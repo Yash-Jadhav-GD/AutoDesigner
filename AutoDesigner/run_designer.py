@@ -93,6 +93,14 @@ def main():
     parser.add_argument("--input", "-i", type=str, help="Path to input presentation (.pptx)")
     parser.add_argument("--output", "-o", type=str, help="Path to output presentation (.pptx)")
     parser.add_argument(
+        "--engine",
+        "-e",
+        type=str,
+        default="composable",
+        choices=["composable", "archetype"],
+        help="Layout engine to use: composable (constraint box-model solver) or archetype (legacy fixed archetypes)",
+    )
+    parser.add_argument(
         "--mapper",
         "-m",
         type=str,
@@ -147,7 +155,26 @@ def main():
             sys.exit(1)
 
     print(f"\n[PPT Designer] Designing: {input_file}")
-    print(f"[PPT Designer] Mapper: {args.mapper} | Palette: {args.palette}")
+    print(f"[PPT Designer] Engine: {args.engine} | Mapper: {args.mapper} | Palette: {args.palette}")
+
+    if args.engine == "composable":
+        result = designer.design_with_composer(
+            input_path=input_file,
+            output_path=args.output,
+        )
+        print(f"\n[Composable Engine] Generated: {result['output_file']}")
+        for s in result["slides"]:
+            print(f" - Slide {s['slide']}: Root={s['node_type']} ({s['shapes']} resolved shapes)")
+
+        fid = result["fidelity"]
+        print(f"\nFidelity: slides in={fid['slides_in']} out={fid['slides_out']}, "
+              + ("all text preserved, no dangling relationships" if fid["ok"] else "FAILED"))
+        if not fid["ok"]:
+            for s in fid["slides"]:
+                if s["lost"] or s["dangling_rels"]:
+                    print(f"   slide {s['slide']}: lost {s['lost'][:10]} dangling {s['dangling_rels']}")
+            sys.exit(2)
+        return
 
     result = designer.design_presentation(
         input_path=input_file,

@@ -92,3 +92,54 @@ class PPTDesigner:
         result["output_file"] = str(output_path)
         result["fidelity"] = verify_output(input_path, output_path)
         return result
+
+    def design_with_composer(
+        self,
+        input_path: str,
+        output_path: Optional[str] = None,
+        log=print,
+    ) -> Dict[str, Any]:
+        """Designs any presentation using the Composable Layout Engine (primitives, box-model solver, DrawingML renderer)."""
+        import pptx
+        from engine.composer import SemanticComposer, LayoutSolver, ComposableRenderer
+        from engine.builders.common import load_library, get_decor_shadow_proto
+        from engine.slide_model import read_slide
+
+        self.check_file_accessible(input_path)
+        stem = Path(input_path).stem.replace(" ", "_")
+
+        if not output_path:
+            output_dir = self.BASE_DIR / "output"
+            output_dir.mkdir(parents=True, exist_ok=True)
+            output_path = str(output_dir / f"{stem}_composable.pptx")
+
+        in_prs = pptx.Presentation(input_path)
+        out_prs = pptx.Presentation()
+        out_prs.slide_width = in_prs.slide_width
+        out_prs.slide_height = in_prs.slide_height
+
+        lib_prs, _, _, lib_lines = load_library()
+        lib_shadow = get_decor_shadow_proto(lib_prs)
+        solver = LayoutSolver()
+
+        slides_info = []
+        for s_idx, slide in enumerate(in_prs.slides, start=1):
+            model = read_slide(slide, s_idx, in_prs.slide_width, in_prs.slide_height)
+            composition = SemanticComposer.compose(model)
+            resolved_shapes, meta = solver.solve(composition)
+            out_slide = out_prs.slides.add_slide(out_prs.slide_layouts[6])
+            ComposableRenderer.render(out_slide, resolved_shapes, lib_lines, lib_shadow)
+            slides_info.append({
+                "slide": s_idx,
+                "node_type": composition.root.node_type,
+                "shapes": len(resolved_shapes)
+            })
+
+        out_prs.save(output_path)
+        return {
+            "input_file": str(input_path),
+            "output_file": str(output_path),
+            "engine": "composable",
+            "slides": slides_info,
+            "fidelity": verify_output(input_path, output_path)
+        }
