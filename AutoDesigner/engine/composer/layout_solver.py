@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from pydantic import BaseModel
 
 from .primitives import (
+    LayoutNode,
     AnyNode,
     HStack,
     VStack,
@@ -67,6 +68,7 @@ class ResolvedShape:
     line_prototype: Optional[str] = None
     table_data: Optional[Dict[str, Any]] = None
     svg_asset: Optional[str] = None
+    paragraphs: Optional[List[Dict[str, Any]]] = None
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 
@@ -237,7 +239,7 @@ class LayoutSolver:
         cur_y = bounds.top
         for child in node.children:
             h = child.fixed_height if child.fixed_height is not None else (child.height_weight / total_weight) * remaining_h
-            w = bounds.width if node.align == "stretch" else (child.fixed_width or bounds.width)
+            w = child.fixed_width if child.fixed_width is not None else bounds.width
             x = bounds.left
             if node.align == "center":
                 x = bounds.left + (bounds.width - w) / 2.0
@@ -322,7 +324,7 @@ class LayoutSolver:
                     gradient=h.gradient,
                     shadow=True
                 ))
-                cur_content_y = max(cur_content_y, c_top + (h.height - protrusion) + 6.0)
+                cur_content_y = max(cur_content_y, c_top + (h.height - protrusion) + 14.0)
 
             elif h.style == "flush":
                 resolved.append(ResolvedShape(
@@ -340,7 +342,7 @@ class LayoutSolver:
                     vertical_anchor="ctr",
                     gradient=h.gradient
                 ))
-                cur_content_y += h.height + 8.0
+                cur_content_y += h.height + 14.0
 
             elif h.style == "top_tab":
                 tab_w = max(60.0, c_w * 0.7)
@@ -367,12 +369,24 @@ class LayoutSolver:
         body_bounds = Rect(c_left + pad_l, cur_content_y, usable_inner_w, body_h)
 
         if isinstance(node.body, BulletListNode):
+            font_sz = node.body.font_size
+            # Dynamic line fit: calculate accurate line wrap per item based on actual width
+            char_per_line = max(15, int(body_bounds.width / (font_sz * 0.52)))
+            est_lines = sum(max(1, (len(item) + char_per_line - 1) // char_per_line) for item in node.body.items)
+            est_h = est_lines * (font_sz * 1.25) + max(0, len(node.body.items) - 1) * node.body.space_after
+            if est_h > body_h and body_h > 30.0:
+                # Downscale font size and space_after so entire block fits with 10% headroom
+                scale = (body_h * 0.90) / est_h
+                font_sz = max(8.0, round(font_sz * scale, 1))
+
+            eff_space_after = min(node.body.space_after, max(1.5, (body_h - est_lines * font_sz * 1.2) / max(1, len(node.body.items))))
+
             resolved.append(ResolvedShape(
                 shape_id=self._next_id("bullet_list"),
                 kind="bullet_list",
                 rect=body_bounds,
                 z_order=10,
-                font_size=node.body.font_size,
+                font_size=font_sz,
                 text_color=node.body.text_color,
                 align="left",
                 vertical_anchor="ctr",
@@ -380,7 +394,7 @@ class LayoutSolver:
                     "items": node.body.items,
                     "bullet_char": node.body.bullet_char,
                     "typeface": node.body.typeface,
-                    "space_after": node.body.space_after,
+                    "space_after": eff_space_after,
                     "mar_l_pt": node.body.mar_l_pt,
                     "indent_pt": node.body.indent_pt
                 }
@@ -421,39 +435,61 @@ class LayoutSolver:
         pad_t = node.padding.top
         pad_b = node.padding.bottom
         pad_l = node.padding.left
-        usable_w = bounds.width - (node.padding.left + node.padding.right)
-        total_inner_h = bounds.height - pad_t - pad_b
+        pad_r = node.padding.right
+        usable_w = bounds.width - (pad_l + pad_r)
+        usable_h = bounds.height - (pad_t + pad_b)
 
-        num_h = total_inner_h * 0.52
-        lbl_h = total_inner_h * 0.48
-
-        # Large metric number
-        resolved.append(ResolvedShape(
-            shape_id=self._next_id("kpi_num"),
-            kind="kpi_text",
-            rect=Rect(bounds.left + pad_l, bounds.top + pad_t, usable_w, num_h),
-            z_order=10,
-            text=node.number,
-            font_size=node.number_size,
-            bold=True,
-            text_color=node.number_color,
-            align="center",
-            vertical_anchor="ctr"
-        ))
-
-        # Metric label
-        lbl_text = node.label
+        # Estimate line count of label to calculate safe font sizes
+        char_per_line = max(10, int(usable_w / (node.label_size * 0.52)))
+        lbl_lines = max(1, (len(node.label) + char_per_line - 1) // char_per_line)
         if node.sublabel:
-            lbl_text += f"\n{node.sublabel}"
+            lbl_lines += max(1, (len(node.sublabel) + char_per_line - 1) // char_per_line)
+
+        eff_num_sz = node.number_size
+        eff_lbl_sz = node.label_size
+
+        needed_h = eff_num_sz * 1.25 + 3.0 + lbl_lines * eff_lbl_sz * 1.2
+        if needed_h > usable_h and usable_h > 20.0:
+            scale = (usable_h * 0.92) / needed_h
+            eff_num_sz = max(13.0, round(eff_num_sz * scale, 1))
+            eff_lbl_sz = max(7.5, round(eff_lbl_sz * scale, 1))
+
+        paras = [
+            {
+                "text": node.number,
+                "font_size": eff_num_sz,
+                "bold": True,
+                "color": node.number_color,
+                "align": "center",
+                "space_after": 2.0,
+            },
+            {
+                "text": node.label,
+                "font_size": eff_lbl_sz,
+                "bold": False,
+                "color": node.label_color,
+                "align": "center",
+                "space_after": 0.0,
+            }
+        ]
+        if node.sublabel:
+            paras.append({
+                "text": node.sublabel,
+                "font_size": max(7.5, eff_lbl_sz - 1.0),
+                "bold": False,
+                "color": "NEUTRAL_MUTED",
+                "align": "center",
+                "space_after": 0.0,
+            })
+
+        # Emits a SINGLE text shape containing sequential paragraphs:
+        # PowerPoint native text layout eliminates 100% of inter-text collisions.
         resolved.append(ResolvedShape(
-            shape_id=self._next_id("kpi_lbl"),
-            kind="kpi_text",
-            rect=Rect(bounds.left + pad_l, bounds.top + pad_t + num_h, usable_w, lbl_h),
+            shape_id=self._next_id("kpi_content"),
+            kind="kpi_content",
+            rect=Rect(bounds.left + pad_l, bounds.top + pad_t, usable_w, usable_h),
             z_order=10,
-            text=lbl_text,
-            font_size=node.label_size,
-            bold=False,
-            text_color=node.label_color,
+            paragraphs=paras,
             align="center",
             vertical_anchor="ctr"
         ))

@@ -125,6 +125,30 @@ class ComposableRenderer:
                 p.font.bold = sh.bold
                 p.font.color.rgb = hex_to_rgb(resolve_color(sh.text_color))
 
+            elif sh.paragraphs or kind == "kpi_content":
+                tb = slide.shapes.add_textbox(Pt(r.left), Pt(r.top), Pt(r.width), Pt(r.height))
+                tb.name = sh.shape_id
+                tf = tb.text_frame
+                tf.word_wrap = True
+                tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+                tf._txBody.bodyPr.set("anchor", "ctr")
+                paras = sh.paragraphs or []
+                first = True
+                for p_data in paras:
+                    p = tf.paragraphs[0] if first else tf.add_paragraph()
+                    first = False
+                    p.text = p_data.get("text", "")
+                    p.alignment = PP_ALIGN.CENTER if p_data.get("align", sh.align) == "center" else PP_ALIGN.LEFT
+                    p.font.name = "Aptos"
+                    p.font.size = Pt(p_data.get("font_size", sh.font_size))
+                    p.font.bold = p_data.get("bold", False)
+                    p_col = resolve_color(p_data.get("color", sh.text_color))
+                    p.font.color.rgb = hex_to_rgb(p_col)
+                    if "space_after" in p_data:
+                        p.space_after = Pt(p_data["space_after"])
+                    if "space_before" in p_data:
+                        p.space_before = Pt(p_data["space_before"])
+
             elif kind in ("text_box", "kpi_text"):
                 tb = slide.shapes.add_textbox(Pt(r.left), Pt(r.top), Pt(r.width), Pt(r.height))
                 tb.name = sh.shape_id
@@ -164,7 +188,10 @@ class ComposableRenderer:
                     p.font.bold = False
                     p.font.color.rgb = hex_to_rgb(resolve_color(sh.text_color))
                     p.space_after = Pt(space_after)
-                    apply_native_bullet(p, char=bullet_char, typeface="Arial", mar_l_pt=mar_l, indent_pt=indent)
+                    if bullet_char:
+                        apply_native_bullet(p, char=bullet_char, typeface="Arial", mar_l_pt=mar_l, indent_pt=indent)
+                    else:
+                        p.alignment = PP_ALIGN.CENTER if sh.align == "center" else PP_ALIGN.LEFT
 
             elif kind == "section_list":
                 tb = slide.shapes.add_textbox(Pt(r.left), Pt(r.top), Pt(r.width), Pt(r.height))
@@ -239,7 +266,8 @@ class ComposableRenderer:
                     for c_idx, h_text in enumerate(headers):
                         cell = tbl.cell(0, c_idx)
                         cell.text = h_text
-                        apply_solid_fill(cell, h_fill)
+                        cell.fill.solid()
+                        cell.fill.fore_color.rgb = hex_to_rgb(h_fill)
                         set_cell_border(cell, color="FFFFFF", width="6350")
                         for p in cell.text_frame.paragraphs:
                             p.alignment = PP_ALIGN.CENTER
@@ -256,7 +284,8 @@ class ComposableRenderer:
                         if c_idx < num_cols:
                             cell = tbl.cell(r_idx + row_offset, c_idx)
                             cell.text = str(cell_value)
-                            apply_solid_fill(cell, curr_fill)
+                            cell.fill.solid()
+                            cell.fill.fore_color.rgb = hex_to_rgb(curr_fill)
                             set_cell_border(cell, color="CBD5E1", width="6350")
                             for p in cell.text_frame.paragraphs:
                                 p.alignment = PP_ALIGN.LEFT if c_idx == 0 else PP_ALIGN.RIGHT
