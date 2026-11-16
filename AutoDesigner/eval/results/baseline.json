@@ -1,0 +1,186 @@
+{
+  "summary": {
+    "mapper": "baseline",
+    "slides": 12,
+    "archetype_accuracy": 0.083,
+    "field_accuracy": 0.083,
+    "full_coverage_slides": 8,
+    "mean_coverage": 0.863,
+    "schema_valid": 12
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "gold": "three_column_pills",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 2,
+      "gold": "split_process_insights",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 3,
+      "gold": "process_rows",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 4,
+      "gold": "assessment_kpis",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 5,
+      "gold": "workflow_cards",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 6,
+      "gold": "persona_grid",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 7,
+      "gold": "org_structure",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 0.9167,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [
+        "bs",
+        "capex",
+        "co",
+        "estate",
+        "it",
+        "marketing",
+        "portfolio",
+        "portfolio"
+      ],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 8,
+      "gold": "allocation_table",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 0.2216,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 9,
+      "gold": "sizing_table",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 0.2453,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 1,
+      "gold": "card_grid",
+      "pred": "card_grid",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "input/sample_draft.pptx"
+    },
+    {
+      "slide": 2,
+      "gold": "kpi_cards",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 0.9744,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [
+        "94"
+      ],
+      "deck": "input/sample_draft.pptx"
+    },
+    {
+      "slide": 3,
+      "gold": "subheader_list",
+      "pred": "card_grid",
+      "archetype": false,
+      "fields": 0.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.0,
+      "missing": [],
+      "deck": "input/sample_draft.pptx"
+    }
+  ]
+}

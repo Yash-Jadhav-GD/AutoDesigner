@@ -1,0 +1,1134 @@
+
+========================================
+=== SLIDE 8 ===
+========================================
+  [Title 1]:
+      - Executive Summary: One Accountable Partner Delivering 6 to 15% Savings Through an AI Enabled Managed Service
+  [TextBox 3]:
+      - Context and objective: Provide KPOD with a single accountable PSCM partner across Wells, Operations, Projects and Indirect categories, ensuring continuity through transition, improved supplier performance, measurable value delivery, and increased Iraqi local content participation.
+  [TextBox 6]:
+      - Scope of Work
+  [TextBox 7]:
+      - VOLUMES
+  [TextBox 9]:
+      - 148
+  [TextBox 10]:
+      - Contracts Executed
+  [TextBox 12]:
+      - 130
+  [TextBox 13]:
+      - Live Sourcing Cases
+  [TextBox 15]:
+      - 9
+  [TextBox 20]:
+      - IN-SCOPE SERVICES
+  [TextBox 21]:
+      - Category strategy and sourcing execution
+      - RFx management and commercial evaluations
+      - Contract development and administration
+      - Procurement operations and buying support
+      - Supplier performance and risk management
+      - Market intelligence and should-cost analysis
+      - Materials and inventory coordination
+      - Governance, reporting and local content support
+  [TextBox 24]:
+      - Solution Summary
+  [TextBox 28]:
+      - Savings
+  [TextBox 29]:
+      - 6 to 15% on addressable spend
+      - USD 60–100M indicative annual savings opportunity
+      - Proven track record of value delivery across Wells, Operations, Projects and Indirect categories
+  [TextBox 33]:
+      - Services and Activities
+  [TextBox 34]:
+      - Integrated Source-to-Pay (S2P) & SC managed services
+      - Innovative category sourcing strategies, RFx and contract management
+      - P2P, materials, supplier performance and risk management
+  [TextBox 38]:
+      - Digital and AI
+  [TextBox 39]:
+      - Platform-agnostic integration with KPOD's existing technology ecosystem
+      - GEP AI agents for intake, RFx, negotiations and contracts
+      - AI-driven analytics, should-cost and automation
+  [TextBox 43]:
+      - Delivery Model
+  [TextBox 44]:
+      - Dedicated Category Managers across key spend areas
+      - Centralized governance and performance management
+      - Integrated local content tracking, supplier development and KPI reporting
+  [TextBox 47]:
+      - Benefits with GEP
+  [TextBox 50]:
+      - S2P Services Excellence
+      - Deep Global Category, Industry and Process Expertise
+  [TextBox 53]:
+      - Efficiency
+      - 15–30% productivity improvement through process standardization and automation
+  [TextBox 56]:
+      - Digital COE + Agents
+      - AI agents across S2P on KPOD systems
+  [TextBox 59]:
+      - SME & Talented pool
+      - Access to 3,000+ category, sourcing and procurement specialists
+  [TextBox 62]:
+      - Leadership Commitment
+      - Executive sponsorship, dedicated account leadership and category ownership
+  [TextBox 65]:
+      - Outcome based model
+      - Measurable KPIs, savings commitments and transparent benefits tracking
+  [TextBox 69]:
+      - 23
+  [TextBox 71]:
+      - BP PSCM Personnel
+  [TextBox 73]:
+      - Agency Personnel
+  [Rectangle: Rounded Corners 67]:
+      - Design
+
+========================================
+=== SLIDE 9 ===
+========================================
+  [Title 1]:
+      - Source-to-Pay Expertise: Our laser focus on procurement and ready assets deliver better experience, efficiency, and effectiveness for GEP’s clients
+  [Rectangle: Top Corners Rounded 15]:
+      - Source-to-Pay Capabilities
+  [object 10]:
+      - Speed-to-Value with Digital Focus
+      - Ready to deploy infrastructure powered by digital tools to drive value and velocity
+      - Change Management
+      - Targeted change management as a part of foundation building to ensure strong adoption
+      - Reduced Cycle Time
+      - Process optimization to drive efficiencies and reduce cycle time
+      - Strong Compliance
+      - Driving buying channel compliance at source
+      - FTE Efficiency
+      - Automating multiple S2P processes through AI and RPA
+      - Innovation and Digital Focus
+      - Focus on RPAs, NLP, AI based chatbots, etc. to improve productivity
+      - Improved Experience
+      - Use of auto-bid, cost models and other GEP incremental tools to further improve experience
+  [Rectangle: Top Corners Rounded 18]:
+      - GEP Drivers and Outcomes Targeted
+  [object 19]:
+      - 50K+
+      - Sourcing Projects / Year
+  [object 20]:
+      - 2 MM+
+      - Contracts Processed Annually
+  [object 21]:
+      - 35 Million+
+      - Supplier Network
+  [object 22]:
+      - 120+
+      - Countries Supported
+  [object 23]:
+      - 3,000+
+      - Category, Sourcing,
+      - Professionals
+  [object 24]:
+      - 25+
+      - Languages Supported
+  [Rectangle: Top Corners Rounded 1844]:
+      - Experience With Leading Procurement Platforms
+  [object 136]:
+      - 30 – 50%
+      - Efficiencies through Automation
+  [object 135]:
+      - 5,000+
+      - Digital Tools & RPAs
+  [object 136]:
+      - 10 – 20%
+      - Reduction in Turnaround Time
+  [object 137]:
+      - 25K+
+      - Catalogs Implemented
+  [object 135]:
+      - 500+
+      - Analytical Data Models
+  [object 122]:
+      - 500+
+      - Subject Matter Experts
+  [object 132]:
+      - 10+
+      - Category Advisory Groups
+  [object 137]:
+      - $4.5T+
+      - Spend Analyzed Annually
+  [object 135]:
+      - $600+ BN
+      - Spend Managed Annually
+  [object 136]:
+      - 50 MM
+      - Transactions Managed Annually
+  [TextBox 7]:
+      - Q5
+
+========================================
+=== SLIDE 10 ===
+========================================
+  [Title 1]:
+      - Plan on a Page: a 3 month transition takes KPOD to steady state, followed by 33 months of strategic procurement services across all in scope activities
+  [TextBox 3]:
+      - Program Kick-Off (Feb 2027)
+  [TextBox 5]:
+      - M1
+  [TextBox 7]:
+      - M2
+  [TextBox 9]:
+      - M3
+  [TextBox 11]:
+      - M4 to M36 (33 months): May 2027 to Jan 2030
+  [TextBox 14]:
+      - Foundation Building and Transition | 3 Months
+  [TextBox 17]:
+      - Foundation Building
+      - PMO set up, governance, SLAs and KPI baselines
+      - Baseline spend; map categories to Wells, Operations, Projects and Indirect; validate savings
+      - Map warehouse, logistics and customs interfaces
+      - Oracle, Ariba and AIQ access, governance and transition planning
+      - Supplier risk framework and critical contracts identified
+      - Local content baseline, reporting requirements and governance framework established
+      - Transition and Team Ramp-Up
+      - Knowledge transfer and desk procedures; PR to PO service levels
+      - Take over 130 live sourcing cases: close to award, mid process, early stage
+      - Resource onboarding, vetting and training
+      - Parallel run, readiness review and go live communication
+  [TextBox 16]:
+      - Go Live
+  [TextBox 19]:
+      - Strategic Procurement Services (Steady State) | 33 Months
+  [TextBox 22]:
+      - Category Strategy: category strategies and a rolling 24 month procurement plan; annual refresh and benefits register
+  [TextBox 25]:
+      - Strategic Sourcing: Sourcing and contracting across Wells, Operations, Projects and Indirect categories; category strategies, sourcing events, negotiations, contract awards and savings delivery
+  [TextBox 28]:
+      - Contract and Supplier Management: contract administration, amendments and claims; supplier performance, local content tracking, contract compliance, risk monitoring and continuity plans
+  [TextBox 31]:
+      - Procurement Operations: requisition to PO, supplier support, buying support, expediting and transactional procurement activities
+  [TextBox 34]:
+      - Materials Management: materials coordination, inventory visibility, shortage reporting and inventory optimisation
+  [TextBox 38]:
+      - Digital and AI Layer
+      - Across transition and steady state
+  [TextBox 40]:
+      - Oracle
+  [TextBox 42]:
+      - FairmarkIT
+  [TextBox 44]:
+      - Aravo
+  [TextBox 46]:
+      - Beroe
+  [TextBox 47]:
+      - +
+  [TextBox 49]:
+      - Intake and Triage
+  [TextBox 51]:
+      - RFx Creation
+  [TextBox 53]:
+      - RFx Evaluation
+  [TextBox 55]:
+      - Quick Negotiation
+  [TextBox 57]:
+      - Contract Drafting
+  [TextBox 59]:
+      - Should Cost
+  [TextBox 61]:
+      - PR Validation
+  [TextBox 63]:
+      - Autonomous Sourcing
+  [TextBox 65]:
+      - Ongoing Governance | Savings Tracking | Local Content Reporting | KPI Management | PMO | Risk & Change Management
+  [Rectangle: Rounded Corners 86]:
+      - Design
+
+========================================
+=== SLIDE 11 ===
+========================================
+  [Title 1]:
+      - Spend and Savings Opportunity: we see USD 32 to 47M in annual savings at 6 to 10% of addressable spend across KPOD’s categories
+  [TextBox 3]:
+      - Preliminary
+  [TextBox 5]:
+      - Category
+  [TextBox 7]:
+      - Key sub-categories
+  [TextBox 11]:
+      - Typical annual spend (USD M)
+  [TextBox 13]:
+      - % Addressability
+  [TextBox 15]:
+      - Savings %
+  [TextBox 17]:
+      - Annual savings (USD M)
+  [TextBox 21]:
+      - Wells
+  [TextBox 23]:
+      - Drilling & Completion Services, OCTG & Tubulars, Cementing & Stimulation, Wireline & Logging
+  [TextBox 27]:
+      - 300 - 500
+  [TextBox 29]:
+      - 55%
+  [TextBox 31]:
+      - 6–9%
+  [TextBox 33]:
+      - 13 to 20
+  [TextBox 37]:
+      - Operations
+  [TextBox 39]:
+      - O&M Services, Rotating Equipment, Production Chemicals, Maintenance Materials
+  [TextBox 43]:
+      - 200 - 300
+  [TextBox 45]:
+      - 50%
+  [TextBox 47]:
+      - 7–10%
+  [TextBox 49]:
+      - 9 to 13
+  [TextBox 53]:
+      - Projects
+  [TextBox 55]:
+      - EPC/EPCM Packages, Construction Services, Valves, Pipe & Fittings, Electrical & Instrumentation
+  [TextBox 59]:
+      - 100 - 200
+  [TextBox 61]:
+      - 50%
+  [TextBox 63]:
+      - 6–9%
+  [TextBox 65]:
+      - 5 to 7
+  [TextBox 69]:
+      - Indirects
+  [TextBox 71]:
+      - Logistics & Freight, Facilities Management, IT & Telecom, Corporate Services
+  [TextBox 75]:
+      - 50 - 150
+  [TextBox 77]:
+      - 60%
+  [TextBox 79]:
+      - 8 to 12%
+  [TextBox 81]:
+      - 5 to 7
+  [TextBox 119]:
+      - ~USD 1B
+  [TextBox 120]:
+      - indicative annual spend (midpoint of typical ranges)
+  [TextBox 122]:
+      - USD 32 to 47M
+  [TextBox 123]:
+      - annual savings run rate
+  [TextBox 128]:
+      - 6 to 10%
+  [TextBox 129]:
+      - savings on addressable spend
+  [TextBox 175]:
+      - Wells
+  [TextBox 177]:
+      - STRATEGIC LEVERS
+  [TextBox 178]:
+      - Multi well frame agreements with performance KPIs
+      - Index linked OCTG pricing and consignment stock
+  [TextBox 183]:
+      - Operations
+  [TextBox 185]:
+      - STRATEGIC LEVERS
+  [TextBox 186]:
+      - Multi year O&M frameworks with KPIs
+      - Spares standardisation and inventory optimisation
+      - Catalogues and FairmarkIT for tail spend
+  [TextBox 191]:
+      - Projects
+  [TextBox 193]:
+      - STRATEGIC LEVERS
+  [TextBox 194]:
+      - Package strategy and early supplier involvement
+      - Engineering contract benchmarking and should cost
+      - Local fabrication to grow Iraqi content
+  [TextBox 199]:
+      - Indirect
+  [TextBox 201]:
+      - STRATEGIC LEVERS
+  [TextBox 202]:
+      - Demand management and spec rationalisation
+      - Supplier consolidation
+      - Rate card benchmarking
+  [TextBox 203]:
+      - Market: Tight rig and OCTG markets; steel price swings; campaign driven demand
+  [TextBox 204]:
+      - Market: High volume, fragmented spend; remote site logistics; ageing assets
+  [TextBox 205]:
+      - Market: Large, complex packages; schedule critical long lead items
+  [TextBox 206]:
+      - Market: Many small suppliers; weak demand control; rate creep
+  [Rectangle: Rounded Corners 226]:
+      - Design
+
+========================================
+=== SLIDE 12 ===
+========================================
+  [Rectangle: Rounded Corners 44]:
+      - Program Lead
+  [Rectangle: Rounded Corners 47]:
+      - Executive Sponsor
+  [Rectangle: Rounded Corners 77]:
+      - Process Owners and Procurement Team
+  [Title 50]:
+      - Resource Plan: Dedicated PSCM managed service team supported by category SMEs, digital specialists and governance leadership across the 36‑month engagement
+  [Rectangle: Rounded Corners 48]:
+      - Jason Allukian
+      - Client Executive
+  [Rectangle 70]:
+      - GEP SMEs
+      - (as needed)
+  [Rectangle 80]:
+      - GEP SMEs
+      - (as needed)
+  [Rectangle: Rounded Corners 48]:
+      - Service Delivery Manager
+      - Virat Venkataraman
+  [TextBox 10]:
+      - [1] Phase 2 includes an additional investment resource to support quick win execution and accelerate savings delivery for Telix
+  [Rectangle 4]:
+      - Wayne Clark
+  [Rectangle 4]:
+      - Matt Tuller
+  [Rectangle 48]:
+      - Emma Jane
+  [Rectangle 57]:
+      - Raina Saxena
+  [TextBox 67]:
+      - Contracting  Process
+      - Tools & Templates
+  [TextBox 75]:
+      - Industry
+      - Benchmarks
+  [TextBox 84]:
+      - Training Playbooks
+  [TextBox 91]:
+      - Digital Tools & Contracting RPAs
+  [TextBox 95]:
+      - Global Industry
+      - SMEs
+  [Rectangle: Rounded Corners 99]:
+      - GEP Support Infrastructure
+  [TextBox 29]:
+      - Strategic Sourcing & Category Management
+  [TextBox 105]:
+      - Procurement Operations & Materials Management
+  [Rectangle: Rounded Corners 48]:
+      - Program Manager
+
+========================================
+=== SLIDE 13 ===
+========================================
+  [Rectangle: Rounded Corners 109]:
+      - Source - to - Contract
+  [Arrow: Left-Right 86]:
+      - KPOD Technology Platform: Oracle | FairmarkIT | Aravo | Beroe, with GEP AI Agents
+  [Rectangle: Top Corners Rounded 68]:
+      - KPOD Integrated PSCM Operations (delivered by GEP)
+  [Rectangle: Rounded Corners 69]:
+      - Leadership Team
+  [Rectangle: Rounded Corners 70]:
+      - KPOD Business and Functional Stakeholders
+      - Procurement Team
+  [TextBox 72]:
+      - Procurement Strategy and Planning
+      - Organization Change and Management
+  [Rectangle: Rounded Corners 88]:
+      - Digital Enablers: GEP AI Agents (Intake, RFx, Negotiation, Contract Drafting, Should Cost) and RPA
+  [Rectangle: Rounded Corners 89]:
+      - Program Governance     |     Compliance Management
+  [TextBox 78]:
+      - KPOD
+  [TextBox 79]:
+      - GEP
+  [TextBox 80]:
+      - Legend
+  [Rectangle: Rounded Corners 81]:
+      - Suppliers
+  [Rectangle: Rounded Corners 102]:
+      - Contract Mgmt.
+  [Rectangle 103]:
+      - Contract Authoring
+      - Contract Execution
+      - Contract Administration
+      - Contract Termination & Renewal
+  [Rectangle 96]:
+      - Vendor Setup
+      - Supplier Relationship & Performance Management
+      - Supplier Risk Management
+  [Rectangle: Rounded Corners 97]:
+      - Supplier Mgmt.
+  [Rectangle: Rounded Corners 110]:
+      - Ready-to-Deploy Tools
+      - and Templates
+  [Rectangle: Rounded Corners 112]:
+      - GEP Center of Excellence (COE)
+  [Rectangle: Rounded Corners 113]:
+      - MI & Analytics COE
+  [Rectangle: Rounded Corners 114]:
+      - Category Advisory Group
+      - and Category SMEs
+  [Rectangle: Rounded Corners 115]:
+      - Best-In Class
+      - Benchmarks
+  [Rectangle: Rounded Corners 116]:
+      - Reporting Dashboards
+  [Title 7]:
+      - Operating Model: GEP runs KPOD’s PSCM operations end to end, supported by GEP experts, AI agents and built infrastructure
+  [Rectangle: Rounded Corners 8]:
+      - KPOD
+  [TextBox 91]:
+      - Market Analysis
+      - Strategy Creation & Approvals
+      - Strategy implementation & Optimization
+  [Rectangle 59]:
+      - Demand Assessment & Identification
+      - Supply Market Assessment
+      - Category Strategy Approach
+      - Monitoring & Maintenance
+  [Rectangle: Rounded Corners 60]:
+      - Category Mgmt.
+  [Rectangle: Rounded Corners 63]:
+      - Strategic Sourcing
+  [Rectangle 93]:
+      - Opportunity Assessment
+      - Sourcing Strategy Approach
+      - Sourcing Execution & Award
+      - Preferred Suppliers List
+  [Rectangle: Rounded Corners 107]:
+      - Plan - to - Strategy
+  [Rectangle: Rounded Corners 118]:
+      - Category Management
+  [Rectangle: Rounded Corners 119]:
+      - Strategy Management
+  [TextBox 71]:
+      - Project Procurement (Planning & Execution)
+      - Demand & Capacity Planning
+  [Rectangle: Rounded Corners 73]:
+      - Projects & Planning
+  [Rectangle: Rounded Corners 52]:
+      - Purchase - to - Pay
+  [Rectangle 53]:
+      - R2O buying channels
+      - PO creation / Update
+      - PO monitoring
+      - Analyze bottlenecks, expediting
+      - Goods Service / Receipt
+  [Rectangle: Rounded Corners 54]:
+      - Order Mgmt.
+  [Rectangle: Rounded Corners 55]:
+      - Materials Mgmt.
+  [Rectangle 56]:
+      - Material availability & shortages
+      - Spares & inventory optimisation
+      - Warehouse & logistics interfaces
+      - Customs coordination
+  [Rectangle 57]:
+      - Supplier queries & claims
+      - Problem escalation
+      - Query resolution ownership
+  [Rectangle: Rounded Corners 66]:
+      - Ops & Helpdesk
+  [Rectangle: Top Corners Rounded 2]:
+      - Q1 & Q3
+
+========================================
+=== SLIDE 14 ===
+========================================
+  [Title 1]:
+      - Every interface has an owner, and issues escalate before they cause delay
+  [TextBox 2]:
+      - Clear ownership, structured escalation and proactive issue management across all KPOD interfaces
+  [TextBox 8]:
+      - 1. Interface Register from day one
+  [TextBox 9]:
+      - All interfaces owned, mapped and governed
+  [TextBox 22]:
+      - Operations
+  [TextBox 25]:
+      - Wells
+  [TextBox 28]:
+      - Projects
+  [TextBox 31]:
+      - Engineering
+  [TextBox 34]:
+      - HSE
+  [TextBox 37]:
+      - Finance
+  [TextBox 40]:
+      - Logistics
+  [TextBox 43]:
+      - Security
+  [TextBox 46]:
+      - NOC / NGC
+  [TextBox 49]:
+      - bp IJV
+  [TextBox 52]:
+      - GEP PSCM
+      - Category Manager (single point of contact per function)
+  [TextBox 55]:
+      - Defined owners
+      - GEP owner and KPOD counterpart for each interface
+  [TextBox 58]:
+      - Agreed turnaround
+      - SLAs for information exchange and decisions
+  [TextBox 61]:
+      - Integrated planning
+      - Regular cross functional alignment
+  [TextBox 64]:
+      - 2. Three level escalation
+  [TextBox 65]:
+      - Issues escalate early, with clear accountability
+  [TextBox 67]:
+      - Level 3
+      - Strategic
+  [TextBox 70]:
+      - GEP Service Director + KPOD CPO
+      - Risk to operations, safety, regulatory dates or contract expiry
+  [TextBox 73]:
+      - Level 2
+      - Tactical
+  [TextBox 76]:
+      - GEP Service Delivery Manager + KPOD PDM
+      - At risk of more than 3 days delay, critical schedule risk or cross functional impact
+  [TextBox 79]:
+      - Level 1
+      - Operational
+  [TextBox 82]:
+      - GEP Category Leads + KPOD function lead
+      - Dependency more than 3 working days overdue, or an emerging issue
+  [TextBox 85]:
+      - 3. Avoiding delay, duplication and gaps
+  [TextBox 86]:
+      - Disciplined issue management
+  [TextBox 90]:
+      - One case record
+      - From requisition to contract with full visibility
+  [TextBox 94]:
+      - Agreed priority score
+      - Drives the right escalation and final call
+  [TextBox 98]:
+      - Weekly aged item review
+      - Stalled cases, overdue expediting, expiring contracts
+  [Rectangle: Rounded Corners 101]:
+      - Design
+  [Rectangle: Top Corners Rounded 4]:
+      - Q2
+
+========================================
+=== SLIDE 15 ===
+========================================
+  [Pentagon 7]:
+      - 2. Three level escalation
+  [Rectangle: Rounded Corners 123]:
+      - Operations
+  [Rectangle: Rounded Corners 168]:
+      - bp IJV
+  [Rectangle: Rounded Corners 126]:
+      - Wells
+  [Rectangle: Rounded Corners 166]:
+      - NOC / NGC
+  [Rectangle: Rounded Corners 129]:
+      - Projects
+  [Rectangle: Rounded Corners 164]:
+      - Security
+  [Rectangle: Rounded Corners 132]:
+      - Engineering
+  [Rectangle: Rounded Corners 162]:
+      - Logistics
+  [Rectangle: Rounded Corners 135]:
+      - HSE
+  [Rectangle: Rounded Corners 160]:
+      - Finance
+  [Title 1]:
+      - Every interface has an owner, and issues escalate before they cause delayClear ownership, structured escalation and proactive issue management across all KPOD interfaces
+  [Pentagon 7]:
+      - 1. Interface Register from day one
+  [TextBox 9]:
+      - All interfaces owned, mapped and governed
+  [Rectangle: Rounded Corners 53]:
+      - Defined owners
+      - GEP owner and KPOD counterpart for each interface
+  [Rectangle: Rounded Corners 56]:
+      - Agreed turnaround
+      - SLAs for information exchange and decisions
+  [Rectangle: Rounded Corners 59]:
+      - Integrated planning
+      - Regular cross functional alignment
+  [TextBox 65]:
+      - Issues escalate early, with clear accountability
+  [TextBox 67]:
+      - Level 3
+      - Strategic
+  [TextBox 70]:
+      - GEP Service Director + KPOD CPO
+      - Risk to operations, safety, regulatory dates or contract expiry
+  [TextBox 73]:
+      - Level 2
+      - Tactical
+  [TextBox 76]:
+      - GEP Service Delivery Manager + KPOD PDM
+      - At risk of more than 3 days delay, critical schedule risk or cross functional impact
+  [TextBox 79]:
+      - Level 1
+      - Operational
+  [TextBox 82]:
+      - GEP Category Leads + KPOD function lead
+      - Dependency more than 3 working days overdue, or an emerging issue
+  [TextBox 85]:
+      - 3. Avoiding delay, duplication and gaps
+  [TextBox 86]:
+      - Disciplined issue management
+  [TextBox 90]:
+      - One case record
+      - From requisition to contract with full visibility
+  [TextBox 94]:
+      - Agreed priority score
+      - Drives the right escalation and final call
+  [TextBox 98]:
+      - Weekly aged item review
+      - Stalled cases, overdue expediting, expiring contracts
+  [Rectangle: Rounded Corners 101]:
+      - Design
+  [Rectangle: Top Corners Rounded 4]:
+      - Q2
+  [Oval 50]:
+      - GEP PSCM
+      - Category Manager (single point of contact per function)
+
+========================================
+=== SLIDE 16 ===
+========================================
+  [Title 2]:
+      - Transition Governance & Risk Management : Three-tier governance followed by GEP will ensure transition accountability, proactive risk mitigation and service continuity
+  [Rectangle: Rounded Corners 4]:
+      - Transition Steering Committee (Monthly)
+  [Rectangle: Rounded Corners 5]:
+      - Transition Mgmt. Committee (Fortnightly)
+  [Rectangle: Rounded Corners 6]:
+      - Transition Operations Committee (Weekly / as needed)
+  [TextBox 8]:
+      - Transition Team
+  [TextBox 15]:
+      - Executive Sponsors
+      - Global Program Lead
+      - Global Process Lead
+      - Change Management Lead
+  [TextBox 16]:
+      - Global Program Lead
+      - Workstream Lead(s)
+      - Process Leads
+      - Change Management Lead
+  [TextBox 17]:
+      - Transition Leads
+      - Workstream Leads
+  [TextBox 18]:
+      - Executive Sponsor/s
+      - Global Program Lead
+      - Global Process Lead
+      - Change Management Lead
+      - Other Key Stakeholders
+  [TextBox 19]:
+      - Global Program Lead
+      - Workstream Leads
+      - Process Leads
+      - Change Management Lead
+  [TextBox 20]:
+      - Transition Leads
+      - Workstream Leads
+      - Other Key Stakeholders
+      - C & C agents
+  [Rectangle: Rounded Corners 23]:
+      - KPOD
+  [Rectangle: Top Corners Rounded 30]:
+      - Key Activities
+  [TextBox 32]:
+      - Startegic Oversight
+      - Key decisions
+      - Resource prioritization
+      - Stage-gate approvals
+  [TextBox 34]:
+      - Progress tracking
+      - Risk and issue management
+      - Knowledge transfer
+      - Resource coordination
+  [TextBox 36]:
+      - Day-to-day execution
+      - Operational readiness
+      - Issue resolution
+      - Go-live preparation
+  [TABLE Table 37]:
+      Risk area | Key barriers | GEP mitigation
+      Programme management | Delayed data availability; delayed future-state decisions | Early data collection; clear governance, roles and decision rights
+      People readiness | Knowledge-transfer gaps; loss of critical resources | Multiple KT rounds; retain key resources; backfill critical vacancies
+      Change management | Insufficient stakeholder engagement; low adoption of new tools and processes | Day-one change communications; customer journey focus; adoption KPIs
+  [Rectangle: Rounded Corners 41]:
+      - Key Transition Risk Mitigation
+  [Rectangle: Top Corners Rounded 43]:
+      - Where we need KPOD Support
+  [TextBox 45]:
+      - Timely access to spend data, documentation and systems.
+      - Availability and retention of key transition personnel.
+  [TextBox 47]:
+      - Empowered leadership for future-state decisions.
+      - Active stakeholder participation and change adoption.
+  [Rectangle: Rounded Corners 49]:
+      - Q4
+  [Rectangle: Rounded Corners 50]:
+      - Design
+
+========================================
+=== SLIDE 17 ===
+========================================
+  [TextBox 1]:
+      - PSCM Delivery Model: London-Led Governance, Offshore Execution & Regional Expertise
+  [TextBox 6]:
+      - GLOBAL PSCM CREDENTIALS
+  [TextBox 8]:
+      - $600BN+
+  [TextBox 9]:
+      - Spend managed
+  [TextBox 11]:
+      - 80+
+  [TextBox 12]:
+      - Mining, Energy & O&G clients
+  [TextBox 14]:
+      - 500+
+  [TextBox 15]:
+      - Category & industry SMEs
+  [TextBox 17]:
+      - 120+
+  [TextBox 18]:
+      - Countries supported
+  [TextBox 20]:
+      - 26+ years
+  [TextBox 21]:
+      - Procurement & supply chain experience
+  [TextBox 24]:
+      - LONDON-LED / OFFSHORE-SUPPORTED MODEL
+  [TextBox 26]:
+      - LONDON | LEADERSHIP & CLIENT INTERFACE
+  [TextBox 27]:
+      - Service leadership
+      - Senior stakeholder engagement
+      - Governance & performance oversight
+      - Category strategy & commercial direction
+  [TextBox 28]:
+      - ↓
+  [TextBox 30]:
+      - OFFSHORE | EXECUTION & DELIVERY SUPPORT
+  [TextBox 31]:
+      - Sourcing & contracting execution
+      - Procurement operations
+      - Analytics & reporting
+      - Supplier and contract administration
+  [TextBox 32]:
+      - KPOD-ALIGNED RESOURCE STRUCTURE
+  [TextBox 34]:
+      - L3
+  [TextBox 35]:
+      - Service Director • Delivery Manager • Category & Commercial Managers
+  [TextBox 37]:
+      - L2
+  [TextBox 38]:
+      - Sourcing & Contracting Specialists • Governance • Materials • Local Content
+  [TextBox 40]:
+      - L1
+  [TextBox 41]:
+      - Analysts • Buyers • Contract Administrators • Reporting
+  [TextBox 44]:
+      - REGIONAL DELIVERY FOOTPRINT | EUROPE & MIDDLE EAST
+  [TextBox 47]:
+      - EUROPEAN DELIVERY NETWORK | HQ : London
+  [TextBox 52]:
+      - 100+ Clients served
+  [TextBox 54]:
+      - €150BN+ Spend managed
+  [TextBox 56]:
+      - 20+ languages supported
+  [TextBox 60]:
+      - MIDDLE EAST EXPERIENCE
+  [TextBox 62]:
+      - Regional markets supported include Egypt, Qatar, Saudi Arabia and the UAE.
+  [TextBox 64]:
+      - 100+ Dedicated procurement professionals
+  [TextBox 66]:
+      - $1.5BN Annual spend managed
+  [TextBox 68]:
+      - 200+ Projects managed
+  [TextBox 70]:
+      - 12+ Clients served
+  [TextBox 74]:
+      - ENERGY-SECTOR EXPERTISE & PSCM COMPETENCIES
+  [TextBox 75]:
+      - Technical procurement
+  [TextBox 76]:
+      - Sourcing execution & procurement processes
+  [TextBox 78]:
+      - Energy category knowledge
+  [TextBox 79]:
+      - Drilling, MRO, well services & EPC
+  [TextBox 81]:
+      - Commercial & contracts
+  [TextBox 82]:
+      - Negotiation, contracting & claims
+  [TextBox 84]:
+      - Systems & digital
+  [TextBox 85]:
+      - Oracle, SAP Ariba & FairmarkIT
+  [TextBox 87]:
+      - Risk & compliance
+  [TextBox 88]:
+      - Conduct, ABC & sanctions
+  [TextBox 90]:
+      - Qualifications
+  [TextBox 91]:
+      - CIPS / MCIPS or equivalent
+  [Rectangle: Rounded Corners 105]:
+      - Q5
+  [Rectangle: Rounded Corners 107]:
+      - Design
+
+========================================
+=== SLIDE 18 ===
+========================================
+  [Title 1]:
+      - Supplier & Materials Management: Strengthening Performance, Risk & Operational Continuity
+  [TextBox 6]:
+      - Supplier and contract performance
+  [TextBox 7]:
+      - Contracts segmented by criticality and value
+      - Critical: management plan, monthly review, quarterly scorecard (Section VII)
+      - Improvement plans tracked to closure
+  [TextBox 10]:
+      - Change, claims and disputes
+  [TextBox 11]:
+      - Single change and claims register: value, entitlement, due date
+      - Recommended position with evidence for KPOD approval
+      - Legal advice stays with KPOD Legal
+  [TextBox 14]:
+      - Supply chain risk and continuity
+  [TextBox 15]:
+      - Financial health, single source, geopolitical, sanctions and lead time risk
+      - Risk monitoring using Aravo and Beroe
+      - Continuity plans covering alternative sources, buffer stock, expediting triggers
+  [TextBox 19]:
+      - In base scope: GEP coordinates
+  [TextBox 21]:
+      - PO-to-delivery plan coordination
+  [TextBox 23]:
+      - Expedite critical orders
+  [TextBox 25]:
+      - Availability and shortage reporting
+  [TextBox 27]:
+      - Warehouse and pipeyard interface
+  [TextBox 29]:
+      - Inbound logistics and customs coordination
+  [TextBox 31]:
+      - Traceability from PR to receipt
+  [TextBox 34]:
+      - Optional, priced separately
+  [TextBox 35]:
+      - Physical warehouse operations
+      - Stock verification
+      - Inventory control and accuracy management.
+      - Customs brokerage
+      - KPIs: on time delivery, critical order fulfilment
+  [TextBox 41]:
+      - Integrated Supplier & Contract Lifecycle Management
+  [TextBox 43]:
+      - Materials, Logistics, Inventory & Warehousing Management
+  [Rectangle: Rounded Corners 49]:
+      - Q7 & Q8
+  [Rectangle: Rounded Corners 51]:
+      - Design
+
+========================================
+=== SLIDE 19 ===
+========================================
+  [Title 1]:
+      - Risk Management Framework : Integrated Supplier & Third-Party Risk Management Framework to Build a Resilient, Compliant and Risk-Aware Ecosystem
+  [Rectangle: Rounded Corners 3]:
+      - Combining supplier risk intelligence, third-party governance, continuous monitoring, and AI-driven insights to proactively identify, assess, mitigate, and monitor enterprise-wide risks.
+  [Rectangle: Top Corners Rounded 17]:
+      - End to End Risk management Cycle
+  [Rectangle: Rounded Corners 69]:
+      - Govern
+  [Rectangle: Rounded Corners 70]:
+      - Monitor
+  [Rectangle: Rounded Corners 71]:
+      - Mitigate
+  [Rectangle: Rounded Corners 72]:
+      - Segment
+  [Rectangle: Rounded Corners 73]:
+      - Assess
+  [Rectangle: Rounded Corners 74]:
+      - Identify
+  [Rectangle: Rounded Corners 22]:
+      - Supplier Screening Agent
+      - Regulatory Compliance Agent
+      - Diversity Verification Agent
+      - Continuous Risk Monitoring Agent
+      - Predictive Risk Alert Engine
+  [Rectangle: Rounded Corners 26]:
+      - Financial
+      - Operational
+      - Cyber & Information Security
+      - ESG
+      - Compliance
+      - Supply Chain
+      - Geopolitical
+  [Rectangle: Rounded Corners 32]:
+      - Comprehensive SRM & TPRM Framework
+      - Integrated Risk Operating Model
+      - Risk Quantification & Scoring Engine
+      - Continuous Monitoring & early warning alerts
+      - Automated due diligence workflows
+      - Market Intelligence & External Data Integration
+      - AI Powered Risks insights and Recommendations
+  [TextBox 40]:
+      - Risk Management Solution Portfolio
+  [Rectangle: Top Corners Rounded 18]:
+      - AI Accelerators
+  [Rectangle: Top Corners Rounded 29]:
+      - GEP Differentiators
+  [Rectangle: Top Corners Rounded 23]:
+      - Risk Coverage
+  [Rectangle: Rounded Corners 43]:
+      - What GEP TPRM Brings:
+  [TextBox 50]:
+      - 20-30% Faster Risk
+      - Assessment
+  [TextBox 54]:
+      - Improved Regulatory
+      - Compliance
+  [TextBox 51]:
+      - Enhanced Supplier
+      - Resilience
+  [TextBox 52]:
+      - Reduced disruption
+      - exposure
+  [TextBox 53]:
+      - Enterprise-wide
+      - risk visibility
+  [Rectangle: Rounded Corners 6]:
+      - Q7
+
+========================================
+=== SLIDE 20 ===
+========================================
+  [Title 1]:
+      - Integrated Governance: A structured governance model ensuring KPOD retains all reserved authorities while GEP takes accountability for integrated PSCM service delivery.
+  [TextBox 294]:
+      - Preliminary
+  [TextBox 126]:
+      - Quarterly
+  [TextBox 127]:
+      - Monthly
+  [TextBox 114]:
+      - Critical Issues, Risks and Challenges
+  [TextBox 121]:
+      - Client Executive
+      - Programme Lead
+  [TextBox 122]:
+      - Programme Lead
+      - Key Delivery Team Members
+  [TextBox 124]:
+      - Delivery Team
+  [TextBox 130]:
+      - Weekly/ Fortnight
+  [TextBox 133]:
+      - Executive Sponsor
+      - Programme Lead
+  [TextBox 137]:
+      - Programme Lead
+      - Category Managers
+      - Key Business Stakeholders
+  [Rectangle 145]:
+      - 1. EXECUTIVE STEERING COMMITTEE
+  [Rectangle: Rounded Corners 146]:
+      - Change Management
+  [Rectangle: Rounded Corners 147]:
+      - Business Alignment
+  [Rectangle: Rounded Corners 148]:
+      - Enforce Strategic Intent
+  [Rectangle: Rounded Corners 149]:
+      - Remove Strategic Bottlenecks
+  [Rectangle 161]:
+      - 2. PROGRAMME COMMITTEE
+  [Rectangle: Rounded Corners 169]:
+      - Progress to Date
+  [Rectangle 175]:
+      - 3. OPERATIONAL COMMITEE
+  [Rectangle: Rounded Corners 176]:
+      - Project Planning and Execution
+  [Rectangle: Rounded Corners 177]:
+      - Issue Mgmt. / Escalation
+  [Rectangle: Rounded Corners 178]:
+      - Strategy Development
+  [Rectangle: Rounded Corners 179]:
+      - SLA Management
+  [TextBox 181]:
+      - Performance Trends
+  [TextBox 193]:
+      - Critical Issues
+  [TextBox 199]:
+      - Long-Term Strategies
+  [TextBox 217]:
+      - Project Updates
+  [TextBox 221]:
+      - Recommendations
+  [Rectangle: Rounded Corners 225]:
+      - Effective Communication
+  [Rectangle: Rounded Corners 226]:
+      - Change Management
+  [Rectangle: Rounded Corners 227]:
+      - Policy / Process  Change Discussions
+  [Rectangle: Rounded Corners 228]:
+      - Prioritisation
+  [Rectangle 229]:
+      - Savings / Compliance Reports, SLA’s, Survey Results
+  [TextBox 239]:
+      - KPOD
+  [TextBox 242]:
+      - GEP
+  [TextBox 246]:
+      - Legend
+  [TextBox 134]:
+      - Category Managers
+      - Key Business Stakeholders
+  [TextBox 10]:
+      - KPOD retains
+  [TextBox 12]:
+      - Priorities and outcomes
+      - Strategy and award approvals (DoFA)
+      - Contract signature
+      - Engineering, HSE, legal and financial approvals
+      - Operator statutory duties
+      - Acceptance of deliverables
+  [TextBox 20]:
+      - GEP delivers
+  [TextBox 22]:
+      - All SOW services and deliverables
+      - Management and supervision of GEP people
+      - Quality assurance of outputs
+      - KPI performance and reporting
+      - Compliance with KPOD procedures
+      - Local content delivery
+  [Rectangle: Top Corners Rounded 27]:
+      - Embedded Controls & Assurance
+  [TextBox 29]:
+      - CDD before award
+      - Approved strategy before market
+      - Conflict of interest declarations
+      - Monthly compliance testing
+      - Audit ready records
+      - Red risks to CPO within 24 hours
+  [Rectangle: Top Corners Rounded 31]:
+      - Accountability
+  [Rectangle: Rounded Corners 41]:
+      - Q3 & Q9
+  [Rectangle: Rounded Corners 43]:
+      - Design

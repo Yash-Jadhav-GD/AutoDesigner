@@ -1,0 +1,679 @@
+{
+  "slides": [
+    {
+      "archetype": "three_column_pills",
+      "data": [
+        {
+          "header": "The Problem",
+          "items": [
+            "Procurement work is siloed by team, not by process",
+            "500+ activities managed inconsistently across regions",
+            "WL1 resources handle high-context, cross-functional tasks with no AI support",
+            "No standardized process baseline exists to build automation upon"
+          ]
+        },
+        {
+          "header": "The Bridge",
+          "items": [
+            "WS2 maps current L3–L6 processes across all 9 persona groups",
+            "Deconstructs work into AI-ready, standardized workflow units",
+            "Designs the human+agent operating model for each process",
+            "Creates the blueprint that WS3 governs and WS4 deploys"
+          ]
+        },
+        {
+          "header": "The Future State",
+          "items": [
+            "Harmonized process horizontals replace siloed team structures",
+            "Multi-agent workflows handle repeatable, rules-based tasks autonomously",
+            "Humans focus on judgment, strategy, and relationship-intensive work",
+            "GEP Quantum Intelligence orchestrates end-to-end S2P execution"
+          ]
+        }
+      ]
+    },
+    {
+      "archetype": "split_process_insights",
+      "data": {
+        "left_pairs": [
+          {
+            "subheader": "Process Diagnostics",
+            "body": "L3 process map creation from WS1 pilot insights; activity decomposition across all procurement personas and geographies"
+          },
+          {
+            "subheader": "Stakeholder Interviews",
+            "body": "Structured interviews with WL1–WL3 stakeholders across BU, Portfolio, Logistics, VMO, and GBS to surface pain points and variation"
+          },
+          {
+            "subheader": "Technology Assessment",
+            "body": "Audit of current tooling, data flows, automation maturity, and integration gaps across GEP SMART, SAP, and regional systems"
+          },
+          {
+            "subheader": "Operating Model Review",
+            "body": "Analysis of span of control, decision rights, governance gaps, and role duplication across PaaS, GBS, and Specialist teams"
+          },
+          {
+            "subheader": "Data Landscape Analysis",
+            "body": "Mapping of data sources, quality, availability, and readiness for agentic AI consumption across all procurement processes"
+          }
+        ],
+        "right_header": "INSIGHTS",
+        "right_items": [
+          "Harmonized process horizontals replace siloed team structures",
+          "Multi-agent workflows handle repeatable, rules-based tasks autonomously",
+          "Humans focus on judgment, strategy, and relationship-intensive work",
+          "GEP Quantum Intelligence orchestrates end-to-end S2P execution"
+        ]
+      }
+    },
+    {
+      "archetype": "process_rows",
+      "data": [
+        {
+          "subheader": "Process Diagnostics",
+          "body": "L3 process map creation from WS1 pilot insights; activity decomposition across all procurement personas and geographies"
+        },
+        {
+          "subheader": "Stakeholder Interviews",
+          "body": "Structured interviews with WL1–WL3 stakeholders across BU, Portfolio, Logistics, VMO, and GBS to surface pain points and variation"
+        },
+        {
+          "subheader": "Technology Assessment",
+          "body": "Audit of current tooling, data flows, automation maturity, and integration gaps across GEP SMART, SAP, and regional systems"
+        },
+        {
+          "subheader": "Operating Model Review",
+          "body": "Analysis of span of control, decision rights, governance gaps, and role duplication across PaaS, GBS, and Specialist teams"
+        },
+        {
+          "subheader": "Data Landscape Analysis",
+          "body": "Mapping of data sources, quality, availability, and readiness for agentic AI consumption across all procurement processes"
+        }
+      ]
+    },
+    {
+      "archetype": "assessment_kpis",
+      "data": {
+        "title": "Phase 1: Current State Assessment — Diagnosing the Starting Point",
+        "subtitle": "8 weeks of deep-dive diagnostics across 9 persona groups, all regions, and the full S2P process landscape",
+        "left_pairs": [
+          {
+            "subheader": "Process Diagnostics",
+            "body": "L3 process map creation from WS1 pilot insights; activity decomposition across all procurement personas and geographies"
+          },
+          {
+            "subheader": "Stakeholder Interviews",
+            "body": "Structured interviews with WL1–WL3 stakeholders across BU, Portfolio, Logistics, VMO, and GBS to surface pain points and variation"
+          },
+          {
+            "subheader": "Technology Assessment",
+            "body": "Audit of current tooling, data flows, automation maturity, and integration gaps across GEP SMART, SAP, and regional systems"
+          },
+          {
+            "subheader": "Operating Model Review",
+            "body": "Analysis of span of control, decision rights, governance gaps, and role duplication across PaaS, GBS, and Specialist teams"
+          },
+          {
+            "subheader": "Data Landscape Analysis",
+            "body": "Mapping of data sources, quality, availability, and readiness for agentic AI consumption across all procurement processes"
+          }
+        ],
+        "deliv_header": "PHASE 1 DELIVERABLES",
+        "deliv_items": [
+          "✓  Current-state process maps (L3)",
+          "✓  Pain point diagnostic report",
+          "✓  Technology gap analysis",
+          "✓  Stakeholder interview synthesis",
+          "✓  AI-readiness assessment"
+        ],
+        "insights_header": "KEY DIAGNOSTIC INSIGHTS",
+        "kpi_rows": [
+          {
+            "val": "~40–60",
+            "label": "Activities per WL1 resource",
+            "sub": "highly fragmented"
+          },
+          {
+            "val": "<30%",
+            "label": "Process consistency across regions",
+            "sub": "major variation"
+          },
+          {
+            "val": "~65%",
+            "label": "Automation-ready activities (est.)",
+            "sub": "of L3 processes"
+          },
+          {
+            "val": "9",
+            "label": "Persona groups to map",
+            "sub": "across 4 hubs"
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "workflow_cards",
+      "data": {
+        "title": "Phase 3: Five Multi-Agent Pilot Workflows — Proof of Concept at Scale",
+        "subtitle": "Five production-grade agentic workflows deployed in live Unilever procurement operations with measured outcomes against baseline",
+        "workflows": [
+          {
+            "letter": "A",
+            "title": "Volume Collection Agent",
+            "desc": "Pulls forward volumes from markets and converts FG/BOM data into raw material demand, with QC and gap resolution",
+            "in": "In: FG volumes, BOM data, market forecasts",
+            "out": "Out: Cleansed RM demand signal, gap flags",
+            "autonomy": "~80% autonomous"
+          },
+          {
+            "letter": "B",
+            "title": "Autonomous Sourcing & Negotiation Agent",
+            "desc": "Runs low-to-medium value sourcing end-to-end — supplier selection, rate cards, negotiation, contract creation",
+            "in": "In: Spend data, supplier list, spec sheets",
+            "out": "Out: Executed contracts, rate cards, audit trail",
+            "autonomy": "~70% autonomous"
+          },
+          {
+            "letter": "C",
+            "title": "Bid Analysis & Technical Evaluation Agent",
+            "desc": "Parses bid responses, normalizes commercial terms, evaluates technical specifications, produces comparative analysis",
+            "in": "In: Bid responses, evaluation criteria",
+            "out": "Out: Normalized comparison, recommendation pack",
+            "autonomy": "~85% autonomous"
+          },
+          {
+            "letter": "D",
+            "title": "Cost Modeling Agent",
+            "desc": "Builds should-cost models, decomposes cost drivers, benchmarks against markets, monitors PPV against forecast",
+            "in": "In: Cost data, market indices, BOM",
+            "out": "Out: Should-cost model, PPV dashboard",
+            "autonomy": "~75% autonomous"
+          },
+          {
+            "letter": "E",
+            "title": "Contract Obligation Management Agent",
+            "desc": "Tracks post-contract obligations, KPIs, rebates, value leakage, and supplier compliance against negotiated terms",
+            "in": "In: Contract terms, supplier KPIs, invoice data",
+            "out": "Out: Compliance dashboard, leakage alerts",
+            "autonomy": "~90% autonomous"
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "persona_grid",
+      "data": {
+        "title": "WS2 Team Structure: 25 FTEs Across 9 Persona Teams & 4 Regional Hubs",
+        "subtitle": "Global delivery model with deep persona expertise and regional proximity to Unilever stakeholders",
+        "lead_badge": "Process Design Lead  |  US Leadership  |  GEP Partner (20% PT)",
+        "total_badge": "TOTAL: 25 FTEs across 4 Regional Hubs",
+        "persona_cards": [
+          {
+            "count": "7",
+            "label": "FTEs",
+            "name": "BU",
+            "regions": "GC · GA · EU · NA · LATAM"
+          },
+          {
+            "count": "4",
+            "label": "FTEs",
+            "name": "Portfolio – RPM",
+            "regions": "EU · India · GC · LATAM"
+          },
+          {
+            "count": "4",
+            "label": "FTEs",
+            "name": "Digitalists",
+            "regions": "India"
+          },
+          {
+            "count": "2",
+            "label": "FTEs",
+            "name": "Logistics",
+            "regions": "NA · India"
+          },
+          {
+            "count": "2",
+            "label": "FTEs",
+            "name": "Portfolio Marketing",
+            "regions": "NA · India"
+          },
+          {
+            "count": "2",
+            "label": "FTEs",
+            "name": "Portfolio COTBS",
+            "regions": "India"
+          },
+          {
+            "count": "2",
+            "label": "FTEs",
+            "name": "BG",
+            "regions": "EU · LATAM"
+          },
+          {
+            "count": "1",
+            "label": "FTE",
+            "name": "VMO",
+            "regions": "India"
+          },
+          {
+            "count": "1",
+            "label": "FTE",
+            "name": "S&I",
+            "regions": "India"
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "org_structure",
+      "data": {
+        "title": "Delivery Team Structure: WL2 Leadership Archetypes",
+        "top_banner": "PaaS 2.0 Program Management Team",
+        "leadership": [
+          {
+            "title": "Tier 2/3 Value-Creation Category Leads",
+            "sub": null,
+            "ftes": "31 FTEs",
+            "type": "spend_value"
+          },
+          {
+            "title": "Tier 1 Spend Execution Leads",
+            "sub": null,
+            "ftes": "10 FTEs",
+            "type": "span_breaker"
+          },
+          {
+            "title": "BU/BG Leads",
+            "sub": null,
+            "ftes": "9 FTEs",
+            "type": "span_breaker"
+          },
+          {
+            "title": "Functional Leads",
+            "sub": "(Sustainability, S&I and POC)",
+            "ftes": "2 FTEs",
+            "type": "span_breaker"
+          }
+        ],
+        "pool1": {
+          "title": "Portfolio WL1 Delivery Pool",
+          "badge": "240 - 250 WL1 roles",
+          "sub": "Shared pool deployed across both Tier 1 execution and Tier 2/3 value creation – the same portfolio departments carry spend in both tiers",
+          "cards": [
+            "Portfolio – RPM",
+            "Portfolio – IT/BS",
+            "Portfolio – Marketing",
+            "Portfolio – CO",
+            "Capex & Utilities",
+            "Real Estate"
+          ]
+        },
+        "pool2": {
+          "title": "BU/BG WL1 Teams",
+          "badge": "150 - 160 WL1 roles",
+          "sub": "BU- and BG-dedicated teams, deployed across all eight regions and reporting into the BU/BG leads",
+          "regions": [
+            "North America",
+            "Europe",
+            "PTAB",
+            "LATAM",
+            "Greater Asia",
+            "Greater China",
+            "Indonesia",
+            "India"
+          ]
+        },
+        "pool3": {
+          "title": "Functional WL1 Teams",
+          "badge": "50 - 60 WL1 roles",
+          "sub": "Held as discrete lines as functional agendas are not absorbed into portfolio or BU/BG delivery priorities.",
+          "cards": [
+            "POC",
+            "S&I",
+            "Sustainability"
+          ]
+        },
+        "legend": {
+          "l1": "Spend and Value Focused",
+          "l2": "Span Breakers"
+        }
+      }
+    },
+    {
+      "archetype": "allocation_table",
+      "data": {
+        "title": "Spend and Value Based WL2 Allocation Across Tier 2/Tier 3 Portfolios: Allocation reflects broader category ownership by the PaaS provider and is weighted towards savings and value delivery",
+        "note": "Note:  Considered €200 MN as the spend/FTE benchmark  and category nuances to allocate the # of WL2 per portfolio.",
+        "footer": "Packaging sub-categories roll up to the Packaging portfolio subtotal.",
+        "table_data": [
+          [
+            [
+              "Category"
+            ],
+            [
+              "Spend"
+            ],
+            [
+              "# WL2"
+            ]
+          ],
+          [
+            [
+              "Collaborative Mfg."
+            ],
+            [
+              "€1.78 BN"
+            ],
+            [
+              "6"
+            ]
+          ],
+          [
+            [
+              "Marketing"
+            ],
+            [
+              "€0.50 BN"
+            ],
+            [
+              "3",
+              "(2 Events Sampling & Coupons, 1 Other Marketing)"
+            ]
+          ],
+          [
+            [
+              "Logistics"
+            ],
+            [
+              "€0.60 BN"
+            ],
+            [
+              "3",
+              "(Road Transport – aligned by geography)"
+            ]
+          ],
+          [
+            [
+              "IT"
+            ],
+            [
+              "€0.06 BN"
+            ],
+            [
+              "1",
+              "(Devices, Maintenance, Infra)"
+            ]
+          ],
+          [
+            [
+              "Business Services"
+            ],
+            [
+              "€0.50 BN"
+            ],
+            [
+              "3",
+              "(1 RE, 1 Global Mobility / Temp Labor, 1 H&W / Workplace Design)"
+            ]
+          ],
+          [
+            [
+              "Packaging"
+            ],
+            [
+              "€2.22 BN"
+            ],
+            [
+              "8"
+            ]
+          ],
+          [
+            [
+              "Bottle"
+            ],
+            [
+              "€0.70 BN"
+            ],
+            [
+              "2"
+            ]
+          ],
+          [
+            [
+              "Flexible Packaging"
+            ],
+            [
+              "€0.43 BN"
+            ],
+            [
+              "1"
+            ]
+          ],
+          [
+            [
+              "Case / Tray"
+            ],
+            [
+              "€0.35 BN"
+            ],
+            [
+              "1"
+            ]
+          ],
+          [
+            [
+              "Dispenser"
+            ],
+            [
+              "€0.23 BN"
+            ],
+            [
+              "1"
+            ]
+          ],
+          [
+            [
+              "Carton / Carton Board"
+            ],
+            [
+              "€0.19 BN"
+            ],
+            [
+              "1"
+            ]
+          ],
+          [
+            [
+              "Closure"
+            ],
+            [
+              "€0.17 BN"
+            ],
+            [
+              "1"
+            ]
+          ],
+          [
+            [
+              "Tube"
+            ],
+            [
+              "€0.16 BN"
+            ],
+            [
+              "1"
+            ]
+          ],
+          [
+            [
+              "PC – Chemicals"
+            ],
+            [
+              "€0.80 BN"
+            ],
+            [
+              "4"
+            ]
+          ],
+          [
+            [
+              "HC – Chemicals"
+            ],
+            [
+              "€0.63 BN"
+            ],
+            [
+              "3"
+            ]
+          ],
+          [
+            [
+              "Total"
+            ],
+            [
+              "€7.09 BN"
+            ],
+            [
+              "31"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "archetype": "sizing_table",
+      "data": {
+        "title": "Span of Control Driven WL2 sizing for Tier 1 Spend, BU Roles and other key functions",
+        "table_data": [
+          [
+            [
+              "Scope"
+            ],
+            [
+              "Est. WL2s"
+            ],
+            [
+              "Rationale"
+            ]
+          ],
+          [
+            [
+              "Tier 1 Portfolios"
+            ],
+            [
+              "10"
+            ],
+            [
+              "Retained WL2s largely drive direction while GEP WL2s act as a span breaker",
+              "Assuming about 140 – 150 WL1s continuing in these roles, considering 1:15 span of control"
+            ]
+          ],
+          [
+            [
+              "BU Roles"
+            ],
+            [
+              "9"
+            ],
+            []
+          ],
+          [
+            [
+              "North America"
+            ],
+            [
+              "1"
+            ],
+            [
+              "Geography-based coverage across all BUs, weighted for BU size and complexity"
+            ]
+          ],
+          [
+            [
+              "Europe"
+            ],
+            [
+              "1"
+            ],
+            []
+          ],
+          [
+            [
+              "PTAB"
+            ],
+            [
+              "1"
+            ],
+            []
+          ],
+          [
+            [
+              "LATAM"
+            ],
+            [
+              "2"
+            ],
+            []
+          ],
+          [
+            [
+              "Greater Asia"
+            ],
+            [
+              "1"
+            ],
+            []
+          ],
+          [
+            [
+              "Greater China & Indonesia"
+            ],
+            [
+              "1"
+            ],
+            []
+          ],
+          [
+            [
+              "India"
+            ],
+            [
+              "2"
+            ],
+            []
+          ],
+          [
+            [
+              "POC"
+            ],
+            [
+              "1"
+            ],
+            [
+              "Retained WL2 drives direction while the GEP WL2 acts as a span breaker"
+            ]
+          ],
+          [
+            [
+              "S&I & Sustainability"
+            ],
+            [
+              "1"
+            ],
+            []
+          ],
+          [
+            [
+              "Total"
+            ],
+            [
+              "21"
+            ],
+            []
+          ]
+        ]
+      }
+    }
+  ]
+}

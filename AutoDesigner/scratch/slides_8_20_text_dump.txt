@@ -1,0 +1,934 @@
+
+========================================
+=== SLIDE 8 ===
+========================================
+  [Title 1] (left=22.4, top=0.0, w=796.9, h=65.5)
+      p0: Executive Summary: One Accountable Partner Delivering 6 to 15% Savings Through an AI Enabled Managed Service
+  [TextBox 3] (left=32.4, top=84.1, w=896.4, h=32.0)
+      p0: Context and objective: Provide KPOD with a single accountable PSCM partner across Wells, Operations, Projects and Indirect categories, ensuring continuity through transition, improved supplier performance, measurable value delivery, and increased Iraqi local content participation.
+  [TextBox 6] (left=21.6, top=141.3, w=237.6, h=19.9)
+      p0: Scope of Work
+  [TextBox 7] (left=32.4, top=171.4, w=216.0, h=15.0)
+      p0: VOLUMES
+  [TextBox 9] (left=30.2, top=192.2, w=105.8, h=27.1)
+      p0: 148
+  [TextBox 10] (left=30.2, top=223.2, w=105.8, h=15.0)
+      p0: Contracts Executed
+  [TextBox 12] (left=141.8, top=192.2, w=105.8, h=27.1)
+      p0: 130
+  [TextBox 13] (left=141.8, top=223.2, w=105.8, h=15.0)
+      p0: Live Sourcing Cases
+  [TextBox 15] (left=59.0, top=255.5, w=59.9, h=27.1)
+      p0: 9
+  [TextBox 20] (left=32.4, top=322.6, w=216.0, h=15.0)
+      p0: IN-SCOPE SERVICES
+  [TextBox 21] (left=32.4, top=340.6, w=219.6, h=155.6)
+      p0: Category strategy and sourcing execution
+      p1: RFx management and commercial evaluations
+      p2: Contract development and administration
+      p3: Procurement operations and buying support
+      p4: Supplier performance and risk management
+      p5: Market intelligence and should-cost analysis
+      p6: Materials and inventory coordination
+      p7: Governance, reporting and local content support
+  [TextBox 24] (left=270.0, top=141.3, w=403.2, h=19.9)
+      p0: Solution Summary
+  [PICTURE Picture 27] at (294.9, 189.0, w=19.4, h=19.4)
+  [TextBox 28] (left=327.6, top=188.8, w=136.8, h=19.9)
+      p0: Savings
+  [TextBox 29] (left=287.3, top=223.2, w=177.1, h=85.3)
+      p0: 6 to 15% on addressable spend
+      p1: USD 60–100M indicative annual savings opportunity
+      p2: Proven track record of value delivery across Wells, Operations, Projects and Indirect categories
+  [PICTURE Picture 32] at (490.7, 189.0, w=19.4, h=19.4)
+  [TextBox 33] (left=523.4, top=180.3, w=136.8, h=36.8)
+      p0: Services and Activities
+  [TextBox 34] (left=483.1, top=223.2, w=174.2, h=110.8)
+      p0: Integrated Source-to-Pay (S2P) & SC managed services
+      p1: Innovative category sourcing strategies, RFx and contract management
+      p2: P2P, materials, supplier performance and risk management
+  [PICTURE Picture 37] at (294.9, 350.3, w=19.4, h=19.4)
+  [TextBox 38] (left=327.6, top=350.1, w=136.8, h=19.9)
+      p0: Digital and AI
+  [TextBox 39] (left=287.3, top=384.5, w=174.2, h=98.0)
+      p0: Platform-agnostic integration with KPOD's existing technology ecosystem
+      p1: GEP AI agents for intake, RFx, negotiations and contracts
+      p2: AI-driven analytics, should-cost and automation
+  [PICTURE Picture 42] at (490.7, 350.3, w=19.4, h=19.4)
+  [TextBox 43] (left=523.4, top=350.1, w=136.8, h=19.9)
+      p0: Delivery Model
+  [TextBox 44] (left=483.1, top=384.5, w=174.2, h=98.0)
+      p0: Dedicated Category Managers across key spend areas
+      p1: Centralized governance and performance management
+      p2: Integrated local content tracking, supplier development and KPI reporting
+  [TextBox 47] (left=684.0, top=141.3, w=254.2, h=19.9)
+      p0: Benefits with GEP
+  [PICTURE Picture 49] at (699.6, 185.5, w=17.7, h=17.7)
+  [TextBox 50] (left=730.8, top=175.6, w=201.6, h=41.9)
+      p0: S2P Services Excellence
+      p1: Deep Global Category, Industry and Process Expertise
+  [PICTURE Picture 52] at (699.6, 238.8, w=17.7, h=17.7)
+  [TextBox 53] (left=730.8, top=228.9, w=201.6, h=41.9)
+      p0: Efficiency
+      p1: 15–30% productivity improvement through process standardization and automation
+  [PICTURE Picture 55] at (699.6, 292.1, w=17.7, h=17.7)
+  [TextBox 56] (left=730.8, top=288.2, w=201.6, h=29.8)
+      p0: Digital COE + Agents
+      p1: AI agents across S2P on KPOD systems
+  [PICTURE Picture 58] at (699.6, 345.4, w=17.7, h=17.7)
+  [TextBox 59] (left=730.8, top=335.5, w=201.6, h=41.9)
+      p0: SME & Talented pool
+      p1: Access to 3,000+ category, sourcing and procurement specialists
+  [PICTURE Picture 61] at (699.6, 398.6, w=17.7, h=17.7)
+  [TextBox 62] (left=730.8, top=388.7, w=201.6, h=41.9)
+      p0: Leadership Commitment
+      p1: Executive sponsorship, dedicated account leadership and category ownership
+  [PICTURE Picture 64] at (699.6, 451.9, w=17.7, h=17.7)
+  [TextBox 65] (left=730.8, top=442.0, w=201.6, h=41.9)
+      p0: Outcome based model
+      p1: Measurable KPIs, savings commitments and transparent benefits tracking
+  [TextBox 69] (left=167.8, top=255.5, w=59.9, h=27.1)
+      p0: 23
+  [TextBox 71] (left=60.4, top=283.2, w=59.9, h=27.1)
+      p0: BP PSCM Personnel
+  [TextBox 73] (left=169.4, top=283.2, w=59.9, h=27.1)
+      p0: Agency Personnel
+  [Rectangle: Rounded Corners 67] (left=908.4, top=51.3, w=104.5, h=42.3)
+      p0: Design
+
+========================================
+=== SLIDE 9 ===
+========================================
+  [Title 1] (left=22.4, top=0.0, w=796.9, h=65.5)
+      p0: Source-to-Pay Expertise: Our laser focus on procurement and ready assets deliver better experience, efficiency, and effectiveness for GEP’s clients
+  [PICTURE Picture 2] at (355.1, 173.0, w=325.9, h=187.1)
+  [Rectangle: Top Corners Rounded 15] (left=11.1, top=73.7, w=608.6, h=28.0)
+      p0: Source-to-Pay Capabilities
+  [object 10] (left=706.9, top=100.1, w=236.6, h=329.4)
+      p0: Speed-to-Value with Digital Focus
+      p1: Ready to deploy infrastructure powered by digital tools to drive value and velocity
+      p2: Change Management
+      p3: Targeted change management as a part of foundation building to ensure strong adoption
+      p4: Reduced Cycle Time
+      p5: Process optimization to drive efficiencies and reduce cycle time
+      p6: Strong Compliance
+      p7: Driving buying channel compliance at source
+      p8: FTE Efficiency
+      p9: Automating multiple S2P processes through AI and RPA
+      p10: Innovation and Digital Focus
+      p11: Focus on RPAs, NLP, AI based chatbots, etc. to improve productivity
+      p12: Improved Experience
+      p13: Use of auto-bid, cost models and other GEP incremental tools to further improve experience
+  [Rectangle: Top Corners Rounded 18] (left=627.2, top=73.4, w=323.3, h=27.7)
+      p0: GEP Drivers and Outcomes Targeted
+  [object 19] (left=289.2, top=112.5, w=121.1, h=34.2)
+      p0: 50K+
+      p1: Sourcing Projects / Year
+  [object 20] (left=289.2, top=164.1, w=121.1, h=48.7)
+      p0: 2 MM+
+      p1: Contracts Processed Annually
+  [object 21] (left=289.2, top=223.6, w=85.2, h=35.9)
+      p0: 35 Million+
+      p1: Supplier Network
+  [object 22] (left=289.2, top=389.8, w=98.5, h=32.4)
+      p0: 120+
+      p1: Countries Supported
+  [object 23] (left=289.2, top=268.9, w=121.1, h=51.9)
+      p0: 3,000+
+      p1: Category, Sourcing,
+      p2: Professionals
+  [object 24] (left=289.2, top=334.6, w=131.2, h=33.8)
+      p0: 25+
+      p1: Languages Supported
+  [PICTURE Graphic 39] at (251.7, 171.1, w=26.6, h=26.6)
+  [PICTURE Graphic 40] at (248.7, 226.1, w=30.6, h=30.6)
+  [PICTURE Graphic 1820] at (252.0, 390.9, w=22.8, h=27.5)
+  [PICTURE Graphic 1839] at (657.0, 256.9, w=20.0, h=21.8)
+  [PICTURE Graphic 1840] at (655.9, 298.7, w=19.5, h=19.5)
+  [Rectangle: Top Corners Rounded 1844] (left=67.7, top=384.4, w=62.6, h=176.9)
+      p0: Experience With Leading Procurement Platforms
+  [PICTURE Picture 2] at (437.5, 443.0, w=65.7, h=45.1)
+  [object 136] (left=497.8, top=230.7, w=100.1, h=50.7)
+      p0: 30 – 50%
+      p1: Efficiencies through Automation
+  [object 135] (left=497.8, top=115.4, w=112.6, h=34.7)
+      p0: 5,000+
+      p1: Digital Tools & RPAs
+  [object 136] (left=503.3, top=361.7, w=100.1, h=50.7)
+      p0: 10 – 20%
+      p1: Reduction in Turnaround Time
+  [object 137] (left=497.8, top=168.8, w=100.6, h=52.1)
+      p0: 25K+
+      p1: Catalogs Implemented
+  [object 135] (left=497.8, top=299.7, w=112.6, h=45.6)
+      p0: 500+
+      p1: Analytical Data Models
+  [PICTURE Graphic 1730] at (445.7, 300.2, w=42.4, h=42.4)
+  [object 122] (left=93.2, top=302.9, w=107.2, h=52.1)
+      p0: 500+
+      p1: Subject Matter Experts
+  [object 132] (left=93.2, top=368.5, w=97.6, h=54.4)
+      p0: 10+
+      p1: Category Advisory Groups
+  [object 137] (left=93.2, top=107.1, w=100.6, h=52.1)
+      p0: $4.5T+
+      p1: Spend Analyzed Annually
+  [object 135] (left=93.2, top=175.0, w=112.6, h=45.6)
+      p0: $600+ BN
+      p1: Spend Managed Annually
+  [object 136] (left=93.2, top=236.4, w=100.1, h=50.7)
+      p0: 50 MM
+      p1: Transactions Managed Annually
+  [PICTURE Picture 6] at (650.0, 448.7, w=117.9, h=12.4)
+  [PICTURE Picture 8] at (806.6, 469.6, w=73.2, h=28.4)
+  [PICTURE Picture 10] at (345.6, 449.0, w=104.6, h=48.7)
+  [PICTURE Picture 12] at (480.0, 480.7, w=115.1, h=17.0)
+  [PICTURE Picture 18] at (882.9, 445.0, w=57.9, h=41.2)
+  [PICTURE Picture 4] at (648.8, 472.1, w=102.0, h=28.2)
+  [PICTURE Picture 2] at (786.5, 446.6, w=77.9, h=17.1)
+  [PICTURE Picture 2] at (551.8, 448.6, w=79.1, h=27.3)
+  [PICTURE Picture 4] at (492.8, 448.3, w=57.1, h=30.8)
+  [TextBox 7] (left=856.9, top=52.7, w=100.1, h=16.2)
+      p0: Q5
+
+========================================
+=== SLIDE 10 ===
+========================================
+  [Title 1] (left=22.4, top=0.0, w=796.9, h=65.5)
+      p0: Plan on a Page: a 3 month transition takes KPOD to steady state, followed by 33 months of strategic procurement services across all in scope activities
+  [TextBox 3] (left=40.3, top=68.4, w=180.0, h=21.6)
+      p0: Program Kick-Off (Feb 2027)
+  [TextBox 5] (left=21.6, top=91.4, w=94.8, h=21.6)
+      p0: M1
+  [TextBox 7] (left=116.4, top=91.4, w=94.8, h=21.6)
+      p0: M2
+  [TextBox 9] (left=211.2, top=91.4, w=94.8, h=21.6)
+      p0: M3
+  [TextBox 11] (left=313.2, top=91.4, w=625.0, h=21.6)
+      p0: M4 to M36 (33 months): May 2027 to Jan 2030
+  [TextBox 14] (left=21.6, top=118.8, w=284.4, h=27.4)
+      p0: Foundation Building and Transition | 3 Months
+  [TextBox 17] (left=22.4, top=147.4, w=294.4, h=272.9)
+      p0: Foundation Building
+      p1: PMO set up, governance, SLAs and KPI baselines
+      p2: Baseline spend; map categories to Wells, Operations, Projects and Indirect; validate savings
+      p3: Map warehouse, logistics and customs interfaces
+      p4: Oracle, Ariba and AIQ access, governance and transition planning
+      p5: Supplier risk framework and critical contracts identified
+      p6: Local content baseline, reporting requirements and governance framework established
+      p7: Transition and Team Ramp-Up
+      p8: Knowledge transfer and desk procedures; PR to PO service levels
+      p9: Take over 130 live sourcing cases: close to award, mid process, early stage
+      p10: Resource onboarding, vetting and training
+      p11: Parallel run, readiness review and go live communication
+  [PICTURE Picture 37] at (36.0, 439.9, w=21.6, h=21.6)
+  [TextBox 38] (left=70.6, top=424.8, w=115.2, h=51.8)
+      p0: Digital and AI Layer
+      p1: Across transition and steady state
+  [TextBox 40] (left=190.8, top=439.2, w=51.8, h=23.0)
+      p0: Oracle
+  [TextBox 42] (left=247.0, top=439.2, w=51.8, h=23.0)
+      p0: FairmarkIT
+  [TextBox 44] (left=303.1, top=439.2, w=51.8, h=23.0)
+      p0: Aravo
+  [TextBox 46] (left=359.3, top=439.2, w=51.8, h=23.0)
+      p0: Beroe
+  [TextBox 47] (left=416.2, top=424.8, w=21.6, h=51.8)
+      p0: +
+  [TextBox 49] (left=440.6, top=429.8, w=119.5, h=19.4)
+      p0: Intake and Triage
+  [TextBox 51] (left=565.2, top=429.8, w=119.5, h=19.4)
+      p0: RFx Creation
+  [TextBox 53] (left=689.8, top=429.8, w=119.5, h=19.4)
+      p0: RFx Evaluation
+  [TextBox 55] (left=814.3, top=429.8, w=119.5, h=19.4)
+      p0: Quick Negotiation
+  [TextBox 57] (left=440.6, top=452.2, w=119.5, h=19.4)
+      p0: Contract Drafting
+  [TextBox 59] (left=565.2, top=452.2, w=119.5, h=19.4)
+      p0: Should Cost
+  [TextBox 61] (left=689.8, top=452.2, w=119.5, h=19.4)
+      p0: PR Validation
+  [TextBox 63] (left=814.3, top=452.2, w=119.5, h=19.4)
+      p0: Autonomous Sourcing
+  [TextBox 65] (left=21.6, top=486.4, w=916.6, h=15.0)
+      p0: Ongoing Governance | Savings Tracking | Local Content Reporting | KPI Management | PMO | Risk & Change Management
+  [Rectangle: Rounded Corners 86] (left=908.4, top=51.3, w=104.5, h=42.3)
+      p0: Design
+
+========================================
+=== SLIDE 11 ===
+========================================
+  [Title 1] (left=22.4, top=0.0, w=796.9, h=65.5)
+      p0: Spend and Savings Opportunity: we see USD 32 to 47M in annual savings at 6 to 10% of addressable spend across KPOD’s categories
+  [TextBox 3] (left=859.7, top=65.5, w=100.1, h=20.2)
+      p0: Preliminary
+  [PICTURE Picture 174] at (41.6, 349.9, w=20.2, h=17.8)
+  [TextBox 175] (left=76.9, top=339.0, w=164.2, h=39.5)
+      p0: Wells
+  [TextBox 177] (left=33.7, top=416.7, w=203.8, h=15.9)
+      p0: STRATEGIC LEVERS
+  [TextBox 178] (left=33.7, top=432.6, w=203.8, h=71.4)
+      p0: Multi well frame agreements with performance KPIs
+      p1: Index linked OCTG pricing and consignment stock
+  [PICTURE Picture 182] at (272.0, 349.9, w=20.2, h=17.8)
+  [TextBox 183] (left=307.3, top=339.0, w=164.2, h=39.5)
+      p0: Operations
+  [TextBox 185] (left=264.1, top=416.7, w=203.8, h=15.9)
+      p0: STRATEGIC LEVERS
+  [TextBox 186] (left=264.1, top=432.6, w=203.8, h=71.4)
+      p0: Multi year O&M frameworks with KPIs
+      p1: Spares standardisation and inventory optimisation
+      p2: Catalogues and FairmarkIT for tail spend
+  [PICTURE Picture 190] at (502.4, 349.9, w=20.2, h=17.8)
+  [TextBox 191] (left=537.7, top=339.0, w=164.2, h=39.5)
+      p0: Projects
+  [TextBox 193] (left=494.5, top=416.7, w=203.8, h=15.9)
+      p0: STRATEGIC LEVERS
+  [TextBox 194] (left=494.5, top=432.6, w=203.8, h=71.4)
+      p0: Package strategy and early supplier involvement
+      p1: Engineering contract benchmarking and should cost
+      p2: Local fabrication to grow Iraqi content
+  [PICTURE Picture 198] at (732.8, 349.9, w=20.2, h=17.8)
+  [TextBox 199] (left=768.1, top=339.0, w=164.2, h=39.5)
+      p0: Indirect
+  [TextBox 201] (left=724.9, top=416.7, w=203.8, h=15.9)
+      p0: STRATEGIC LEVERS
+  [TextBox 202] (left=724.9, top=432.6, w=203.8, h=71.4)
+      p0: Demand management and spec rationalisation
+      p1: Supplier consolidation
+      p2: Rate card benchmarking
+  [TextBox 203] (left=31.5, top=382.4, w=207.4, h=31.9)
+      p0: Market: Tight rig and OCTG markets; steel price swings; campaign driven demand
+  [TextBox 204] (left=264.1, top=382.4, w=207.4, h=31.9)
+      p0: Market: High volume, fragmented spend; remote site logistics; ageing assets
+  [TextBox 205] (left=496.6, top=382.4, w=207.4, h=31.9)
+      p0: Market: Large, complex packages; schedule critical long lead items
+  [TextBox 206] (left=729.2, top=382.4, w=207.4, h=31.9)
+      p0: Market: Many small suppliers; weak demand control; rate creep
+  [Rectangle: Rounded Corners 226] (left=908.4, top=51.3, w=104.5, h=42.3)
+      p0: Design
+
+========================================
+=== SLIDE 12 ===
+========================================
+  [Title 50] (left=23.1, top=10.1, w=796.9, h=48.8)
+      p0: Resource Plan: Dedicated PSCM managed service team supported by category SMEs, digital specialists and governance leadership across the 36‑month engagement
+  [Rectangle: Rounded Corners 48] (left=748.2, top=127.2, w=188.4, h=37.6)
+      p0: Jason Allukian
+      p1: Client Executive
+  [Rectangle 80] (left=839.2, top=223.5, w=107.9, h=37.0)
+      p0: GEP SMEs
+      p1: (as needed)
+  [PICTURE Graphic 81] at (809.2, 226.1, w=31.7, h=31.7)
+  [Rectangle: Rounded Corners 48] (left=350.8, top=124.3, w=263.4, h=37.6)
+      p0: Service Delivery Manager
+      p1: Virat Venkataraman
+  [PICTURE Graphic 37] at (548.0, 83.6, w=80.1, h=20.4)
+  [TextBox 10] (left=184.4, top=407.4, w=762.7, h=17.0)
+      p0: [1] Phase 2 includes an additional investment resource to support quick win execution and accelerate savings delivery for Telix
+  [PICTURE Graphic 11] at (73.8, 76.5, w=32.2, h=43.0)
+  [Rectangle 4] (left=858.2, top=294.8, w=75.2, h=19.1)
+      p0: Wayne Clark
+  [PICTURE Picture 2] at (881.7, 268.3, w=29.6, h=29.6)
+  [Rectangle 48] (left=787.5, top=361.5, w=70.8, h=19.1)
+      p0: Emma Jane
+  [PICTURE Picture 52] at (809.2, 331.2, w=28.8, h=28.8)
+  [PICTURE Picture 2] at (881.4, 331.1, w=28.8, h=28.8)
+  [Rectangle 57] (left=857.0, top=361.6, w=81.6, h=19.1)
+      p0: Raina Saxena
+  [PICTURE Picture 60] at (739.4, 124.3, w=43.2, h=43.2)
+  [PICTURE Picture 62] at (340.8, 123.0, w=44.0, h=44.0)
+  [TextBox 95] (left=79.3, top=462.4, w=112.6, h=36.4)
+      p0: Global Industry
+      p1: SMEs
+  [Rectangle: Rounded Corners 99] (left=342.2, top=432.4, w=275.7, h=21.6)
+      p0: GEP Support Infrastructure
+  [Rectangle: Rounded Corners 48] (left=350.8, top=192.8, w=263.4, h=37.6)
+      p0: Program Manager
+
+========================================
+=== SLIDE 13 ===
+========================================
+  [Rectangle: Rounded Corners 109] (left=172.0, top=260.8, w=449.1, h=14.8)
+      p0: Source - to - Contract
+  [Arrow: Left-Right 86] (left=162.2, top=229.3, w=778.6, h=32.5)
+      p0: KPOD Technology Platform: Oracle | FairmarkIT | Aravo | Beroe, with GEP AI Agents
+  [Rectangle: Top Corners Rounded 68] (left=158.8, top=67.4, w=786.4, h=25.0)
+      p0: KPOD Integrated PSCM Operations (delivered by GEP)
+  [Rectangle: Rounded Corners 69] (left=21.4, top=124.1, w=121.0, h=28.6)
+      p0: Leadership Team
+  [Rectangle: Rounded Corners 70] (left=21.4, top=167.5, w=121.4, h=171.2)
+      p0: KPOD Business and Functional Stakeholders
+      p1: Procurement Team
+  [TextBox 72] (left=178.8, top=149.6, w=190.1, h=66.6)
+      p0: Procurement Strategy and Planning
+      p1: Organization Change and Management
+  [Rectangle: Rounded Corners 88] (left=168.9, top=468.4, w=765.1, h=14.2)
+      p0: Digital Enablers: GEP AI Agents (Intake, RFx, Negotiation, Contract Drafting, Should Cost) and RPA
+  [Rectangle: Rounded Corners 89] (left=168.9, top=487.5, w=765.1, h=12.9)
+      p0: Program Governance     |     Compliance Management
+  [TextBox 78] (left=43.3, top=456.6, w=117.0, h=19.4)
+      p0: KPOD
+  [TextBox 79] (left=44.2, top=475.5, w=108.2, h=19.4)
+      p0: GEP
+  [TextBox 80] (left=15.1, top=439.2, w=117.0, h=19.4)
+      p0: Legend
+  [Rectangle: Rounded Corners 81] (left=22.1, top=350.2, w=121.4, h=52.5)
+      p0: Suppliers
+  [Rectangle: Rounded Corners 102] (left=510.6, top=282.9, w=110.5, h=18.0)
+      p0: Contract Mgmt.
+  [Rectangle 103] (left=506.8, top=304.3, w=117.9, h=85.4)
+      p0: Contract Authoring
+      p1: Contract Execution
+      p2: Contract Administration
+      p3: Contract Termination & Renewal
+  [Rectangle 96] (left=393.9, top=304.3, w=118.2, h=80.4)
+      p0: Vendor Setup
+      p1: Supplier Relationship & Performance Management
+      p2: Supplier Risk Management
+  [Rectangle: Rounded Corners 97] (left=396.3, top=282.9, w=110.5, h=18.0)
+      p0: Supplier Mgmt.
+  [Rectangle: Rounded Corners 110] (left=176.2, top=439.0, w=126.1, h=23.0)
+      p0: Ready-to-Deploy Tools
+      p1: and Templates
+  [Rectangle: Rounded Corners 112] (left=168.9, top=415.7, w=765.1, h=18.9)
+      p0: GEP Center of Excellence (COE)
+  [Rectangle: Rounded Corners 113] (left=333.4, top=439.0, w=126.1, h=23.0)
+      p0: MI & Analytics COE
+  [Rectangle: Rounded Corners 114] (left=490.6, top=439.0, w=126.1, h=23.0)
+      p0: Category Advisory Group
+      p1: and Category SMEs
+  [Rectangle: Rounded Corners 115] (left=647.8, top=439.0, w=126.1, h=23.0)
+      p0: Best-In Class
+      p1: Benchmarks
+  [Rectangle: Rounded Corners 116] (left=805.0, top=439.0, w=126.1, h=23.0)
+      p0: Reporting Dashboards
+  [Title 7] (left=52.6, top=0.0, w=766.7, h=65.5)
+      p0: Operating Model: GEP runs KPOD’s PSCM operations end to end, supported by GEP experts, AI agents and built infrastructure
+  [Rectangle: Rounded Corners 8] (left=22.1, top=69.4, w=120.3, h=18.7)
+      p0: KPOD
+  [TextBox 91] (left=409.3, top=149.6, w=215.0, h=59.4)
+      p0: Market Analysis
+      p1: Strategy Creation & Approvals
+      p2: Strategy implementation & Optimization
+  [Rectangle 59] (left=166.0, top=304.3, w=115.3, h=105.4)
+      p0: Demand Assessment & Identification
+      p1: Supply Market Assessment
+      p2: Category Strategy Approach
+      p3: Monitoring & Maintenance
+  [Rectangle: Rounded Corners 60] (left=167.0, top=282.9, w=110.5, h=18.0)
+      p0: Category Mgmt.
+  [Rectangle: Rounded Corners 63] (left=281.4, top=282.9, w=111.1, h=18.0)
+      p0: Strategic Sourcing
+  [Rectangle 93] (left=277.5, top=304.3, w=118.8, h=96.9)
+      p0: Opportunity Assessment
+      p1: Sourcing Strategy Approach
+      p2: Sourcing Execution & Award
+      p3: Preferred Suppliers List
+  [Rectangle: Rounded Corners 107] (left=167.0, top=96.4, w=767.7, h=15.3)
+      p0: Plan - to - Strategy
+  [Rectangle: Rounded Corners 118] (left=417.1, top=117.7, w=160.7, h=21.6)
+      p0: Category Management
+  [Rectangle: Rounded Corners 119] (left=185.1, top=117.7, w=160.7, h=21.5)
+      p0: Strategy Management
+  [TextBox 71] (left=659.3, top=149.6, w=215.0, h=72.7)
+      p0: Project Procurement (Planning & Execution)
+      p1: Demand & Capacity Planning
+  [Rectangle: Rounded Corners 73] (left=667.1, top=117.7, w=160.7, h=21.6)
+      p0: Projects & Planning
+  [Rectangle: Rounded Corners 52] (left=627.2, top=260.8, w=302.0, h=14.6)
+      p0: Purchase - to - Pay
+  [Rectangle 53] (left=619.1, top=307.6, w=129.3, h=88.1)
+      p0: R2O buying channels
+      p1: PO creation / Update
+      p2: PO monitoring
+      p3: Analyze bottlenecks, expediting
+      p4: Goods Service / Receipt
+  [Rectangle: Rounded Corners 54] (left=627.2, top=282.9, w=103.2, h=17.8)
+      p0: Order Mgmt.
+  [Rectangle: Rounded Corners 55] (left=734.5, top=282.9, w=97.9, h=17.8)
+      p0: Materials Mgmt.
+  [Rectangle 56] (left=732.0, top=306.1, w=116.1, h=113.3)
+      p0: Material availability & shortages
+      p1: Spares & inventory optimisation
+      p2: Warehouse & logistics interfaces
+      p3: Customs coordination
+  [Rectangle 57] (left=829.4, top=305.1, w=110.7, h=71.9)
+      p0: Supplier queries & claims
+      p1: Problem escalation
+      p2: Query resolution ownership
+  [Rectangle: Rounded Corners 66] (left=835.2, top=283.1, w=99.2, h=17.8)
+      p0: Ops & Helpdesk
+  [Rectangle: Top Corners Rounded 2] (left=-15.5, top=15.5, w=65.5, h=34.4)
+      p0: Q1 & Q3
+
+========================================
+=== SLIDE 14 ===
+========================================
+  [Title 1] (left=52.6, top=0.0, w=766.7, h=65.5)
+      p0: Every interface has an owner, and issues escalate before they cause delay
+  [TextBox 2] (left=46.0, top=43.2, w=756.0, h=23.0)
+      p0: Clear ownership, structured escalation and proactive issue management across all KPOD interfaces
+  [TextBox 8] (left=16.6, top=93.6, w=234.0, h=24.5)
+      p0: 1. Interface Register from day one
+  [TextBox 9] (left=262.8, top=93.6, w=230.4, h=24.5)
+      p0: All interfaces owned, mapped and governed
+  [PICTURE Picture 21] at (204.5, 136.1, w=18.7, h=18.7)
+  [TextBox 22] (left=228.2, top=129.6, w=79.2, h=31.7)
+      p0: Operations
+  [PICTURE Picture 24] at (321.8, 159.1, w=18.7, h=18.7)
+  [TextBox 25] (left=345.6, top=152.6, w=79.2, h=31.7)
+      p0: Wells
+  [PICTURE Picture 27] at (372.2, 218.9, w=18.7, h=18.7)
+  [TextBox 28] (left=396.0, top=212.4, w=79.2, h=31.7)
+      p0: Projects
+  [PICTURE Picture 30] at (372.2, 283.7, w=18.7, h=18.7)
+  [TextBox 31] (left=396.0, top=277.2, w=79.2, h=31.7)
+      p0: Engineering
+  [PICTURE Picture 33] at (329.0, 341.3, w=18.7, h=18.7)
+  [TextBox 34] (left=352.8, top=334.8, w=79.2, h=31.7)
+      p0: HSE
+  [PICTURE Picture 36] at (204.5, 362.9, w=18.7, h=18.7)
+  [TextBox 37] (left=228.2, top=356.4, w=79.2, h=31.7)
+      p0: Finance
+  [PICTURE Picture 39] at (80.6, 341.3, w=18.7, h=18.7)
+  [TextBox 40] (left=104.4, top=334.8, w=79.2, h=31.7)
+      p0: Logistics
+  [PICTURE Picture 42] at (36.0, 283.7, w=18.7, h=18.7)
+  [TextBox 43] (left=59.8, top=277.2, w=79.2, h=31.7)
+      p0: Security
+  [PICTURE Picture 45] at (36.0, 218.9, w=18.7, h=18.7)
+  [TextBox 46] (left=59.8, top=212.4, w=79.2, h=31.7)
+      p0: NOC / NGC
+  [PICTURE Picture 48] at (87.8, 159.1, w=18.7, h=18.7)
+  [TextBox 49] (left=111.6, top=152.6, w=79.2, h=31.7)
+      p0: bp IJV
+  [PICTURE Picture 51] at (239.0, 196.6, w=28.8, h=28.8)
+  [TextBox 52] (left=185.0, top=228.2, w=136.8, h=86.4)
+      p0: GEP PSCM
+      p1: Category Manager (single point of contact per function)
+  [PICTURE Picture 54] at (25.2, 424.8, w=21.6, h=21.6)
+  [TextBox 55] (left=50.4, top=417.6, w=118.8, h=64.8)
+      p0: Defined owners
+      p1: GEP owner and KPOD counterpart for each interface
+  [PICTURE Picture 57] at (183.6, 424.8, w=21.6, h=21.6)
+  [TextBox 58] (left=208.8, top=417.6, w=118.8, h=64.8)
+      p0: Agreed turnaround
+      p1: SLAs for information exchange and decisions
+  [PICTURE Picture 60] at (342.0, 424.8, w=21.6, h=21.6)
+  [TextBox 61] (left=367.2, top=417.6, w=118.8, h=64.8)
+      p0: Integrated planning
+      p1: Regular cross functional alignment
+  [TextBox 64] (left=517.0, top=93.6, w=180.0, h=24.5)
+      p0: 2. Three level escalation
+  [TextBox 65] (left=709.2, top=93.6, w=237.6, h=24.5)
+      p0: Issues escalate early, with clear accountability
+  [TextBox 67] (left=532.8, top=129.6, w=90.0, h=61.2)
+      p0: Level 3
+      p1: Strategic
+  [PICTURE Picture 69] at (633.6, 146.9, w=27.4, h=27.4)
+  [TextBox 70] (left=673.2, top=129.6, w=266.4, h=61.2)
+      p0: GEP Service Director + KPOD CPO
+      p1: Risk to operations, safety, regulatory dates or contract expiry
+  [PICTURE Picture 71] at (722.2, 193.0, w=15.8, h=15.8)
+  [TextBox 73] (left=532.8, top=210.2, w=90.0, h=61.2)
+      p0: Level 2
+      p1: Tactical
+  [PICTURE Picture 75] at (633.6, 227.5, w=27.4, h=27.4)
+  [TextBox 76] (left=673.2, top=210.2, w=266.4, h=61.2)
+      p0: GEP Service Delivery Manager + KPOD PDM
+      p1: At risk of more than 3 days delay, critical schedule risk or cross functional impact
+  [PICTURE Picture 77] at (722.2, 273.6, w=15.8, h=15.8)
+  [TextBox 79] (left=532.8, top=290.9, w=90.0, h=61.2)
+      p0: Level 1
+      p1: Operational
+  [PICTURE Picture 81] at (633.6, 308.2, w=27.4, h=27.4)
+  [TextBox 82] (left=673.2, top=300.2, w=266.4, h=42.5)
+      p0: GEP Category Leads + KPOD function lead
+      p1: Dependency more than 3 working days overdue, or an emerging issue
+  [TextBox 85] (left=517.0, top=367.2, w=244.8, h=24.5)
+      p0: 3. Avoiding delay, duplication and gaps
+  [TextBox 86] (left=774.0, top=367.2, w=172.8, h=24.5)
+      p0: Disciplined issue management
+  [PICTURE Picture 89] at (573.1, 409.0, w=18.7, h=18.7)
+  [TextBox 90] (left=514.8, top=437.8, w=135.4, h=55.4)
+      p0: One case record
+      p1: From requisition to contract with full visibility
+  [PICTURE Picture 93] at (720.7, 409.0, w=18.7, h=18.7)
+  [TextBox 94] (left=662.4, top=437.8, w=135.4, h=55.4)
+      p0: Agreed priority score
+      p1: Drives the right escalation and final call
+  [PICTURE Picture 97] at (868.3, 409.0, w=18.7, h=18.7)
+  [TextBox 98] (left=810.0, top=437.8, w=135.4, h=55.4)
+      p0: Weekly aged item review
+      p1: Stalled cases, overdue expediting, expiring contracts
+  [Rectangle: Rounded Corners 101] (left=908.4, top=51.3, w=104.5, h=42.3)
+      p0: Design
+  [Rectangle: Top Corners Rounded 4] (left=-15.5, top=15.5, w=65.5, h=34.4)
+      p0: Q2
+
+========================================
+=== SLIDE 15 ===
+========================================
+  [Pentagon 7] (left=613.9, top=82.3, w=238.3, h=25.5)
+      p0: 2. Three level escalation
+  [Rectangle: Rounded Corners 123] (left=309.8, top=152.4, w=145.3, h=36.9)
+      p0: Operations
+  [Rectangle: Rounded Corners 168] (left=66.4, top=152.4, w=145.3, h=36.9)
+      p0: bp IJV
+  [Rectangle: Rounded Corners 126] (left=349.7, top=201.4, w=145.3, h=36.9)
+      p0: Wells
+  [Rectangle: Rounded Corners 166] (left=26.4, top=201.4, w=145.3, h=36.9)
+      p0: NOC / NGC
+  [Rectangle: Rounded Corners 129] (left=358.4, top=250.5, w=145.3, h=36.9)
+      p0: Projects
+  [Rectangle: Rounded Corners 164] (left=17.7, top=250.5, w=145.3, h=36.9)
+      p0: Security
+  [Rectangle: Rounded Corners 132] (left=349.7, top=299.6, w=145.3, h=36.9)
+      p0: Engineering
+  [Rectangle: Rounded Corners 162] (left=26.4, top=299.6, w=145.3, h=36.9)
+      p0: Logistics
+  [Rectangle: Rounded Corners 135] (left=309.8, top=348.6, w=145.3, h=36.9)
+      p0: HSE
+  [Rectangle: Rounded Corners 160] (left=66.4, top=348.6, w=145.3, h=36.9)
+      p0: Finance
+  [Title 1] (left=52.6, top=0.0, w=766.7, h=65.5)
+      p0: Every interface has an owner, and issues escalate before they cause delayClear ownership, structured escalation and proactive issue management across all KPOD interfaces
+  [Pentagon 7] (left=123.2, top=82.3, w=275.0, h=25.5)
+      p0: 1. Interface Register from day one
+  [TextBox 9] (left=142.6, top=114.6, w=236.3, h=17.4)
+      p0: All interfaces owned, mapped and governed
+  [Rectangle: Rounded Corners 53] (left=30.0, top=413.0, w=144.6, h=76.5)
+      p0: Defined owners
+      p1: GEP owner and KPOD counterpart for each interface
+  [Rectangle: Rounded Corners 56] (left=188.4, top=413.0, w=144.6, h=76.5)
+      p0: Agreed turnaround
+      p1: SLAs for information exchange and decisions
+  [Rectangle: Rounded Corners 59] (left=346.8, top=413.0, w=144.6, h=76.5)
+      p0: Integrated planning
+      p1: Regular cross functional alignment
+  [TextBox 65] (left=607.9, top=114.6, w=250.2, h=17.4)
+      p0: Issues escalate early, with clear accountability
+  [TextBox 67] (left=539.7, top=142.6, w=90.0, h=35.2)
+      p0: Level 3
+      p1: Strategic
+  [PICTURE Picture 69] at (640.5, 146.9, w=27.4, h=27.4)
+  [TextBox 70] (left=680.1, top=140.0, w=266.4, h=40.5)
+      p0: GEP Service Director + KPOD CPO
+      p1: Risk to operations, safety, regulatory dates or contract expiry
+  [PICTURE Picture 71] at (729.0, 193.0, w=15.8, h=15.8)
+  [TextBox 73] (left=539.7, top=223.2, w=90.0, h=35.2)
+      p0: Level 2
+      p1: Tactical
+  [PICTURE Picture 75] at (640.5, 227.5, w=27.4, h=27.4)
+  [TextBox 76] (left=680.1, top=220.6, w=266.4, h=40.5)
+      p0: GEP Service Delivery Manager + KPOD PDM
+      p1: At risk of more than 3 days delay, critical schedule risk or cross functional impact
+  [PICTURE Picture 77] at (729.0, 273.6, w=15.8, h=15.8)
+  [TextBox 79] (left=539.7, top=303.9, w=90.0, h=35.2)
+      p0: Level 1
+      p1: Operational
+  [PICTURE Picture 81] at (640.5, 308.2, w=27.4, h=27.4)
+  [TextBox 82] (left=680.1, top=301.2, w=266.4, h=40.5)
+      p0: GEP Category Leads + KPOD function lead
+      p1: Dependency more than 3 working days overdue, or an emerging issue
+  [TextBox 85] (left=523.8, top=370.7, w=244.8, h=17.4)
+      p0: 3. Avoiding delay, duplication and gaps
+  [TextBox 86] (left=780.9, top=371.9, w=172.8, h=15.0)
+      p0: Disciplined issue management
+  [PICTURE Picture 89] at (580.0, 409.0, w=18.7, h=18.7)
+  [TextBox 90] (left=521.7, top=437.8, w=135.4, h=38.9)
+      p0: One case record
+      p1: From requisition to contract with full visibility
+  [PICTURE Picture 93] at (727.6, 409.0, w=18.7, h=18.7)
+  [TextBox 94] (left=669.3, top=437.8, w=135.4, h=38.9)
+      p0: Agreed priority score
+      p1: Drives the right escalation and final call
+  [PICTURE Picture 97] at (875.2, 409.0, w=18.7, h=18.7)
+  [TextBox 98] (left=816.9, top=437.8, w=135.4, h=38.9)
+      p0: Weekly aged item review
+      p1: Stalled cases, overdue expediting, expiring contracts
+  [Rectangle: Rounded Corners 101] (left=1009.2, top=-21.2, w=104.5, h=42.3)
+      p0: Design
+  [Rectangle: Top Corners Rounded 4] (left=-15.5, top=15.5, w=65.5, h=34.4)
+      p0: Q2
+  [Oval 50] (left=194.7, top=202.9, w=132.0, h=132.0)
+      p0: GEP PSCM
+      p1: Category Manager (single point of contact per function)
+  [PICTURE Picture 51] at (244.3, 211.4, w=32.7, h=32.7)
+
+========================================
+=== SLIDE 16 ===
+========================================
+  [Title 2] (left=45.2, top=1.0, w=796.9, h=65.5)
+      p0: Transition Governance & Risk Management : Three-tier governance followed by GEP will ensure transition accountability, proactive risk mitigation and service continuity
+  [TextBox 32] (left=40.2, top=422.5, w=157.8, h=65.4)
+      p0: Startegic Oversight
+      p1: Key decisions
+      p2: Resource prioritization
+      p3: Stage-gate approvals
+  [TextBox 34] (left=195.3, top=422.5, w=157.8, h=80.0)
+      p0: Progress tracking
+      p1: Risk and issue management
+      p2: Knowledge transfer
+      p3: Resource coordination
+  [TextBox 36] (left=357.0, top=422.5, w=157.8, h=65.4)
+      p0: Day-to-day execution
+      p1: Operational readiness
+      p2: Issue resolution
+      p3: Go-live preparation
+  [TABLE Table 37] (4 rows x 3 cols) at (558.7, 79.2)
+    Row 0: Risk area | Key barriers | GEP mitigation
+    Row 1: Programme management | Delayed data availability; delayed future-state decisions | Early data collection; clear governance, roles and decision rights
+    Row 2: People readiness | Knowledge-transfer gaps; loss of critical resources | Multiple KT rounds; retain key resources; backfill critical vacancies
+    Row 3: Change management | Insufficient stakeholder engagement; low adoption of new tools and processes | Day-one change communications; customer journey focus; adoption KPIs
+  [Rectangle: Rounded Corners 41] (left=559.9, top=64.7, w=384.5, h=21.8)
+      p0: Key Transition Risk Mitigation
+  [Rectangle: Top Corners Rounded 43] (left=559.9, top=400.7, w=384.5, h=19.2)
+      p0: Where we need KPOD Support
+  [TextBox 45] (left=558.7, top=428.8, w=203.2, h=68.5)
+      p0: Timely access to spend data, documentation and systems.
+      p1: Availability and retention of key transition personnel.
+  [TextBox 47] (left=756.8, top=428.8, w=203.2, h=68.5)
+      p0: Empowered leadership for future-state decisions.
+      p1: Active stakeholder participation and change adoption.
+  [Rectangle: Rounded Corners 49] (left=0.0, top=0.0, w=34.0, h=65.5)
+      p0: Q4
+  [Rectangle: Rounded Corners 50] (left=909.4, top=39.5, w=130.2, h=57.7)
+      p0: Design
+
+========================================
+=== SLIDE 17 ===
+========================================
+  [TextBox 1] (left=35.6, top=19.1, w=856.8, h=24.0)
+      p0: PSCM Delivery Model: London-Led Governance, Offshore Execution & Regional Expertise
+  [TextBox 6] (left=21.6, top=65.2, w=884.9, h=16.7)
+      p0: GLOBAL PSCM CREDENTIALS
+  [TextBox 8] (left=24.5, top=90.9, w=168.5, h=17.3)
+      p0: $600BN+
+  [TextBox 9] (left=25.2, top=108.9, w=167.0, h=15.8)
+      p0: Spend managed
+  [TextBox 11] (left=205.9, top=90.9, w=168.5, h=17.3)
+      p0: 80+
+  [TextBox 12] (left=206.6, top=108.9, w=167.0, h=15.8)
+      p0: Mining, Energy & O&G clients
+  [TextBox 14] (left=387.4, top=90.9, w=168.5, h=17.3)
+      p0: 500+
+  [TextBox 15] (left=388.1, top=108.9, w=167.0, h=15.8)
+      p0: Category & industry SMEs
+  [TextBox 17] (left=568.8, top=90.9, w=168.5, h=17.3)
+      p0: 120+
+  [TextBox 18] (left=569.5, top=108.9, w=167.0, h=15.8)
+      p0: Countries supported
+  [TextBox 20] (left=750.2, top=90.9, w=168.5, h=17.3)
+      p0: 26+ years
+  [TextBox 21] (left=751.0, top=108.9, w=167.0, h=15.8)
+      p0: Procurement & supply chain experience
+  [TextBox 24] (left=20.9, top=145.0, w=266.4, h=18.0)
+      p0: LONDON-LED / OFFSHORE-SUPPORTED MODEL
+  [TextBox 26] (left=31.7, top=163.6, w=244.8, h=15.8)
+      p0: LONDON | LEADERSHIP & CLIENT INTERFACE
+  [TextBox 27] (left=35.9, top=179.9, w=244.8, h=50.6)
+      p0: Service leadership
+      p1: Senior stakeholder engagement
+      p2: Governance & performance oversight
+      p3: Category strategy & commercial direction
+  [TextBox 28] (left=131.0, top=233.9, w=46.1, h=20.2)
+      p0: ↓
+  [TextBox 30] (left=31.7, top=251.1, w=244.8, h=15.8)
+      p0: OFFSHORE | EXECUTION & DELIVERY SUPPORT
+  [TextBox 31] (left=30.0, top=266.5, w=244.8, h=50.6)
+      p0: Sourcing & contracting execution
+      p1: Procurement operations
+      p2: Analytics & reporting
+      p3: Supplier and contract administration
+  [TextBox 32] (left=17.5, top=326.7, w=269.7, h=14.3)
+      p0: KPOD-ALIGNED RESOURCE STRUCTURE
+  [TextBox 34] (left=27.5, top=343.9, w=28.5, h=14.3)
+      p0: L3
+  [TextBox 35] (left=54.6, top=339.1, w=226.3, h=24.0)
+      p0: Service Director • Delivery Manager • Category & Commercial Managers
+  [TextBox 37] (left=27.5, top=379.3, w=28.5, h=14.3)
+      p0: L2
+  [TextBox 38] (left=54.6, top=371.6, w=226.3, h=24.0)
+      p0: Sourcing & Contracting Specialists • Governance • Materials • Local Content
+  [TextBox 40] (left=27.5, top=411.0, w=28.5, h=14.3)
+      p0: L1
+  [TextBox 41] (left=54.6, top=411.6, w=226.3, h=13.1)
+      p0: Analysts • Buyers • Contract Administrators • Reporting
+  [TextBox 44] (left=325.4, top=145.0, w=583.2, h=18.0)
+      p0: REGIONAL DELIVERY FOOTPRINT | EUROPE & MIDDLE EAST
+  [TextBox 47] (left=329.0, top=173.1, w=271.4, h=13.7)
+      p0: EUROPEAN DELIVERY NETWORK | HQ : London
+  [TextBox 60] (left=660.8, top=174.2, w=271.4, h=21.6)
+      p0: MIDDLE EAST EXPERIENCE
+  [TextBox 62] (left=813.3, top=206.9, w=107.5, h=32.0)
+      p0: Regional markets supported include Egypt, Qatar, Saudi Arabia and the UAE.
+  [TextBox 64] (left=813.7, top=250.3, w=114.6, h=30.1)
+      p0: 100+ Dedicated procurement professionals
+  [TextBox 66] (left=813.7, top=317.5, w=134.5, h=30.1)
+      p0: $1.5BN Annual spend managed
+  [TextBox 68] (left=813.7, top=288.8, w=127.1, h=20.4)
+      p0: 200+ Projects managed
+  [TextBox 70] (left=813.7, top=356.0, w=127.1, h=20.4)
+      p0: 12+ Clients served
+  [TextBox 74] (left=21.6, top=442.7, w=890.6, h=16.7)
+      p0: ENERGY-SECTOR EXPERTISE & PSCM COMPETENCIES
+  [TextBox 75] (left=22.3, top=466.2, w=142.0, h=15.5)
+      p0: Technical procurement
+  [TextBox 76] (left=22.3, top=485.5, w=142.0, h=28.8)
+      p0: Sourcing execution & procurement processes
+  [TextBox 78] (left=170.0, top=465.4, w=151.3, h=15.5)
+      p0: Energy category knowledge
+  [TextBox 79] (left=170.0, top=485.5, w=142.0, h=28.8)
+      p0: Drilling, MRO, well services & EPC
+  [TextBox 81] (left=317.8, top=466.2, w=142.0, h=15.5)
+      p0: Commercial & contracts
+  [TextBox 82] (left=317.8, top=485.5, w=142.0, h=28.8)
+      p0: Negotiation, contracting & claims
+  [TextBox 84] (left=465.5, top=466.2, w=142.0, h=15.5)
+      p0: Systems & digital
+  [TextBox 85] (left=465.5, top=485.5, w=142.0, h=28.8)
+      p0: Oracle, SAP Ariba & FairmarkIT
+  [TextBox 87] (left=613.2, top=466.2, w=142.0, h=15.5)
+      p0: Risk & compliance
+  [TextBox 88] (left=613.2, top=485.5, w=142.0, h=15.5)
+      p0: Conduct, ABC & sanctions
+  [TextBox 90] (left=760.9, top=466.2, w=142.0, h=15.5)
+      p0: Qualifications
+  [TextBox 91] (left=760.9, top=485.5, w=142.0, h=15.5)
+      p0: CIPS / MCIPS or equivalent
+  [PICTURE Picture 98] at (308.9, 201.9, w=214.9, h=214.4)
+  [PICTURE Picture 101] at (639.7, 206.2, w=159.7, h=204.8)
+  [Rectangle: Rounded Corners 105] (left=0.0, top=0.0, w=34.0, h=65.5)
+      p0: Q5
+  [Rectangle: Rounded Corners 107] (left=909.4, top=39.5, w=130.2, h=57.7)
+      p0: Design
+
+========================================
+=== SLIDE 18 ===
+========================================
+  [Title 1] (left=38.8, top=2.1, w=796.9, h=65.5)
+      p0: Supplier & Materials Management: Strengthening Performance, Risk & Operational Continuity
+  [TextBox 6] (left=21.6, top=101.9, w=295.2, h=17.4)
+      p0: Supplier and contract performance
+  [TextBox 7] (left=30.2, top=132.9, w=277.9, h=97.4)
+      p0: Contracts segmented by criticality and value
+      p1: Critical: management plan, monthly review, quarterly scorecard (Section VII)
+      p2: Improvement plans tracked to closure
+  [TextBox 10] (left=329.0, top=101.9, w=295.2, h=17.4)
+      p0: Change, claims and disputes
+  [TextBox 11] (left=337.7, top=132.9, w=277.9, h=112.0)
+      p0: Single change and claims register: value, entitlement, due date
+      p1: Recommended position with evidence for KPOD approval
+      p2: Legal advice stays with KPOD Legal
+  [TextBox 14] (left=636.5, top=101.9, w=295.2, h=17.4)
+      p0: Supply chain risk and continuity
+  [TextBox 15] (left=645.1, top=132.9, w=277.9, h=112.0)
+      p0: Financial health, single source, geopolitical, sanctions and lead time risk
+      p1: Risk monitoring using Aravo and Beroe
+      p2: Continuity plans covering alternative sources, buffer stock, expediting triggers
+  [TextBox 19] (left=22.4, top=351.5, w=597.6, h=19.9)
+      p0: In base scope: GEP coordinates
+  [TextBox 21] (left=33.2, top=398.1, w=183.6, h=17.4)
+      p0: PO-to-delivery plan coordination
+  [TextBox 23] (left=227.6, top=398.1, w=183.6, h=17.4)
+      p0: Expedite critical orders
+  [TextBox 25] (left=422.0, top=390.8, w=183.6, h=32.0)
+      p0: Availability and shortage reporting
+  [TextBox 27] (left=33.2, top=444.8, w=183.6, h=32.0)
+      p0: Warehouse and pipeyard interface
+  [TextBox 29] (left=227.6, top=444.8, w=183.6, h=32.0)
+      p0: Inbound logistics and customs coordination
+  [TextBox 31] (left=422.0, top=452.1, w=183.6, h=17.4)
+      p0: Traceability from PR to receipt
+  [TextBox 34] (left=634.4, top=351.5, w=302.4, h=19.9)
+      p0: Optional, priced separately
+  [TextBox 35] (left=643.0, top=383.0, w=284.4, h=114.1)
+      p0: Physical warehouse operations
+      p1: Stock verification
+      p2: Inventory control and accuracy management.
+      p3: Customs brokerage
+      p4: KPIs: on time delivery, critical order fulfilment
+  [TextBox 41] (left=19.7, top=67.6, w=920.6, h=24.3)
+      p0: Integrated Supplier & Contract Lifecycle Management
+  [TextBox 43] (left=23.2, top=318.7, w=920.6, h=24.3)
+      p0: Materials, Logistics, Inventory & Warehousing Management
+  [Rectangle: Rounded Corners 49] (left=0.0, top=0.0, w=34.0, h=65.5)
+      p0: Q7 & Q8
+  [Rectangle: Rounded Corners 51] (left=909.4, top=39.5, w=130.2, h=57.7)
+      p0: Design
+
+========================================
+=== SLIDE 19 ===
+========================================
+  [Title 1] (left=34.0, top=1.0, w=796.9, h=65.5)
+      p0: Risk Management Framework : Integrated Supplier & Third-Party Risk Management Framework to Build a Resilient, Compliant and Risk-Aware Ecosystem
+  [Rectangle: Rounded Corners 3] (left=17.8, top=78.1, w=924.4, h=25.6)
+      p0: Combining supplier risk intelligence, third-party governance, continuous monitoring, and AI-driven insights to proactively identify, assess, mitigate, and monitor enterprise-wide risks.
+  [Rectangle: Top Corners Rounded 17] (left=17.8, top=112.1, w=924.4, h=22.8)
+      p0: End to End Risk management Cycle
+  [Rectangle: Rounded Corners 69] (left=805.2, top=143.2, w=127.1, h=45.1)
+      p0: Govern
+  [Rectangle: Rounded Corners 70] (left=649.7, top=143.2, w=127.1, h=45.1)
+      p0: Monitor
+  [Rectangle: Rounded Corners 71] (left=494.2, top=143.2, w=127.1, h=45.1)
+      p0: Mitigate
+  [Rectangle: Rounded Corners 72] (left=338.7, top=143.2, w=127.1, h=45.1)
+      p0: Segment
+  [Rectangle: Rounded Corners 73] (left=183.2, top=143.2, w=127.1, h=45.1)
+      p0: Assess
+  [Rectangle: Rounded Corners 74] (left=27.7, top=143.2, w=127.1, h=45.1)
+      p0: Identify
+  [Rectangle: Rounded Corners 22] (left=647.6, top=243.4, w=273.8, h=139.8)
+      p0: Supplier Screening Agent
+      p1: Regulatory Compliance Agent
+      p2: Diversity Verification Agent
+      p3: Continuous Risk Monitoring Agent
+      p4: Predictive Risk Alert Engine
+  [Rectangle: Rounded Corners 26] (left=38.6, top=243.4, w=273.8, h=139.8)
+      p0: Financial
+      p1: Operational
+      p2: Cyber & Information Security
+      p3: ESG
+      p4: Compliance
+      p5: Supply Chain
+      p6: Geopolitical
+  [Rectangle: Rounded Corners 32] (left=343.1, top=243.4, w=273.8, h=139.8)
+      p0: Comprehensive SRM & TPRM Framework
+      p1: Integrated Risk Operating Model
+      p2: Risk Quantification & Scoring Engine
+      p3: Continuous Monitoring & early warning alerts
+      p4: Automated due diligence workflows
+      p5: Market Intelligence & External Data Integration
+      p6: AI Powered Risks insights and Recommendations
+  [TextBox 40] (left=17.8, top=207.4, w=924.4, h=22.8)
+      p0: Risk Management Solution Portfolio
+  [Rectangle: Top Corners Rounded 18] (left=647.6, top=243.4, w=273.8, h=26.0)
+      p0: AI Accelerators
+  [Rectangle: Top Corners Rounded 29] (left=343.1, top=243.4, w=273.8, h=26.0)
+      p0: GEP Differentiators
+  [Rectangle: Top Corners Rounded 23] (left=38.6, top=243.4, w=273.8, h=26.0)
+      p0: Risk Coverage
+  [Rectangle: Rounded Corners 43] (left=60.0, top=410.6, w=840.0, h=22.8)
+      p0: What GEP TPRM Brings:
+  [PICTURE Graphic 121] at (124.9, 246.1, w=20.6, h=20.6)
+  [PICTURE Graphic 122] at (416.8, 246.1, w=20.6, h=20.6)
+  [PICTURE Graphic 123] at (731.9, 246.1, w=20.6, h=20.6)
+  [Rectangle: Rounded Corners 6] (left=0.0, top=0.0, w=34.0, h=65.5)
+      p0: Q7
+
+========================================
+=== SLIDE 20 ===
+========================================
+  [Title 1] (left=51.3, top=0.0, w=806.8, h=65.1)
+      p0: Integrated Governance: A structured governance model ensuring KPOD retains all reserved authorities while GEP takes accountability for integrated PSCM service delivery.
+  [TextBox 294] (left=839.7, top=48.3, w=120.3, h=21.8)
+      p0: Preliminary
+  [Rectangle: Top Corners Rounded 31] (left=27.0, top=400.8, w=35.3, h=104.2)
+      p0: Accountability
+  [Rectangle: Rounded Corners 41] (left=0.0, top=0.0, w=34.0, h=65.5)
+      p0: Q3 & Q9
+  [Rectangle: Rounded Corners 43] (left=909.4, top=39.5, w=130.2, h=57.7)
+      p0: Design

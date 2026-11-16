@@ -1,0 +1,157 @@
+{
+  "summary": {
+    "mapper": "rules",
+    "slides": 12,
+    "archetype_accuracy": 1.0,
+    "field_accuracy": 1.0,
+    "full_coverage_slides": 12,
+    "mean_coverage": 1.0,
+    "schema_valid": 12
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "gold": "three_column_pills",
+      "pred": "three_column_pills",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.75,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 2,
+      "gold": "split_process_insights",
+      "pred": "split_process_insights",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.8,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 3,
+      "gold": "process_rows",
+      "pred": "process_rows",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.75,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 4,
+      "gold": "assessment_kpis",
+      "pred": "assessment_kpis",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.88,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 5,
+      "gold": "workflow_cards",
+      "pred": "workflow_cards",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.9,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 6,
+      "gold": "persona_grid",
+      "pred": "persona_grid",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.9,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 7,
+      "gold": "org_structure",
+      "pred": "org_structure",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.92,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 8,
+      "gold": "allocation_table",
+      "pred": "allocation_table",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.95,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 9,
+      "gold": "sizing_table",
+      "pred": "sizing_table",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.95,
+      "missing": [],
+      "deck": "Design_tester_new_inspect.pptx"
+    },
+    {
+      "slide": 1,
+      "gold": "card_grid",
+      "pred": "card_grid",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.7,
+      "missing": [],
+      "deck": "input/sample_draft.pptx"
+    },
+    {
+      "slide": 2,
+      "gold": "kpi_cards",
+      "pred": "kpi_cards",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.8,
+      "missing": [],
+      "deck": "input/sample_draft.pptx"
+    },
+    {
+      "slide": 3,
+      "gold": "subheader_list",
+      "pred": "subheader_list",
+      "archetype": true,
+      "fields": 1.0,
+      "coverage": 1.0,
+      "valid": true,
+      "confidence": 0.75,
+      "missing": [],
+      "deck": "input/sample_draft.pptx"
+    }
+  ]
+}

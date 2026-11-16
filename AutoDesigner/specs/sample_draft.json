@@ -1,0 +1,117 @@
+{
+  "slides": [
+    {
+      "archetype": "card_grid",
+      "data": {
+        "title": "Digital Transformation Strategic Pillars",
+        "subtitle": "FY2026 Core Execution Priorities",
+        "cards": [
+          {
+            "header": "Cloud Acceleration",
+            "items": [
+              {
+                "subheader": "",
+                "body": "Migrate 80% legacy workloads to managed Kubernetes"
+              },
+              {
+                "subheader": "",
+                "body": "Establish multi-region disaster recovery automation"
+              },
+              {
+                "subheader": "",
+                "body": "Reduce infrastructure overhead by 35%"
+              }
+            ]
+          },
+          {
+            "header": "Data & AI Modernization",
+            "items": [
+              {
+                "subheader": "",
+                "body": "Deploy unified enterprise data lakehouse"
+              },
+              {
+                "subheader": "",
+                "body": "Embed LLM workflow copilot across operations"
+              },
+              {
+                "subheader": "",
+                "body": "Achieve real-time executive telemetry"
+              }
+            ]
+          },
+          {
+            "header": "Cyber Resilience",
+            "items": [
+              {
+                "subheader": "",
+                "body": "Implement Zero Trust identity boundary across all endpoints"
+              },
+              {
+                "subheader": "",
+                "body": "Automated threat intelligence with continuous compliance"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "kpi_cards",
+      "data": {
+        "title": "Enterprise Performance Metrics",
+        "subtitle": "Quarterly Operational Milestones",
+        "cards": [
+          {
+            "header": "Cost Efficiency",
+            "items": [],
+            "kpi_metric": "$4.2M",
+            "kpi_label": "Annualized Savings from automated supplier rationalization"
+          },
+          {
+            "header": "Cycle Time Reduction",
+            "items": [],
+            "kpi_metric": "68%",
+            "kpi_label": "Faster Sourcing cycle times enabled by digital negotiations"
+          },
+          {
+            "header": "Adoption Velocity",
+            "items": [],
+            "kpi_metric": "94.8%",
+            "kpi_label": "Active Platform Engagement across global business units"
+          }
+        ]
+      }
+    },
+    {
+      "archetype": "subheader_list",
+      "data": {
+        "title": "Solution Architecture Blueprint",
+        "subtitle": "",
+        "cards": [
+          {
+            "header": "Solution Architecture Blueprint",
+            "items": [
+              {
+                "subheader": "Orchestration Layer",
+                "body": "Event-driven microservices coordinating distributed requests"
+              },
+              {
+                "subheader": "Security Boundary",
+                "body": "End-to-end TLS 1.3 encryption with hardware security modules"
+              },
+              {
+                "subheader": "Analytics Pipeline",
+                "body": "Real-time streaming telemetry with automated anomaly detection"
+              },
+              {
+                "subheader": "Scalability Engine",
+                "body": "Auto-scaling clusters dynamically handling traffic surges"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

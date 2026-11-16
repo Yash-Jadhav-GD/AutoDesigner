@@ -1,0 +1,79 @@
+{
+  "archetypes": {
+    "design1_floating_pill": {
+      "name": "Design 1 - Floating Pill Card",
+      "description": "Rounded card container with a protruding colored header pill floating at the top edge",
+      "corner_radius": 0.04,
+      "header_style": "floating_pill",
+      "pill_protrusion_pt": 16.0,
+      "pill_height_pt": 33.0,
+      "pill_width_ratio": 0.78,
+      "header_font_size": 15.0,
+      "body_font_size": 11.0,
+      "body_line_spacing": 1.2,
+      "include_dividers": true
+    },
+    "design2_flush_card": {
+      "name": "Design 2 - Flush Header Card",
+      "description": "Card container with an internal flush colored header block",
+      "corner_radius": 0.04,
+      "header_style": "flush",
+      "header_margin_pt": 10.0,
+      "header_height_pt": 32.0,
+      "header_font_size": 15.0,
+      "body_font_size": 11.0,
+      "include_dividers": true
+    },
+    "crd_sub_lst": {
+      "name": "Hierarchical Subheader List Card",
+      "description": "Card with structured items having bold subheadings followed by body descriptions",
+      "corner_radius": 0.04,
+      "header_style": "flush",
+      "header_height_pt": 32.0,
+      "header_font_size": 15.0,
+      "subheader_font_size": 12.5,
+      "body_font_size": 10.5,
+      "include_dividers": true
+    },
+    "icon_badge_card": {
+      "name": "Icon / Numbered Badge Card",
+      "description": "Card with circular badges (icons or step numbers) aligned beside each row",
+      "corner_radius": 0.04,
+      "header_style": "floating_pill",
+      "badge_diameter_pt": 26.0,
+      "badge_style": "circle",
+      "header_font_size": 15.0,
+      "body_font_size": 11.0,
+      "include_dividers": true
+    },
+    "kpi_metric_card": {
+      "name": "KPI Metric Hero Card",
+      "description": "High-impact card highlighting a metric figure, label, and trend or summary description",
+      "corner_radius": 0.05,
+      "metric_font_size": 36.0,
+      "label_font_size": 14.0,
+      "body_font_size": 10.5,
+      "include_dividers": false
+    },
+    "crd_icn_v1": {
+      "name": "CRD-ICN-V1 Data Box Design",
+      "description": "Card with an icon circle container beside the header text, a horizontal divider, and body items below",
+      "corner_radius": 0.04,
+      "header_style": "header_icon",
+      "header_font_size": 14.0,
+      "body_font_size": 12.0,
+      "divider_name": "Straight Connector 8",
+      "include_dividers": true
+    },
+    "imp_box_v1": {
+      "name": "IMP-BOX-V1 Important Box Design",
+      "description": "High-contrast callout card with top header tab, white text, and white fading dividers between body items",
+      "corner_radius": 0.04,
+      "header_style": "top_tab",
+      "header_font_size": 14.0,
+      "body_font_size": 13.33,
+      "divider_name": "White Side Fade R Divider",
+      "include_dividers": true
+    }
+  }
+}

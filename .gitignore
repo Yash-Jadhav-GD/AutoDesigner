@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+.pytest_cache/
+.cache/
+.claude/
+
+# Visual Studio / .NET / VSTO
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VisualState.xml
+
+# Office temporary files
+~$*.pptx
+~$*.ppt
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.xls
+
+# Temporary preview images and test outputs (keep sample presentations and specs)
+AutoDesigner/output/preview/
+AutoDesigner/output/input_preview/
+AutoDesigner/output/preview_rules/
+AutoDesigner/output/*.png
+AutoDesigner/output/test_*.pptx
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

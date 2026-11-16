@@ -1,0 +1,61 @@
+{
+  "default": "gep_purple",
+  "palettes": {
+    "gep_purple": {
+      "name": "GEP Executive Purple",
+      "primary": "48397E",
+      "secondary": "302653",
+      "accent": "7E6BAE",
+      "card_bg": "FFFFFF",
+      "card_border": "E2E8F0",
+      "slide_bg": "F8FAFC",
+      "text_dark": "262626",
+      "text_muted": "64748B",
+      "text_light": "FFFFFF",
+      "divider": "CBD5E1",
+      "badge_bg": "F1EEF8"
+    },
+    "corporate_blue": {
+      "name": "Corporate Navy & Royal",
+      "primary": "1E3A8A",
+      "secondary": "0F52BA",
+      "accent": "38BDF8",
+      "card_bg": "FFFFFF",
+      "card_border": "E2E8F0",
+      "slide_bg": "F8FAFC",
+      "text_dark": "1E293B",
+      "text_muted": "64748B",
+      "text_light": "FFFFFF",
+      "divider": "CBD5E1",
+      "badge_bg": "EFF6FF"
+    },
+    "emerald_slate": {
+      "name": "Modern Emerald & Slate",
+      "primary": "0F766E",
+      "secondary": "115E59",
+      "accent": "14B8A6",
+      "card_bg": "FFFFFF",
+      "card_border": "E2E8F0",
+      "slide_bg": "F8FAFC",
+      "text_dark": "1E293B",
+      "text_muted": "64748B",
+      "text_light": "FFFFFF",
+      "divider": "CBD5E1",
+      "badge_bg": "F0FDFA"
+    },
+    "slate_onyx": {
+      "name": "Minimal Slate & Onyx",
+      "primary": "334155",
+      "secondary": "1E293B",
+      "accent": "64748B",
+      "card_bg": "FFFFFF",
+      "card_border": "E2E8F0",
+      "slide_bg": "F8FAFC",
+      "text_dark": "0F172A",
+      "text_muted": "64748B",
+      "text_light": "FFFFFF",
+      "divider": "E2E8F0",
+      "badge_bg": "F1F5F9"
+    }
+  }
+}

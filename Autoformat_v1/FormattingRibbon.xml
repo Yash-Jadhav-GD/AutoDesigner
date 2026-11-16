@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab id="TabAutoFormat" label="Auto Format">
+        <group id="GroupDesign" label="Design Tools">
+          <button id="BtnOpenPanel"
+                  label="Open Side Panel"
+                  size="large"
+                  onAction="OnOpenPanelClicked"
+                  imageMso="TaskPaneToggle" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
