@@ -24,6 +24,9 @@ from .primitives import (
     DividerNode,
     ConnectorNode,
     MaturityStageNode,
+    LayeredStackNode,
+    StackLayer,
+    StackLayerItem,
     SlideComposition,
     Padding,
 )
@@ -143,12 +146,20 @@ class LayoutSolver:
             content_top = max(content_top, cur_y + 8.0)
 
         # 2. Main Layout Area Bounds
-        available_rect = Rect(
-            left=self.CANVAS_LEFT,
-            top=content_top,
-            width=self.USABLE_W,
-            height=max(50.0, content_bottom - content_top)
-        )
+        if isinstance(composition.root, LayeredStackNode) or getattr(composition.root, "node_type", None) == "LayeredStack":
+            available_rect = Rect(
+                left=29.9,
+                top=76.0,
+                width=910.8,
+                height=428.0
+            )
+        else:
+            available_rect = Rect(
+                left=self.CANVAS_LEFT,
+                top=content_top,
+                width=self.USABLE_W,
+                height=max(50.0, content_bottom - content_top)
+            )
 
         # 3. Solve Root Tree
         self._solve_node(composition.root, available_rect, resolved)
@@ -197,6 +208,8 @@ class LayoutSolver:
             self._solve_connector(node, bounds, resolved)
         elif isinstance(node, MaturityStageNode):
             self._solve_maturity_stage(node, bounds, resolved)
+        elif isinstance(node, LayeredStackNode) or getattr(node, "node_type", None) == "LayeredStack":
+            self._solve_layered_stack(node, bounds, resolved)
 
     def _solve_hstack(self, node: HStack, bounds: Rect, resolved: List[ResolvedShape]):
         n = len(node.children)
@@ -616,3 +629,148 @@ class LayoutSolver:
                 "indent_pt": -11.0
             }
         ))
+
+    def _solve_layered_stack(self, node: LayeredStackNode, bounds: Rect, resolved: List[ResolvedShape]):
+        layers = list(node.layers)
+        if not layers:
+            return
+
+        if node.foundation_at_bottom:
+            sorted_layers = sorted(layers, key=lambda l: l.level, reverse=True)
+        else:
+            sorted_layers = sorted(layers, key=lambda l: l.level)
+
+        L = len(sorted_layers)
+        row_h = 78.0
+        header_w = 171.4
+        gap_h_b = 6.4
+        body_x = bounds.left + header_w + gap_h_b
+        body_w = bounds.width - (header_w + gap_h_b)
+
+        if L > 1:
+            avail_h = bounds.height - (L * row_h)
+            row_gap = min(12.0, max(5.0, avail_h / (L - 1)))
+            total_h = L * row_h + (L - 1) * row_gap
+            start_y = bounds.top + max(0.0, (bounds.height - total_h) / 2.0)
+        else:
+            row_gap = 0.0
+            start_y = bounds.top
+
+        for i, layer in enumerate(sorted_layers):
+            y = start_y + i * (row_h + row_gap)
+
+            # 1. Header Box
+            resolved.append(ResolvedShape(
+                shape_id=self._next_id(f"lyr_{layer.level}_hdr_box"),
+                kind="card_container",
+                rect=Rect(bounds.left, y, header_w, row_h),
+                z_order=1,
+                fill_color=layer.header_fill,
+                border_color=layer.border_color,
+                border_width=layer.border_width,
+                corner_radius=4.0
+            ))
+
+            # 2. Badge Oval
+            resolved.append(ResolvedShape(
+                shape_id=self._next_id(f"lyr_{layer.level}_badge"),
+                kind="badge_oval",
+                rect=Rect(bounds.left + 3.9, y + 5.2, 19.9, 19.9),
+                z_order=10,
+                fill_color=layer.badge_fill,
+                text=layer.badge_text or str(layer.level),
+                font_size=13.0,
+                bold=True,
+                text_color=layer.badge_text_color,
+                align="center",
+                vertical_anchor="ctr",
+                metadata={"italic": True}
+            ))
+
+            # 3. Header Icon
+            if layer.header_icon_file or layer.header_icon_bytes:
+                resolved.append(ResolvedShape(
+                    shape_id=self._next_id(f"lyr_{layer.level}_hdr_icon"),
+                    kind="svg_icon",
+                    rect=Rect(bounds.left + (header_w - 28.0) / 2.0, y + 8.0, 28.0, 28.0),
+                    z_order=10,
+                    svg_asset=layer.header_icon_file,
+                    metadata={
+                        "svg_bytes": layer.header_icon_bytes,
+                        "tint": layer.icon_tint_color or layer.border_color
+                    }
+                ))
+
+            # 4. Header Text Box
+            resolved.append(ResolvedShape(
+                shape_id=self._next_id(f"lyr_{layer.level}_hdr_text"),
+                kind="text_box",
+                rect=Rect(bounds.left + 4.0, y + 38.0, header_w - 8.0, 36.0),
+                z_order=10,
+                text=layer.title,
+                font_size=11.5,
+                bold=True,
+                text_color=layer.header_text_color,
+                align="center",
+                vertical_anchor="ctr"
+            ))
+
+            # 5. Body Box
+            resolved.append(ResolvedShape(
+                shape_id=self._next_id(f"lyr_{layer.level}_body_box"),
+                kind="card_container",
+                rect=Rect(body_x, y, body_w, row_h),
+                z_order=1,
+                fill_color=layer.body_fill,
+                border_color=layer.border_color,
+                border_width=layer.border_width,
+                corner_radius=4.0,
+                metadata={"alpha": layer.body_alpha}
+            ))
+
+            # 6. Items inside Body Box
+            n_items = len(layer.items)
+            if n_items > 0:
+                col_w = body_w / n_items
+                for c_idx, itm in enumerate(layer.items):
+                    col_x = body_x + c_idx * col_w
+
+                    # SVG Icon
+                    if itm.icon_svg_file or itm.icon_svg_bytes:
+                        resolved.append(ResolvedShape(
+                            shape_id=self._next_id(f"lyr_{layer.level}_it_{c_idx}_icon"),
+                            kind="svg_icon",
+                            rect=Rect(col_x + (col_w - 24.0) / 2.0, y + 10.0, 24.0, 24.0),
+                            z_order=10,
+                            svg_asset=itm.icon_svg_file,
+                            metadata={
+                                "svg_bytes": itm.icon_svg_bytes,
+                                "tint": layer.icon_tint_color or layer.border_color
+                            }
+                        ))
+
+                    # Item Text
+                    resolved.append(ResolvedShape(
+                        shape_id=self._next_id(f"lyr_{layer.level}_it_{c_idx}_text"),
+                        kind="text_box",
+                        rect=Rect(col_x + 8.0, y + 38.0, col_w - 16.0, 36.0),
+                        z_order=10,
+                        text=itm.text,
+                        font_size=11.0,
+                        bold=True,
+                        text_color="BRAND_ONYX",
+                        align="center",
+                        vertical_anchor="ctr"
+                    ))
+
+                    # Divider between columns
+                    if c_idx < n_items - 1:
+                        div_color = layer.divider_color or layer.border_color
+                        resolved.append(ResolvedShape(
+                            shape_id=self._next_id(f"lyr_{layer.level}_div_{c_idx}"),
+                            kind="solid_line",
+                            rect=Rect(col_x + col_w, y + 12.5, 0.65, 53.0),
+                            z_order=5,
+                            border_color=div_color,
+                            border_width=0.65
+                        ))

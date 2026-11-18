@@ -180,6 +180,41 @@ class MaturityStageNode(LayoutNode):
     corner_radius: float = 4.0
 
 
+class StackLayerItem(BaseModel):
+    """An item within a layer of an architectural stack."""
+    text: str
+    icon_name: Optional[str] = None
+    icon_svg_file: Optional[str] = None
+    icon_svg_bytes: Optional[bytes] = None
+
+
+class StackLayer(BaseModel):
+    """A single horizontal tier in an architectural layered stack."""
+    level: int
+    title: str
+    items: List[StackLayerItem] = Field(default_factory=list)
+    header_fill: str = "BRAND_INDIGO"
+    header_text_color: str = "NEUTRAL_WHITE"
+    body_fill: str = "NEUTRAL_SURFACE"
+    body_alpha: int = 100000  # DrawingML alpha: e.g. 20000 (20%), 30000 (30%), 100000 (100%)
+    border_color: str = "NEUTRAL_BORDER"
+    border_width: float = 0.5
+    divider_color: Optional[str] = None
+    header_icon_file: Optional[str] = None
+    header_icon_bytes: Optional[bytes] = None
+    badge_text: Optional[str] = None
+    badge_fill: str = "#FAF9F6"
+    badge_text_color: str = "#14203E"
+    icon_tint_color: Optional[str] = None
+
+
+class LayeredStackNode(LayoutNode):
+    """Architectural layered stack (Slide 9 pattern in Library_copy.pptx)."""
+    node_type: Literal["LayeredStack"] = "LayeredStack"
+    layers: List[StackLayer] = Field(default_factory=list)
+    foundation_at_bottom: bool = True
+
+
 # Union for any node type in the tree
 AnyNode = Union[
     HStack,
@@ -192,6 +227,7 @@ AnyNode = Union[
     DividerNode,
     ConnectorNode,
     MaturityStageNode,
+    LayeredStackNode,
 ]
 
 # Update forward refs
@@ -199,6 +235,7 @@ HStack.model_rebuild()
 VStack.model_rebuild()
 Grid.model_rebuild()
 CardNode.model_rebuild()
+LayeredStackNode.model_rebuild()
 
 
 class SlideComposition(BaseModel):

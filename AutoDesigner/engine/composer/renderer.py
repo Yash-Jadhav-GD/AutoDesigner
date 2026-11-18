@@ -5,11 +5,13 @@ Enforces 100% middle vertical alignment, exact 4.0pt corner radius,
 DrawingML native bullets, authentic Library divider lines, and clean fills.
 """
 
-from typing import Any, Dict, List, Optional
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
 import pptx
 from pptx.util import Pt
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
+from pptx.oxml import parse_xml
 
 from ..color_tokens import (
     ColorTokens,
@@ -54,6 +56,80 @@ def resolve_color(token_or_hex: Optional[str]) -> str:
     return token_map.get(token_or_hex, cleaned)
 
 
+def apply_solid_fill_alpha(shape, hex_val: str, alpha_val: int = 100000):
+    """Sets DrawingML solidFill with optional alpha (transparency: 100000 = 100%, 20000 = 20%)."""
+    spPr = shape._element.spPr
+    for tag in ['solidFill', 'gradFill', 'blipFill', 'pattFill', 'noFill']:
+        elem = spPr.find(f'{{http://schemas.openxmlformats.org/drawingml/2006/main}}{tag}')
+        if elem is not None:
+            spPr.remove(elem)
+    hex_clean = hex_val.lstrip('#')
+    if alpha_val < 100000:
+        fill_xml = f'''<a:solidFill xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+          <a:srgbClr val="{hex_clean}">
+            <a:alpha val="{alpha_val}"/>
+          </a:srgbClr>
+        </a:solidFill>'''
+    else:
+        fill_xml = f'''<a:solidFill xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+          <a:srgbClr val="{hex_clean}"/>
+        </a:solidFill>'''
+    fill_elem = parse_xml(fill_xml)
+    ln = spPr.find('{http://schemas.openxmlformats.org/drawingml/2006/main}ln')
+    if ln is not None:
+        ln_idx = list(spPr).index(ln)
+        spPr.insert(ln_idx, fill_elem)
+    else:
+        spPr.append(fill_elem)
+
+
+def pic_xml(shape_id: int, name: str, rel_id: str, left_pt: float, top_pt: float, width_pt: float, height_pt: float) -> str:
+    """svgBlip picture element in DrawingML."""
+    l_emu = int(left_pt * 12700)
+    t_emu = int(top_pt * 12700)
+    w_emu = int(width_pt * 12700)
+    h_emu = int(height_pt * 12700)
+    return f'''<p:pic xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+      <p:nvPicPr>
+        <p:cNvPr id="{shape_id}" name="{name}"/>
+        <p:cNvPicPr><a:picLocks noChangeAspect="1"/></p:cNvPicPr>
+        <p:nvPr/>
+      </p:nvPicPr>
+      <p:blipFill>
+        <a:blip>
+          <a:extLst>
+            <a:ext uri="{{96DAC541-7B7A-43D3-8B79-37D633B846F1}}">
+              <asvg:svgBlip xmlns:asvg="http://schemas.microsoft.com/office/drawing/2016/SVG/main" r:embed="{rel_id}"/>
+            </a:ext>
+          </a:extLst>
+        </a:blip>
+        <a:stretch><a:fillRect/></a:stretch>
+      </p:blipFill>
+      <p:spPr>
+        <a:xfrm>
+          <a:off x="{l_emu}" y="{t_emu}"/>
+          <a:ext cx="{w_emu}" cy="{h_emu}"/>
+        </a:xfrm>
+        <a:prstGeom prst="rect"><a:avLst/></a:prstGeom>
+      </p:spPr>
+    </p:pic>'''
+
+
+def load_svg_bytes(asset_name: Optional[str], fallback_bytes: Optional[bytes] = None) -> Optional[bytes]:
+    """Retrieves SVG icon bytes from library assets, local icon cache, or explicit bytes."""
+    if fallback_bytes:
+        return fallback_bytes
+    if not asset_name:
+        return None
+    p_lib = Path(__file__).resolve().parent.parent / "assets" / "library_icons" / asset_name
+    if p_lib.exists():
+        return p_lib.read_bytes()
+    p_cache = Path(__file__).resolve().parents[2] / ".cache" / "icons" / asset_name
+    if p_cache.exists():
+        return p_cache.read_bytes()
+    return None
+
+
 class ComposableRenderer:
     """Renders resolved shapes onto PowerPoint slides."""
 
@@ -64,8 +140,9 @@ class ComposableRenderer:
         resolved_shapes: List[ResolvedShape],
         lib_lines: Dict[str, Any],
         lib_shadow_proto: Optional[Any] = None
-    ):
+    ) -> List[Tuple[str, str, bytes]]:
         """Renders all resolved shapes onto slide sorted by z-order."""
+        slide_icon_refs: List[Tuple[str, str, bytes]] = []
         # Sort by z-order so containers sit underneath text and headers
         sorted_shapes = sorted(resolved_shapes, key=lambda s: s.z_order)
 
@@ -81,7 +158,11 @@ class ComposableRenderer:
                 box.name = sh.shape_id
                 set_shape_corner_radius(box, sh.corner_radius)
                 fill_hex = resolve_color(sh.fill_color)
-                apply_solid_fill(box, fill_hex)
+                alpha_val = sh.metadata.get("alpha")
+                if alpha_val is not None:
+                    apply_solid_fill_alpha(box, fill_hex, int(alpha_val))
+                else:
+                    apply_solid_fill(box, fill_hex)
 
                 if sh.border_color:
                     box.line.color.rgb = hex_to_rgb(resolve_color(sh.border_color))
@@ -293,3 +374,59 @@ class ComposableRenderer:
                                 p.font.size = Pt(font_sz)
                                 p.font.bold = is_last_totals
                                 p.font.color.rgb = hex_to_rgb(ColorTokens.TEXT_ON_DARK if is_last_totals else ColorTokens.TEXT_PRIMARY)
+
+            elif kind == "badge_oval":
+                oval = slide.shapes.add_shape(
+                    MSO_SHAPE.OVAL,
+                    Pt(r.left), Pt(r.top), Pt(r.width), Pt(r.height)
+                )
+                oval.name = sh.shape_id
+                fill_hex = resolve_color(sh.fill_color)
+                apply_solid_fill(oval, fill_hex)
+                if sh.border_color:
+                    oval.line.color.rgb = hex_to_rgb(resolve_color(sh.border_color))
+                    oval.line.width = Pt(sh.border_width)
+                else:
+                    oval.line.fill.background()
+
+                tf = oval.text_frame
+                tf.word_wrap = False
+                tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+                tf._txBody.bodyPr.set("anchor", "ctr")
+                tf.text = sh.text or ""
+                p = tf.paragraphs[0]
+                p.alignment = PP_ALIGN.CENTER
+                p.font.name = "Aptos"
+                p.font.size = Pt(sh.font_size)
+                p.font.bold = sh.bold
+                if sh.metadata.get("italic"):
+                    p.font.italic = True
+                p.font.color.rgb = hex_to_rgb(resolve_color(sh.text_color))
+
+            elif kind in ("solid_line", "vertical_line"):
+                line_color = resolve_color(sh.border_color or sh.fill_color)
+                line = slide.shapes.add_shape(
+                    MSO_SHAPE.RECTANGLE,
+                    Pt(r.left), Pt(r.top), Pt(r.width), Pt(r.height)
+                )
+                line.name = sh.shape_id
+                apply_solid_fill(line, line_color)
+                line.line.color.rgb = hex_to_rgb(line_color)
+                line.line.width = Pt(sh.border_width)
+
+            elif kind == "svg_icon":
+                svg_data = load_svg_bytes(sh.svg_asset, sh.metadata.get("svg_bytes"))
+                if svg_data:
+                    rel_id = f"rIdSvg_{len(slide_icon_refs) + 100}"
+                    media_name = f"icon_{sh.shape_id}_{sh.svg_asset or 'asset.svg'}"
+                    slide_icon_refs.append((rel_id, media_name, svg_data))
+                    shape_numeric_id = 500 + len(slide_icon_refs)
+                    pic_element = parse_xml(pic_xml(
+                        shape_numeric_id,
+                        sh.shape_id,
+                        rel_id,
+                        r.left, r.top, r.width, r.height
+                    ))
+                    slide.shapes._spTree.append(pic_element)
+
+        return slide_icon_refs

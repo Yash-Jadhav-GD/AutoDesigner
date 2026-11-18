@@ -122,20 +122,31 @@ class PPTDesigner:
         lib_shadow = get_decor_shadow_proto(lib_prs)
         solver = LayoutSolver()
 
+        import io
+        from engine.svg_icons import embed_svg_icons
+
         slides_info = []
+        all_deck_icons = {}
         for s_idx, slide in enumerate(in_prs.slides, start=1):
             model = read_slide(slide, s_idx, in_prs.slide_width, in_prs.slide_height)
             composition = SemanticComposer.compose(model)
             resolved_shapes, meta = solver.solve(composition)
             out_slide = out_prs.slides.add_slide(out_prs.slide_layouts[6])
-            ComposableRenderer.render(out_slide, resolved_shapes, lib_lines, lib_shadow)
+            slide_icons = ComposableRenderer.render(out_slide, resolved_shapes, lib_lines, lib_shadow)
+            if slide_icons:
+                all_deck_icons[s_idx] = slide_icons
             slides_info.append({
                 "slide": s_idx,
                 "node_type": composition.root.node_type,
                 "shapes": len(resolved_shapes)
             })
 
-        out_prs.save(output_path)
+        buf = io.BytesIO()
+        out_prs.save(buf)
+        raw_bytes = buf.getvalue()
+        if all_deck_icons:
+            raw_bytes = embed_svg_icons(raw_bytes, all_deck_icons)
+        Path(output_path).write_bytes(raw_bytes)
         return {
             "input_file": str(input_path),
             "output_file": str(output_path),

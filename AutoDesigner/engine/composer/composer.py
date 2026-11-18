@@ -24,6 +24,9 @@ from .primitives import (
     ProcessRowNode,
     TableNode,
     DividerNode,
+    LayeredStackNode,
+    StackLayer,
+    StackLayerItem,
     Padding,
 )
 
@@ -43,7 +46,12 @@ class SemanticComposer:
             root = cls._compose_table(table_elem)
             return SlideComposition(title=title_text, subtitle=subtitle_text, root=root)
 
-        # 2. Check for Text Matrices (e.g. Slide 6: 4 distinct columns with 4+ rows)
+        # 2. Check for Layered Architecture Stack (Library Slide 9 pattern)
+        layered_stack = cls._detect_layered_stack(body_elements, title_text)
+        if layered_stack is not None:
+            return SlideComposition(title=title_text, subtitle=subtitle_text, root=layered_stack)
+
+        # 3. Check for Text Matrices (e.g. Slide 6: 4 distinct columns with 4+ rows)
         matrix = cls._detect_text_matrix(body_elements)
         if matrix is not None:
             return SlideComposition(title=title_text, subtitle=subtitle_text, root=matrix)
@@ -149,6 +157,143 @@ class SemanticComposer:
             zebra_fill="NEUTRAL_SURFACE",
             totals_row=True,
             totals_fill="BRAND_NAVY"
+        )
+
+    @classmethod
+    def _detect_layered_stack(cls, elements: List[Element], title_text: str) -> Optional[LayeredStackNode]:
+        """Detects architectural layered stack designs (e.g. Slide 8 / Library Slide 9)."""
+        text_elems = [e for e in elements if e.kind == "text" and e.text.strip()]
+        if len(text_elems) < 9:
+            return None
+
+        is_stack_title = any(kw in title_text.lower() for kw in ["layer", "architecture", "stack", "tier", "foundation", "levels"])
+
+        # Cluster elements into rows by Y
+        sorted_elems = sorted(text_elems, key=lambda e: e.y)
+        rows: List[List[Element]] = []
+        for e in sorted_elems:
+            placed = False
+            for r in rows:
+                avg_y = sum(x.y for x in r) / len(r)
+                if abs(e.y - avg_y) <= 35.0:
+                    r.append(e)
+                    placed = True
+                    break
+            if not placed:
+                rows.append([e])
+
+        if len(rows) < 3 or len(rows) > 7:
+            return None
+
+        sorted_rows = [sorted(r, key=lambda x: x.x) for r in rows]
+        has_digit_badges = all(len(r) >= 3 and r[0].text.strip().isdigit() for r in sorted_rows)
+        if not (has_digit_badges or is_stack_title):
+            return None
+
+        tier_palette = {
+            5: {
+                "header_fill": "FFAC59",
+                "header_text_color": "14203E",
+                "body_fill": "FFD3A6",
+                "body_alpha": 30000,
+                "border_color": "FFAC59",
+                "divider_color": "FFAC59",
+                "icon_tint": "FFAC59",
+                "header_icon": "image31.svg",
+                "item_icons": ["image14.svg", "image13.svg", "image15.svg"]
+            },
+            4: {
+                "header_fill": "FFD3A6",
+                "header_text_color": "14203E",
+                "body_fill": "FFD3A6",
+                "body_alpha": 30000,
+                "border_color": "FFAC59",
+                "divider_color": "FFAC59",
+                "icon_tint": "FFAC59",
+                "header_icon": "image29.svg",
+                "item_icons": ["image8.svg", "image7.svg", "image10.svg"]
+            },
+            3: {
+                "header_fill": "8F9BC7",
+                "header_text_color": "14203E",
+                "body_fill": "8F9BC7",
+                "body_alpha": 20000,
+                "border_color": "526299",
+                "divider_color": "8F9BC7",
+                "icon_tint": "526299",
+                "header_icon": "image30.svg",
+                "item_icons": ["image4.svg", "image5.svg", "image3.svg"]
+            },
+            2: {
+                "header_fill": "B1A8D8",
+                "header_text_color": "14203E",
+                "body_fill": "B1A8D8",
+                "body_alpha": 20000,
+                "border_color": "7C6DB2",
+                "divider_color": "B1A8D8",
+                "icon_tint": "7C6DB2",
+                "header_icon": "image28.svg",
+                "item_icons": ["image1.svg", "image22.svg", "image20.svg"]
+            },
+            1: {
+                "header_fill": "7C6DB2",
+                "header_text_color": "FFFFFF",
+                "body_fill": "B1A8D8",
+                "body_alpha": 20000,
+                "border_color": "7C6DB2",
+                "divider_color": "B1A8D8",
+                "icon_tint": "7C6DB2",
+                "header_icon": "image27.svg",
+                "item_icons": ["image23.svg", "image24.svg", "image25.svg"]
+            }
+        }
+
+        layers: List[StackLayer] = []
+        for idx, row in enumerate(sorted_rows):
+            first_txt = row[0].text.strip()
+            if first_txt.isdigit():
+                level = int(first_txt)
+                badge_text = first_txt
+                title = row[1].text.strip()
+                item_elements = row[2:]
+            else:
+                level = idx + 1
+                badge_text = str(level)
+                title = row[0].text.strip()
+                item_elements = row[1:]
+
+            pal = tier_palette.get(level, tier_palette.get(5 - idx, tier_palette[1]))
+
+            layer_items: List[StackLayerItem] = []
+            for item_idx, it_elem in enumerate(item_elements):
+                item_text = it_elem.text.strip()
+                icon_file = pal["item_icons"][item_idx] if item_idx < len(pal["item_icons"]) else None
+                layer_items.append(StackLayerItem(
+                    text=item_text,
+                    icon_svg_file=icon_file
+                ))
+
+            layers.append(StackLayer(
+                level=level,
+                title=title,
+                items=layer_items,
+                header_fill=pal["header_fill"],
+                header_text_color=pal["header_text_color"],
+                body_fill=pal["body_fill"],
+                body_alpha=pal["body_alpha"],
+                border_color=pal["border_color"],
+                border_width=0.5,
+                divider_color=pal["divider_color"],
+                header_icon_file=pal["header_icon"],
+                badge_text=badge_text,
+                badge_fill="FAF9F6",
+                badge_text_color="14203E",
+                icon_tint_color=pal["icon_tint"]
+            ))
+
+        return LayeredStackNode(
+            layers=layers,
+            foundation_at_bottom=True
         )
 
     @classmethod
