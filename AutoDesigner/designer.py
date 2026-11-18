@@ -141,6 +141,9 @@ class PPTDesigner:
                 "shapes": len(resolved_shapes)
             })
 
+        from engine.builders.common import strip_all_shadows_from_presentation
+        strip_all_shadows_from_presentation(out_prs)
+
         buf = io.BytesIO()
         out_prs.save(buf)
         raw_bytes = buf.getvalue()

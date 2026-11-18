@@ -115,7 +115,7 @@ Headers on Slide 1 feature custom DrawingML 2-stop linear gradients at a $5,400,
 - **Problem Pill**: `#6A5E96` $\rightarrow$ `#48397E`
 - **Bridge Pill**: `#5A668E` $\rightarrow$ `#1F2E65`
 - **Future State Pill**: `#FEB163` $\rightarrow$ `#FE860E`
-- **Drop Shadow**: Color `#302653`, $16\%$ opacity (`alpha="16000"`), $15\text{ pt}$ blur radius (`rad="190500"`).
+- **Zero-Shadow Rule**: DrawingML drop shadows are strictly forbidden deck-wide; all pills and containers render flat.
 
 ---
 

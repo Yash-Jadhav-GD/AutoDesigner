@@ -33,6 +33,7 @@ from engine.builders.common import (
     load_library,
     enforce_deck_corner_radii,
     enforce_middle_alignment_deck_wide,
+    strip_all_shadows_from_presentation,
     AFTER_PATH
 )
 from format_library_and_after_75 import (
@@ -224,6 +225,10 @@ def main():
     print("[Post-Processing] Enforcing Middle vertical alignment (anchor='ctr') deck-wide...")
     aligned_count = enforce_middle_alignment_deck_wide(out_prs)
     print(f"  Middle-aligned {aligned_count} text boxes/shapes across all 12 slides.")
+
+    print("[Post-Processing] Enforcing Strict Zero-Shadow Rule deck-wide...")
+    shadows_removed = strip_all_shadows_from_presentation(out_prs)
+    print(f"  Stripped {shadows_removed} shadow effects across all slides.")
 
     raw_buf = io.BytesIO()
     out_prs.save(raw_buf)

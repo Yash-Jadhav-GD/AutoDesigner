@@ -147,6 +147,23 @@ def apply_library_shadow(shape, proto_shape=None):
     return
 
 
+def strip_all_shadows_from_presentation(prs) -> int:
+    """
+    Strict Zero-Shadow Rule:
+    Strips all DrawingML <a:effectLst> (outerShdw, innerShdw, etc.)
+    from every shape across all slides in the presentation.
+    """
+    removed = 0
+    for slide in prs.slides:
+        for shape in slide.shapes:
+            if hasattr(shape._element, "spPr") and shape._element.spPr is not None:
+                for child in list(shape._element.spPr):
+                    if child.tag.endswith("effectLst"):
+                        shape._element.spPr.remove(child)
+                        removed += 1
+    return removed
+
+
 def load_library():
     """Loads the library deck (falls back to the inspect copy) and returns (lib_prs, lib_s1, lib_s3, lib_lines)."""
     path = LIBRARY_PATH
@@ -313,7 +330,9 @@ def enforce_middle_alignment_deck_wide(prs) -> int:
     """
     Ensures 100% of text boxes and shapes containing text frames across all slides
     have vertical anchor set to Middle (anchor='ctr' / MSO_ANCHOR.MIDDLE).
+    Also strictly enforces zero shadows deck-wide.
     """
+    strip_all_shadows_from_presentation(prs)
     count = 0
     for slide in prs.slides:
         for shape in slide.shapes:

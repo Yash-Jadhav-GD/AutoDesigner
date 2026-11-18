@@ -80,7 +80,7 @@ The deck also uses `#2D3E50`, `#151514`, `#000000`, `#212225` for text. These ar
 | Header pill (default) | `brand.indigo` | none | `#FFFFFF`, bold |
 | Header pill (secondary column) | `brand.navy` | none | `#FFFFFF`, bold |
 | Header pill (accent column) | `brand.tangerine` | none | **`brand.onyx` or `#FFFFFF` bold ≥18 pt only** (see §6) |
-| Header pill shadow | `#302653` at 16% alpha, 15 pt blur | n/a | n/a |
+| Header pill shadow | **Strictly None** (Zero-Shadow Rule: No shadows on any shapes, cards, or pills) | n/a | n/a |
 | Number badge / step marker | `vivid.indigo.mid` | none | `#FFFFFF`, bold |
 | Icon backplate | `vivid.indigo.soft` | none | icon in `brand.indigo` |
 | Divider | `neutral.line` fading to transparent (Library "Grey Side Fade R") | n/a | n/a |
@@ -176,8 +176,11 @@ The funnel graphic on slide 21 (blues `#4FB7F6`, `#338DCD`) is a legacy off-pale
 | Panel gradient | `#E2DEEE` → `#FFFFFF`, vertical, 90° |
 | Header pill gradient (optional variant) | Base color → its `soft` tint, horizontal, left to right |
 | Divider | `neutral.line` → transparent, left to right (Library fade) |
-| Shadow | `#302653` at 16% alpha, 15 pt blur, no offset (header pills only) |
+| Shadow | **Strictly Forbidden** (Zero-Shadow Rule enforced deck-wide: no shadows on any shape, container, card, or text) |
 | Rule | Gradients stay within **one hue family**; never run Indigo into Tangerine |
+
+> [!IMPORTANT]
+> **Strict Zero-Shadow Rule**: DrawingML drop shadows (`<a:outerShdw>`, `<a:effectLst>`) are strictly forbidden across all elements and slides. All presentation designs must be completely flat, clean, and modern without any shadow blur, offset, or artifacts.
 
 ---
 

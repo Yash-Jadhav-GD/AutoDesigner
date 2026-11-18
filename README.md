@@ -351,7 +351,7 @@ The engine implements 12 production archetypes benchmarked directly against exec
 
 | Slide | Archetype Name | Visual Layout Description | Master Reference | Key Design Elements |
 | :---: | :--- | :--- | :--- | :--- |
-| **01** | **Floating Pill Cards (3-Column)** | 3 rounded cards topped with floating gradient pills protruding 16 pt above card container | `Library` Slide 1 (`Design 1`) | Problem $\rightarrow$ Bridge $\rightarrow$ Future; linear gradient fills with drop shadows |
+| **01** | **Floating Pill Cards (3-Column)** | 3 rounded cards topped with floating gradient pills protruding 16 pt above card container | `Library` Slide 1 (`Design 1`) | Problem $\rightarrow$ Bridge $\rightarrow$ Future; linear gradient fills with flat modern zero-shadow styling |
 | **02** | **Diagnostic & Focal Takeaways** | Left: 5 full-width process cards with vector SVG icons. Right: High-contrast Tangerine focal insights card | `After` Slide 2 | `Grey Side Fade R` divider lines; embedded SVG icons; vivid tangerine summary backplate |
 | **03** | **Horizontal Workflow Cards** | 5 horizontal full-width rows (`UI-ROW-01`) spanning slide width | `After` Slide 3 | Soft indigo backplates (`#B1A8D8`); authentic right-fade dividers; bold subheaders |
 | **04** | **3 Library Opportunity Cards** | 3 multi-item cards (`Pain Points`, `Approach`, `Opportunities`) + 4 bottom KPI summary boxes | `Library` Slide 1 (`Design 1` & `Design 2`) | Flush & protruding headers; native DrawingML bullets; center-fade dividers |
