@@ -138,17 +138,25 @@ def get_decor_shadow_proto(lib_prs):
 
 
 def apply_library_shadow(shape, proto_shape=None):
-    """Applies the exact shadow settings from Decor_Box_with_Shadow_1 in Library_copy:
-    <a:outerShdw blurRad="190500" rotWithShape="0">
+    """Applies the exact shadow settings from Decor_Box_with_Shadow_1 in Library_copy Slide 6:
+    <a:outerShdw blurRad="127000" rotWithShape="0">
       <a:srgbClr val="95939D">
         <a:alpha val="16000"/>
       </a:srgbClr>
     </a:outerShdw>
+    Rule: If the shape contains opacity (< 100%), it must not have any shadow.
     """
     spPr = shape._element.spPr
     for child in list(spPr):
         if child.tag.endswith("effectLst"):
             spPr.remove(child)
+
+    # Rule: If the shape contains opacity then that shape should not have any shadow.
+    alpha_elem = spPr.find(".//{http://schemas.openxmlformats.org/drawingml/2006/main}alpha")
+    if alpha_elem is not None:
+        val = int(alpha_elem.get("val", "100000"))
+        if val < 100000:
+            return
 
     if proto_shape is not None:
         p_eff = proto_shape._element.find(".//{http://schemas.openxmlformats.org/drawingml/2006/main}effectLst")
@@ -158,7 +166,7 @@ def apply_library_shadow(shape, proto_shape=None):
 
     eff_xml = (
         '<a:effectLst xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">'
-        '<a:outerShdw blurRad="190500" rotWithShape="0">'
+        '<a:outerShdw blurRad="127000" rotWithShape="0">'
         '<a:srgbClr val="95939D">'
         '<a:alpha val="16000"/>'
         '</a:srgbClr>'

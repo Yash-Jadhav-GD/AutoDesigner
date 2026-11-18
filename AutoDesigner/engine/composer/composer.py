@@ -199,8 +199,8 @@ class SemanticComposer:
                 "border_color": "FFAC59",
                 "divider_color": "FFAC59",
                 "icon_tint": "FFAC59",
-                "header_icon": "image31.svg",
-                "item_icons": ["image14.svg", "image13.svg", "image15.svg"]
+                "header_icon": "user-team-community-streamline-core-8783c6.svg",
+                "item_icons": ["tabler-dashboard.svg", "tabler-user-plus.svg", "ext-communication-bell-notification.svg"]
             },
             4: {
                 "header_fill": "FFD3A6",
@@ -210,8 +210,8 @@ class SemanticComposer:
                 "border_color": "FFAC59",
                 "divider_color": "FFAC59",
                 "icon_tint": "FFAC59",
-                "header_icon": "image29.svg",
-                "item_icons": ["image8.svg", "image7.svg", "image10.svg"]
+                "header_icon": "artificial-intelligence-spark-d5514b.svg",
+                "item_icons": ["coding-apps-website-data-conversion-cube-68dec7.svg", "gauge-dashboard-fb6eb1.svg", "ai-chip-robot-2801ae.svg"]
             },
             3: {
                 "header_fill": "8F9BC7",
@@ -221,8 +221,8 @@ class SemanticComposer:
                 "border_color": "526299",
                 "divider_color": "8F9BC7",
                 "icon_tint": "526299",
-                "header_icon": "image30.svg",
-                "item_icons": ["image4.svg", "image5.svg", "image3.svg"]
+                "header_icon": "human-resources-workflow-18f91f.svg",
+                "item_icons": ["common-file-text-search-5d1a2b.svg", "shopping-cart-check-2ea7ea.svg", "document-contract-edit-sign-streamline-core-1b4bb3.svg"]
             },
             2: {
                 "header_fill": "B1A8D8",
@@ -232,8 +232,8 @@ class SemanticComposer:
                 "border_color": "7C6DB2",
                 "divider_color": "B1A8D8",
                 "icon_tint": "7C6DB2",
-                "header_icon": "image28.svg",
-                "item_icons": ["image1.svg", "image22.svg", "image20.svg"]
+                "header_icon": "ext-shape-shield.svg",
+                "item_icons": ["database-19b3b4.svg", "hierarchy-5-organize-d940d4.svg", "check-badge-9c2c48.svg"]
             },
             1: {
                 "header_fill": "7C6DB2",
@@ -243,10 +243,78 @@ class SemanticComposer:
                 "border_color": "7C6DB2",
                 "divider_color": "B1A8D8",
                 "icon_tint": "7C6DB2",
-                "header_icon": "image27.svg",
-                "item_icons": ["image23.svg", "image24.svg", "image25.svg"]
+                "header_icon": "tabler-pipeline.svg",
+                "item_icons": ["database-connect-4dec28.svg", "tabler-download.svg", "coding-apps-website-web-dev-api-cloud-79f927.svg"]
             }
         }
+
+        # High-relevance semantic icons from Icon Finder
+        semantic_icon_map = {
+            "experience & collaboration": "user-team-community-streamline-core-8783c6.svg",
+            "collaboration": "user-team-community-streamline-core-8783c6.svg",
+            "buyer and category dashboards": "tabler-dashboard.svg",
+            "supplier portal and onboarding": "tabler-user-plus.svg",
+            "stakeholder access and notifications": "ext-communication-bell-notification.svg",
+            "analytics & intelligence": "artificial-intelligence-spark-d5514b.svg",
+            "spend cube and savings tracking": "coding-apps-website-data-conversion-cube-68dec7.svg",
+            "supplier risk and performance": "gauge-dashboard-fb6eb1.svg",
+            "ai recommendations and anomaly detection": "ai-chip-robot-2801ae.svg",
+            "process & workflow automation": "human-resources-workflow-18f91f.svg",
+            "sourcing events and rfx": "common-file-text-search-5d1a2b.svg",
+            "purchase request and approvals": "shopping-cart-check-2ea7ea.svg",
+            "contract lifecycle management": "document-contract-edit-sign-streamline-core-1b4bb3.svg",
+            "data governance & master data": "ext-shape-shield.svg",
+            "supplier and item master records": "database-19b3b4.svg",
+            "spend taxonomy and classification": "hierarchy-5-organize-d940d4.svg",
+            "data quality and compliance rules": "check-badge-9c2c48.svg",
+            "data integration": "tabler-pipeline.svg",
+            "erp and p2p connectors": "database-connect-4dec28.svg",
+            "supplier and spend ingestion": "tabler-download.svg",
+            "apis, edi, and catalog feeds": "coding-apps-website-web-dev-api-cloud-79f927.svg",
+        }
+
+        def get_best_icon(text: str, fallback_file: Optional[str] = None) -> Optional[str]:
+            txt = text.strip().lower()
+            if txt in semantic_icon_map:
+                return semantic_icon_map[txt]
+            for k, f in semantic_icon_map.items():
+                if k in txt or txt in k:
+                    return f
+            if any(w in txt for w in ["dashboard", "metric", "chart"]):
+                return "tabler-dashboard.svg"
+            if any(w in txt for w in ["portal", "onboard", "user"]):
+                return "tabler-user-plus.svg"
+            if any(w in txt for w in ["bell", "notification", "alert"]):
+                return "ext-communication-bell-notification.svg"
+            if any(w in txt for w in ["cube", "saving", "spend"]):
+                return "coding-apps-website-data-conversion-cube-68dec7.svg"
+            if any(w in txt for w in ["risk", "performance", "gauge", "meter"]):
+                return "gauge-dashboard-fb6eb1.svg"
+            if any(w in txt for w in ["ai", "robot", "anomaly", "recommend"]):
+                return "ai-chip-robot-2801ae.svg"
+            if any(w in txt for w in ["sourcing", "rfx", "tender"]):
+                return "common-file-text-search-5d1a2b.svg"
+            if any(w in txt for w in ["purchase", "approval", "request", "cart"]):
+                return "shopping-cart-check-2ea7ea.svg"
+            if any(w in txt for w in ["contract", "agreement", "clm"]):
+                return "document-contract-edit-sign-streamline-core-1b4bb3.svg"
+            if any(w in txt for w in ["governance", "shield", "security"]):
+                return "ext-shape-shield.svg"
+            if any(w in txt for w in ["record", "database", "master"]):
+                return "database-19b3b4.svg"
+            if any(w in txt for w in ["taxonomy", "classification", "hierarchy"]):
+                return "hierarchy-5-organize-d940d4.svg"
+            if any(w in txt for w in ["compliance", "quality", "rule", "badge"]):
+                return "check-badge-9c2c48.svg"
+            if any(w in txt for w in ["integration", "pipeline"]):
+                return "tabler-pipeline.svg"
+            if any(w in txt for w in ["erp", "p2p", "connector", "connect"]):
+                return "database-connect-4dec28.svg"
+            if any(w in txt for w in ["ingest", "ingestion", "download"]):
+                return "tabler-download.svg"
+            if any(w in txt for w in ["api", "edi", "catalog", "feed"]):
+                return "coding-apps-website-web-dev-api-cloud-79f927.svg"
+            return fallback_file
 
         layers: List[StackLayer] = []
         for idx, row in enumerate(sorted_rows):
@@ -267,11 +335,14 @@ class SemanticComposer:
             layer_items: List[StackLayerItem] = []
             for item_idx, it_elem in enumerate(item_elements):
                 item_text = it_elem.text.strip()
-                icon_file = pal["item_icons"][item_idx] if item_idx < len(pal["item_icons"]) else None
+                fallback_icon = pal["item_icons"][item_idx] if item_idx < len(pal["item_icons"]) else None
+                icon_file = get_best_icon(item_text, fallback_icon)
                 layer_items.append(StackLayerItem(
                     text=item_text,
                     icon_svg_file=icon_file
                 ))
+
+            header_icon = get_best_icon(title, pal["header_icon"])
 
             layers.append(StackLayer(
                 level=level,
@@ -284,7 +355,8 @@ class SemanticComposer:
                 border_color=pal["border_color"],
                 border_width=0.5,
                 divider_color=pal["divider_color"],
-                header_icon_file=pal["header_icon"],
+                header_icon_file=header_icon,
+                header_icon_tint=pal["header_text_color"],
                 badge_text=badge_text,
                 badge_fill="FAF9F6",
                 badge_text_color="14203E",

@@ -5,6 +5,7 @@ Enforces 100% middle vertical alignment, exact 4.0pt corner radius,
 DrawingML native bullets, authentic Library divider lines, and clean fills.
 """
 
+import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 import pptx
@@ -170,7 +171,9 @@ class ComposableRenderer:
                 else:
                     box.line.fill.background()
 
-                if sh.shadow and lib_shadow_proto:
+                # Rule: If the shape contains opacity (< 100%), it must not have any shadow.
+                has_opacity = (alpha_val is not None and int(alpha_val) < 100000)
+                if sh.shadow and not has_opacity and lib_shadow_proto:
                     apply_library_shadow(box, lib_shadow_proto)
 
             elif kind in ("header_pill", "flush_header"):
@@ -417,6 +420,14 @@ class ComposableRenderer:
             elif kind == "svg_icon":
                 svg_data = load_svg_bytes(sh.svg_asset, sh.metadata.get("svg_bytes"))
                 if svg_data:
+                    # Apply color tint if specified
+                    tint_hex = sh.metadata.get("tint")
+                    if tint_hex:
+                        clean_tint = "#" + resolve_color(tint_hex).lstrip("#")
+                        text = svg_data.decode("utf-8", errors="ignore")
+                        text = re.sub(r"#66737[cC]", clean_tint, text)
+                        text = text.replace("currentColor", clean_tint)
+                        svg_data = text.encode("utf-8")
                     rel_id = f"rIdSvg_{len(slide_icon_refs) + 100}"
                     media_name = f"icon_{sh.shape_id}_{sh.svg_asset or 'asset.svg'}"
                     slide_icon_refs.append((rel_id, media_name, svg_data))

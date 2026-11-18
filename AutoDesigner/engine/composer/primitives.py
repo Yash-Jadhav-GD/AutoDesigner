@@ -206,6 +206,7 @@ class StackLayer(BaseModel):
     badge_fill: str = "#FAF9F6"
     badge_text_color: str = "#14203E"
     icon_tint_color: Optional[str] = None
+    header_icon_tint: Optional[str] = None
 
 
 class LayeredStackNode(LayoutNode):

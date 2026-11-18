@@ -697,7 +697,7 @@ class LayoutSolver:
                     svg_asset=layer.header_icon_file,
                     metadata={
                         "svg_bytes": layer.header_icon_bytes,
-                        "tint": layer.icon_tint_color or layer.border_color
+                        "tint": layer.header_icon_tint or layer.header_text_color
                     }
                 ))
 

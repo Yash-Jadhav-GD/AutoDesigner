@@ -58,10 +58,10 @@ class ColorTokens:
     GRADIENT_TANGERINE_START = "FEB163"
     GRADIENT_TANGERINE_END = "FE860E"
 
-    # Pill Drop Shadow
-    SHADOW_COLOR = "302653"
+    # Shadow settings (authentic from Decor_Box_with_Shadow_1 on Library Slide 6)
+    SHADOW_COLOR = "95939D"
     SHADOW_ALPHA = 16000          # 16%
-    SHADOW_BLUR_RAD = 190500      # 15 pt blur
+    SHADOW_BLUR_RAD = 127000      # 10 pt blur (127000 EMU)
 
     # 5-Phase Process Ramp (After_copy.pptx Slide 6 & 20)
     PHASE_RAMP = [
@@ -208,8 +208,12 @@ def apply_linear_gradient(
     """
     _insert_fill_schema_compliant(spPr, parse_xml(grad_xml))
 
-    # 2. Pill Drop Shadow (inserted AFTER <a:ln>)
+    # 2. Drop Shadow (inserted AFTER <a:ln>, only if shape does not contain opacity)
     if with_shadow:
+        # Check if shape contains opacity: if alpha < 100000, do not apply shadow
+        alpha_elem = spPr.find(".//{http://schemas.openxmlformats.org/drawingml/2006/main}alpha")
+        if alpha_elem is not None and int(alpha_elem.get("val", "100000")) < 100000:
+            return
         shdw_xml = f"""
         <a:effectLst xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
           <a:outerShdw blurRad="{ColorTokens.SHADOW_BLUR_RAD}" rotWithShape="0">
