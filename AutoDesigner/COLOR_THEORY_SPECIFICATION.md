@@ -233,3 +233,14 @@ The funnel graphic on slide 21 (blues `#4FB7F6`, `#338DCD`) is a legacy off-pale
 1. **Layer 2 vs ramp values.** The reference deck uses vivid tints (`#7C6DB2`, `#B1A8D8`, `#FFAC59`, `#FFD3A6`) rather than the computed ramp. This spec treats the deck as the benchmark. If the brand team wants strict ramp values, swap Layer 2 for the nearest ramp step in §2.
 2. **White on tangerine headers.** The reference deck uses it, but it fails contrast (2.4:1). This spec says Onyx text. If you prefer to keep white, restrict it to bold text of 18 pt or more and use the `#CB6B0B` shade as the fill.
 3. **Text color.** The deck's most common text color is `#2D3E50`; the Library standard is `#262626`. This spec follows the Library.
+
+---
+
+## 13. Archetype-Specific Styling Rules
+
+### TBL-KPI-V1 Table Styling Rule
+- **Header Fill**: When table header tabs use purple (`brand.indigo` `#48397E`), the row oval backplates holding icons must use the matching shade of purple from template `TBL-KPI-V1 Row` (`vivid.indigo.soft` `#B1A8D8`).
+- **Icon Rendering**: The SVG vector icons inside these ovals must have:
+  - Outline (stroke): pure white (`#FFFFFF`).
+  - Fill: strictly none (`fill="none"`).
+- **Shadows**: Strict zero-shadow policy (no `<a:effectLst>`, no theme `<a:effectRef>`).
