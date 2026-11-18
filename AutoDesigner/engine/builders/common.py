@@ -150,16 +150,32 @@ def apply_library_shadow(shape, proto_shape=None):
 def strip_all_shadows_from_presentation(prs) -> int:
     """
     Strict Zero-Shadow Rule:
-    Strips all DrawingML <a:effectLst> (outerShdw, innerShdw, etc.)
-    from every shape across all slides in the presentation.
+    1. Strips all DrawingML <a:effectLst> (outerShdw, innerShdw, etc.)
+       from every shape across all slides in the presentation.
+    2. Strips or zeroes out theme effect references (<p:style> / <a:effectRef idx="0">)
+       which otherwise inherit drop shadows from the presentation theme.
     """
     removed = 0
     for slide in prs.slides:
         for shape in slide.shapes:
+            # 1. Strip effectLst from spPr
             if hasattr(shape._element, "spPr") and shape._element.spPr is not None:
                 for child in list(shape._element.spPr):
                     if child.tag.endswith("effectLst"):
                         shape._element.spPr.remove(child)
+                        removed += 1
+            # 2. Strip theme style shadow effectRef
+            style = shape._element.find("{http://schemas.openxmlformats.org/presentationml/2006/main}style")
+            if style is not None:
+                eff = style.find("{http://schemas.openxmlformats.org/drawingml/2006/main}effectRef")
+                if eff is not None and eff.get("idx") != "0":
+                    eff.set("idx", "0")
+                    removed += 1
+                # Or remove style entirely if shape has its own solidFill & ln
+                if hasattr(shape._element, "spPr") and shape._element.spPr is not None:
+                    has_fill = any(shape._element.spPr.find(f"{{http://schemas.openxmlformats.org/drawingml/2006/main}}{f}") is not None for f in ["solidFill", "gradFill", "noFill"])
+                    if has_fill:
+                        shape._element.remove(style)
                         removed += 1
     return removed
 
