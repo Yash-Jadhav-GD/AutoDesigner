@@ -238,6 +238,17 @@ The funnel graphic on slide 21 (blues `#4FB7F6`, `#338DCD`) is a legacy off-pale
 
 ## 13. Archetype-Specific Styling Rules
 
+### Circle / Badge Icon Contrast Rule
+- **Contrast Requirement**: Whenever an icon is placed on a circle, oval backplate, or badge with a dark or tinted background color (e.g. `#8F9BC7`, `#B1A8D8`, `#48397E`, `#526299`, `#7C6DB2`), the icon inside MUST be rendered in pure white:
+  - Outline (stroke): pure white (`#FFFFFF`).
+  - Fill: strictly none (`fill="none"`).
+  - Theme Normalization: Microsoft Office theme classes must be normalized to `MsftOfcThm_Background1_Stroke_v2` (pure white) with `<style>.MsftOfcThm_Background1_Stroke_v2 { stroke:#FFFFFF; fill:none; }</style>` so PowerPoint desktop does not override strokes with Theme Text 1 (black).
+- **Light Backplates**: When the circle or badge background color is light or pure white, the icon should use the appropriate brand accent color (e.g. `#48397E` brand indigo or `#FE860E` brand tangerine).
+- **Archetype Scope**:
+  - `UI-ROW-01` (Slides 2, 3): Oval badge with `#8F9BC7` (`vivid.navy.soft`) -> White outline icon (`#FFFFFF`, `fill="none"`).
+  - `TBL-KPI-V1` (Slides 4, 5, 6, 7): Oval badge with `#B1A8D8` (`vivid.indigo.soft`) -> White outline icon (`#FFFFFF`, `fill="none"`).
+  - `LYR-STK-V1` (Slide 8): Header tabs with dark fills (`#504382`, `#7C6DB2`, `#6072A8`) -> White outline icon (`#FFFFFF`, `fill="none"`).
+
 ### TBL-KPI-V1 Table Styling Rule
 - **Header Fill**: When table header tabs use purple (`brand.indigo` `#48397E`), the row oval backplates holding icons must use the matching shade of purple from template `TBL-KPI-V1 Row` (`vivid.indigo.soft` `#B1A8D8`).
 - **Icon Rendering**: The SVG vector icons inside these ovals must have:
