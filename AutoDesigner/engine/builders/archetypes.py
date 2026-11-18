@@ -64,7 +64,7 @@ def build_slide1(prs, s1_data, lib_s1, lib_lines):
         hdr.top = Pt(card_top - 15.7)
         hdr.width = Pt(215.4)
         hdr.height = Pt(33.0)
-        apply_linear_gradient(hdr, style["start"], style["end"], angle_dml=10800000, with_shadow=True)
+        apply_linear_gradient(hdr, style["start"], style["end"], angle_dml=10800000, with_shadow=False)
         hdr.text_frame.text = col_data["header"]
         for p in hdr.text_frame.paragraphs:
             p.font.name = "Aptos"
@@ -239,7 +239,7 @@ def build_slide2(prs, s2_data, lib_s1, lib_s3, lib_lines):
     hdr.top = Pt(card_top - 15.7)
     hdr.width = Pt(215.4)
     hdr.height = Pt(33.0)
-    apply_linear_gradient(hdr, ColorTokens.GRADIENT_TANGERINE_START, ColorTokens.GRADIENT_TANGERINE_END, angle_dml=10800000, with_shadow=True)
+    apply_linear_gradient(hdr, ColorTokens.GRADIENT_TANGERINE_START, ColorTokens.GRADIENT_TANGERINE_END, angle_dml=10800000, with_shadow=False)
     hdr.text_frame.text = s2_data["right_header"]
     for p in hdr.text_frame.paragraphs:
         p.font.name = "Aptos"

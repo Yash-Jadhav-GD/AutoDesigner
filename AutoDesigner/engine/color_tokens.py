@@ -181,17 +181,16 @@ def apply_linear_gradient(
     start_hex: str,
     end_hex: str,
     angle_dml: int = 10800000,
-    with_shadow: bool = True
+    with_shadow: bool = False
 ):
     """
-    Applies a vertical/directional 2-stop linear gradient and drop shadow to a shape.
-    angle_dml 10800000 = 90 degrees (top to bottom).
-    Ensures strict DrawingML schema sequence: (xfrm, prstGeom, gradFill, ln, effectLst).
+    Applies a vertical/directional 2-stop linear gradient to a shape.
+    Rule: Do not add shadows anywhere.
     """
     spPr = shape._element.spPr
     clear_fill_and_effects(spPr)
 
-    # 1. Gradient Fill (inserted BEFORE <a:ln>)
+    # Gradient Fill (inserted BEFORE <a:ln>)
     grad_xml = f"""
     <a:gradFill xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" flip="none" rotWithShape="1">
       <a:gsLst>
@@ -207,23 +206,6 @@ def apply_linear_gradient(
     </a:gradFill>
     """
     _insert_fill_schema_compliant(spPr, parse_xml(grad_xml))
-
-    # 2. Drop Shadow (inserted AFTER <a:ln>, only if shape does not contain opacity)
-    if with_shadow:
-        # Check if shape contains opacity: if alpha < 100000, do not apply shadow
-        alpha_elem = spPr.find(".//{http://schemas.openxmlformats.org/drawingml/2006/main}alpha")
-        if alpha_elem is not None and int(alpha_elem.get("val", "100000")) < 100000:
-            return
-        shdw_xml = f"""
-        <a:effectLst xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
-          <a:outerShdw blurRad="{ColorTokens.SHADOW_BLUR_RAD}" rotWithShape="0">
-            <a:srgbClr val="{ColorTokens.SHADOW_COLOR}">
-              <a:alpha val="{ColorTokens.SHADOW_ALPHA}"/>
-            </a:srgbClr>
-          </a:outerShdw>
-        </a:effectLst>
-        """
-        _insert_effect_schema_compliant(spPr, parse_xml(shdw_xml))
 
 
 def apply_solid_fill(shape, hex_val: str):

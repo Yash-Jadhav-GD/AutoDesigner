@@ -36,10 +36,11 @@ LIBRARY_LINE_NAMES = {
 
 
 def clean_element(elem):
-    """Strips any internal custDataLst / tags elements that refer to missing rId relationships."""
+    """Strips any internal custDataLst / tags elements that refer to missing rId relationships,
+    and strips effectLst to strictly enforce: do not add shadows anywhere."""
     for parent in elem.iter():
         for child in list(parent):
-            if child.tag.endswith("custDataLst") or child.tag.endswith("tags"):
+            if child.tag.endswith("custDataLst") or child.tag.endswith("tags") or child.tag.endswith("effectLst"):
                 parent.remove(child)
     return elem
 
@@ -138,42 +139,12 @@ def get_decor_shadow_proto(lib_prs):
 
 
 def apply_library_shadow(shape, proto_shape=None):
-    """Applies the exact shadow settings from Decor_Box_with_Shadow_1 in Library_copy Slide 6:
-    <a:outerShdw blurRad="127000" rotWithShape="0">
-      <a:srgbClr val="95939D">
-        <a:alpha val="16000"/>
-      </a:srgbClr>
-    </a:outerShdw>
-    Rule: If the shape contains opacity (< 100%), it must not have any shadow.
-    """
+    """Rule: DO NOT ADD SHADOWS ANYWHERE. Strips any existing effectLst/shadow from shape."""
     spPr = shape._element.spPr
     for child in list(spPr):
         if child.tag.endswith("effectLst"):
             spPr.remove(child)
-
-    # Rule: If the shape contains opacity then that shape should not have any shadow.
-    alpha_elem = spPr.find(".//{http://schemas.openxmlformats.org/drawingml/2006/main}alpha")
-    if alpha_elem is not None:
-        val = int(alpha_elem.get("val", "100000"))
-        if val < 100000:
-            return
-
-    if proto_shape is not None:
-        p_eff = proto_shape._element.find(".//{http://schemas.openxmlformats.org/drawingml/2006/main}effectLst")
-        if p_eff is not None:
-            spPr.append(copy.deepcopy(p_eff))
-            return
-
-    eff_xml = (
-        '<a:effectLst xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">'
-        '<a:outerShdw blurRad="127000" rotWithShape="0">'
-        '<a:srgbClr val="95939D">'
-        '<a:alpha val="16000"/>'
-        '</a:srgbClr>'
-        '</a:outerShdw>'
-        '</a:effectLst>'
-    )
-    spPr.append(parse_xml(eff_xml))
+    return
 
 
 def load_library():

@@ -306,7 +306,7 @@ class LayoutSolver:
             border_color=node.border_color,
             border_width=node.border_width,
             corner_radius=node.corner_radius,
-            shadow=node.shadow
+            shadow=False
         ))
 
         cur_content_y = c_top + node.padding.top
@@ -335,7 +335,7 @@ class LayoutSolver:
                     align="center",
                     vertical_anchor="ctr",
                     gradient=h.gradient,
-                    shadow=True
+                    shadow=False
                 ))
                 cur_content_y = max(cur_content_y, c_top + (h.height - protrusion) + 14.0)
 

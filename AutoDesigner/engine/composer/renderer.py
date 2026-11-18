@@ -171,10 +171,7 @@ class ComposableRenderer:
                 else:
                     box.line.fill.background()
 
-                # Rule: If the shape contains opacity (< 100%), it must not have any shadow.
-                has_opacity = (alpha_val is not None and int(alpha_val) < 100000)
-                if sh.shadow and not has_opacity and lib_shadow_proto:
-                    apply_library_shadow(box, lib_shadow_proto)
+                # Rule: DO NOT ADD SHADOWS ANYWHERE
 
             elif kind in ("header_pill", "flush_header"):
                 pill = slide.shapes.add_shape(
@@ -184,13 +181,13 @@ class ComposableRenderer:
                 pill.name = sh.shape_id
                 set_shape_corner_radius(pill, sh.corner_radius)
 
-                # Gradient or Solid Fill
+                # Gradient or Solid Fill (Zero shadows everywhere)
                 if sh.gradient == "linear_indigo":
-                    apply_linear_gradient(pill, ColorTokens.GRADIENT_INDIGO_START, ColorTokens.GRADIENT_INDIGO_END, with_shadow=sh.shadow)
+                    apply_linear_gradient(pill, ColorTokens.GRADIENT_INDIGO_START, ColorTokens.GRADIENT_INDIGO_END, with_shadow=False)
                 elif sh.gradient == "linear_navy":
-                    apply_linear_gradient(pill, ColorTokens.GRADIENT_NAVY_START, ColorTokens.GRADIENT_NAVY_END, with_shadow=sh.shadow)
+                    apply_linear_gradient(pill, ColorTokens.GRADIENT_NAVY_START, ColorTokens.GRADIENT_NAVY_END, with_shadow=False)
                 elif sh.gradient == "linear_tangerine":
-                    apply_linear_gradient(pill, ColorTokens.GRADIENT_TANGERINE_START, ColorTokens.GRADIENT_TANGERINE_END, with_shadow=sh.shadow)
+                    apply_linear_gradient(pill, ColorTokens.GRADIENT_TANGERINE_START, ColorTokens.GRADIENT_TANGERINE_END, with_shadow=False)
                 else:
                     apply_solid_fill(pill, resolve_color(sh.fill_color))
 
