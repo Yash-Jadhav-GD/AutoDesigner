@@ -255,3 +255,21 @@ The funnel graphic on slide 21 (blues `#4FB7F6`, `#338DCD`) is a legacy off-pale
   - Outline (stroke): pure white (`#FFFFFF`).
   - Fill: strictly none (`fill="none"`).
 - **Shadows**: Strict zero-shadow policy (no `<a:effectLst>`, no theme `<a:effectRef>`).
+
+### Library Slide 10 Divider & Connector Line Rule
+- **Standing Requirement**: Whenever adding any divider, accent, or separation lines, ALWAYS use the authentic vector prototypes from **Slide 10 of `Library_copy.pptx`** (or Slide 6 of legacy Library). Never use raw generic rectangles (`MSO_SHAPE.RECTANGLE`) as lines.
+- **The 5 Canonical Line Prototypes**:
+  1. `Grey Centre Fade V`: Vertical line with center-weighted gradient fade (both top and bottom edges fade to 0% alpha transparency, solid `#A2ABB0` at center).
+  2. `Grey Solid V`: Solid grey vertical line (`#A2ABB0`, 0.5pt stroke).
+  3. `Grey Solid H`: Solid grey horizontal line (`#A2ABB0`, 0.5pt stroke).
+  4. `Grey Centre Fade H`: Horizontal line with center-weighted gradient fade (both left and right ends fade to 0% alpha transparency, solid `#A2ABB0` at center).
+  5. `Grey Side Fade R`: Horizontal line fading to the right (100% solid `#A2ABB0` on the left where text starts, fading to 0% alpha on the right).
+- **Deterministic Alignment Selection Rule**:
+  - **Center-Aligned Content (including center-aligned text or symmetrical cards)**:
+    - **Vertical Column Arrangement**: MUST use `Grey Centre Fade V` (e.g. between side-by-side KPI columns, feature columns, or cards with center-aligned headers/text).
+    - **Horizontal Row Arrangement**: MUST use `Grey Centre Fade H` (e.g. between vertically stacked cards or rows where content and text are centered).
+  - **Left-Aligned / Standard Content**:
+    - **Vertical Column Arrangement**: Use `Grey Solid V`.
+    - **Horizontal Row Arrangement**: Use `Grey Side Fade R` (for rows/cards fading out softly to the right) or `Grey Solid H`.
+- **Zero Shadow Enforcement**: Divider lines must have zero shadow effects (`<a:effectLst>` and `<a:effectRef>` removed).
+

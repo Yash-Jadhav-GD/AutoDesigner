@@ -105,12 +105,25 @@ Designed for high-impact metrics (large numerical figure at the top, header labe
 | `KPI-CRD-V1 Header Text` | Metric Label | `206.7 x 24.2` | Middle position. **Aptos 14 pt SemiBold**, Center aligned. |
 | `KPI-CRD-V1 Body Text` | Description | `206.7 x 27.1` | Bottom position. **Aptos 10–11 pt Regular**, Center aligned. |
 
-### Slide 6: Vector Dividers & Line Accents
-Divider lines are dynamically cloned and placed between rows to separate content:
-- **`Grey Side Fade R`**: $172.4\text{ pt}$ horizontal line, right-fade gradient, `#A2ABB0`.
-- **`Grey Centre Fade H`**: $172.4\text{ pt}$ horizontal line, center-fade gradient, `#A2ABB0`.
-- **`Blue Side Fade R`** / **`Blue Centre Fade H`**: Color `#459FED`.
-- **`Orange Side Fade R`** / **`Orange Centre Fade H`**: Color `#FBBE26`.
+### Slide 10: Vector Dividers & Line Accents (`Library_copy.pptx` Slide 10 / Legacy Slide 6)
+Divider lines are dynamically cloned and placed between rows or columns to cleanly structure content. Whenever lines are added to any slide, they **must** be sourced from Slide 10 of the library.
+
+| Line Prototype Name | Orientation | Alignment Use Case | Visual Behavior / Gradient Formula |
+| :--- | :--- | :--- | :--- |
+| **`Grey Centre Fade V`** | Vertical | **Center-Aligned Content** | Vertical gradient line fading to $0\%$ alpha at top and bottom ends, solid `#A2ABB0` at center ($50\%$). Used between side-by-side columns with center-aligned text or badges. |
+| **`Grey Centre Fade H`** | Horizontal | **Center-Aligned Content** | Horizontal gradient line fading to $0\%$ alpha at left and right ends, solid `#A2ABB0` at center ($50\%$). Used between vertically stacked rows or cards where content is center-aligned. |
+| **`Grey Solid V`** | Vertical | **Left-Aligned / Standard** | Solid vertical line (`#A2ABB0`, $0.5\text{ pt}$ stroke). Used for vertical separation between left-aligned columns or data tables. |
+| **`Grey Solid H`** | Horizontal | **Standard / Structural** | Solid horizontal line (`#A2ABB0`, $0.5\text{ pt}$ stroke). Used for table header underlines and structural grid delimiters. |
+| **`Grey Side Fade R`** | Horizontal | **Left-Aligned Content** | Horizontal gradient line: $100\%$ solid `#A2ABB0` at left (where text begins), fading out to $0\%$ alpha transparency on the right. Standard divider for left-aligned text cards and list items. |
+
+#### Deterministic Line Selection Rule:
+1. **Vertical Column Arrangement**:
+   - If content/text within columns is **center-aligned**: **MUST** use `Grey Centre Fade V`.
+   - If content/text is **left-aligned** or standard: Use `Grey Solid V`.
+2. **Horizontal Row Arrangement**:
+   - If content/text within rows is **center-aligned**: **MUST** use `Grey Centre Fade H`.
+   - If content/text is **left-aligned**: **MUST** use `Grey Side Fade R` (or `Grey Solid H`).
+3. **Zero Shadow Requirement**: All divider lines must have strictly 0 shadow effects (`<a:effectLst>` and `<a:effectRef>` stripped).
 
 ---
 

@@ -155,9 +155,17 @@ class TableNode(LayoutNode):
 
 
 class DividerNode(LayoutNode):
-    """Authentic vector gradient line cloned from Library Slide 6."""
+    """Authentic vector gradient line cloned from Library Slide 10:
+    - Grey Centre Fade V (vertical, center-aligned content)
+    - Grey Solid V (vertical, left/standard-aligned content)
+    - Grey Centre Fade H (horizontal, center-aligned content)
+    - Grey Side Fade R (horizontal, left-aligned content)
+    - Grey Solid H (horizontal, solid divider)
+    """
     node_type: Literal["Divider"] = "Divider"
-    line_prototype: str = "side_fade_r"  # "side_fade_r", "centre_fade_h", "solid_h", "solid_v"
+    line_prototype: Optional[str] = None  # If None, automatically determined by orientation and is_center_aligned
+    orientation: Literal["horizontal", "vertical", "h", "v"] = "horizontal"
+    is_center_aligned: bool = False
     thickness: float = 1.0
 
 
@@ -216,6 +224,17 @@ class LayeredStackNode(LayoutNode):
     foundation_at_bottom: bool = True
 
 
+class OverlayNode(LayoutNode):
+    """Layer container for floating elements (pills, badges, connectors, annotations)
+    with explicit protrusion, z-order, and alignment rules above a base container."""
+    node_type: Literal["Overlay"] = "Overlay"
+    base: "AnyNode"
+    overlays: List["AnyNode"] = Field(default_factory=list)
+    protrusion_pt: float = 16.0  # e.g. +16pt protrusion above card
+    horizontal_align: Literal["center", "left", "right"] = "center"
+    z_order_offset: int = 10
+
+
 # Union for any node type in the tree
 AnyNode = Union[
     HStack,
@@ -229,6 +248,7 @@ AnyNode = Union[
     ConnectorNode,
     MaturityStageNode,
     LayeredStackNode,
+    OverlayNode,
 ]
 
 # Update forward refs
@@ -237,6 +257,7 @@ VStack.model_rebuild()
 Grid.model_rebuild()
 CardNode.model_rebuild()
 LayeredStackNode.model_rebuild()
+OverlayNode.model_rebuild()
 
 
 class SlideComposition(BaseModel):

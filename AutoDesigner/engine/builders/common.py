@@ -9,6 +9,7 @@ import os
 import re
 import zipfile
 from pathlib import Path
+from typing import Dict, List, Optional, Tuple
 from xml.etree import ElementTree as ET
 
 import pptx
@@ -88,6 +89,48 @@ def add_library_line(slide, proto_shape, left_pt, top_pt, width_pt=0.0, height_p
                     lin.set("ang", "0")
     slide.shapes._spTree.append(elem)
     return slide.shapes[len(slide.shapes) - 1]
+
+
+def select_library_line(lib_lines, orientation="h", is_center_aligned=False):
+    """Selects the authentic Slide 10 library line prototype based on alignment rule:
+      - Vertical column arrangement ('v' or 'vertical'):
+          - Center-aligned content (or center-aligned text) -> 'centre_fade_v' ('Grey Centre Fade V')
+          - Standard / left-aligned content -> 'solid_v' ('Grey Solid V')
+      - Horizontal row arrangement ('h' or 'horizontal'):
+          - Center-aligned content (or center-aligned text) -> 'centre_fade_h' ('Grey Centre Fade H')
+          - Standard / left-aligned content -> 'side_fade_r' ('Grey Side Fade R') or 'solid_h' ('Grey Solid H')
+    """
+    orient = str(orientation).lower().strip()
+    if orient in ("v", "vertical", "vert"):
+        if is_center_aligned:
+            return lib_lines.get("centre_fade_v") or lib_lines.get("solid_v")
+        return lib_lines.get("solid_v") or lib_lines.get("centre_fade_v")
+    else:
+        if is_center_aligned:
+            return lib_lines.get("centre_fade_h") or lib_lines.get("side_fade_r")
+        return lib_lines.get("side_fade_r") or lib_lines.get("solid_h")
+
+
+def add_library_divider(
+    slide,
+    lib_lines,
+    left_pt,
+    top_pt,
+    width_pt=0.0,
+    height_pt=0.0,
+    orientation="h",
+    is_center_aligned=False,
+):
+    """Convenience helper to select and add the authentic Slide 10 divider line based on alignment:
+    - Vertical + Center-aligned -> Grey Centre Fade V
+    - Vertical + Left-aligned   -> Grey Solid V
+    - Horizontal + Center-aligned -> Grey Centre Fade H
+    - Horizontal + Left-aligned   -> Grey Side Fade R
+    """
+    proto = select_library_line(lib_lines, orientation=orientation, is_center_aligned=is_center_aligned)
+    if proto is None:
+        raise ValueError(f"Line prototype for orientation={orientation}, center={is_center_aligned} not found in library")
+    return add_library_line(slide, proto, left_pt, top_pt, width_pt=width_pt, height_pt=height_pt)
 
 
 def set_shape_corner_radius(shape, radius_pt=4.0):
@@ -260,14 +303,38 @@ def add_connector_line(slide, x1, y1, x2, y2, color_hex="A2ABB0", width_pt=1.0):
     return conn
 
 
+def render_svg_to_png_bytes(svg_bytes: bytes, dpi: int = 300) -> Optional[bytes]:
+    """Renders raw SVG bytes to high-resolution PNG bytes using PyMuPDF (fitz)."""
+    try:
+        import fitz
+        doc = fitz.open(stream=svg_bytes, filetype="svg")
+        pix = doc[0].get_pixmap(dpi=dpi)
+        return pix.tobytes(output="png")
+    except Exception as e:
+        return None
+
+
 def inject_svg_assets(raw_pptx_bytes, after_copy_path=AFTER_PATH, targets=None):
     """Embeds the 5 SVG icons and adds their relationships to the slides that reference them.
     `targets` maps slide number -> relationship-id prefix used by that slide's builder
-    (default: the original deck's slide 2 and slide 4)."""
+    (default: the original deck's slide 2 and slide 4).
+    Also generates PNG raster fallbacks and ensures strict OpenXML namespace compliance.
+    """
+    ET.register_namespace('', 'http://schemas.openxmlformats.org/package/2006/relationships')
+    ET.register_namespace('', 'http://schemas.openxmlformats.org/package/2006/content-types')
+
     targets = targets or {2: "rIdSvgS2_", 4: "rIdSvgS4_"}
     rels_targets = {f"ppt/slides/_rels/slide{n}.xml.rels": p for n, p in targets.items()}
     with zipfile.ZipFile(after_copy_path, "r") as z_in:
         svg_map = {f"image{i}.svg": z_in.read(f"ppt/media/image{i}.svg") for i in range(19, 24)}
+
+    # Pre-render PNG fallbacks
+    png_map = {}
+    for fn, s_bytes in svg_map.items():
+        png_data = render_svg_to_png_bytes(s_bytes)
+        if png_data:
+            png_name = fn.rsplit(".", 1)[0] + ".png"
+            png_map[png_name] = png_data
 
     in_buf = io.BytesIO(raw_pptx_bytes)
     out_buf = io.BytesIO()
@@ -290,17 +357,24 @@ def inject_svg_assets(raw_pptx_bytes, after_copy_path=AFTER_PATH, targets=None):
                 data = ET.tostring(root, xml_declaration=True, encoding="utf-8")
             elif item.filename == "[Content_Types].xml":
                 root = ET.fromstring(data)
-                has_svg = any(c.attrib.get("Extension") == "svg" for c in root)
-                if not has_svg:
+                if not any(c.attrib.get("Extension") == "svg" for c in root):
                     ET.SubElement(root, "{http://schemas.openxmlformats.org/package/2006/content-types}Default", {
                         "Extension": "svg",
                         "ContentType": "image/svg+xml"
                     })
+                if not any(c.attrib.get("Extension") == "png" for c in root):
+                    ET.SubElement(root, "{http://schemas.openxmlformats.org/package/2006/content-types}Default", {
+                        "Extension": "png",
+                        "ContentType": "image/png"
+                    })
                 data = ET.tostring(root, xml_declaration=True, encoding="utf-8")
             zout.writestr(item, data)
-        # Add SVGs to media/
+
+        # Add SVGs and PNG fallbacks to media/
         for fn, svg_bytes in svg_map.items():
             zout.writestr(f"ppt/media/{fn}", svg_bytes)
+        for fn, png_bytes in png_map.items():
+            zout.writestr(f"ppt/media/{fn}", png_bytes)
 
     return out_buf.getvalue()
 

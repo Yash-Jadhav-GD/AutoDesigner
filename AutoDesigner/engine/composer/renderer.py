@@ -25,6 +25,7 @@ from ..builders.common import (
     apply_native_bullet,
     clean_bullet_string,
     add_library_line,
+    select_library_line,
     apply_library_shadow,
     set_cell_border,
 )
@@ -35,6 +36,9 @@ def resolve_color(token_or_hex: Optional[str]) -> str:
     """Resolves a color token name or hex string to a clean 6-char hex code."""
     if not token_or_hex:
         return ColorTokens.NEUTRAL_WHITE
+    token_str = str(token_or_hex).strip().replace(" ", "_").upper()
+    if hasattr(ColorTokens, token_str):
+        return getattr(ColorTokens, token_str)
     token_map = {
         "BRAND_INDIGO": ColorTokens.BRAND_INDIGO,
         "BRAND_TANGERINE": ColorTokens.BRAND_TANGERINE,
@@ -52,9 +56,20 @@ def resolve_color(token_or_hex: Optional[str]) -> str:
         "NEUTRAL_SURFACE": ColorTokens.NEUTRAL_SURFACE,
         "NEUTRAL_BORDER": ColorTokens.NEUTRAL_BORDER,
         "NEUTRAL_LINE": ColorTokens.NEUTRAL_LINE,
+        "NEUTRAL_MUTED": ColorTokens.TEXT_SECONDARY,
+        "TEXT_MUTED": ColorTokens.TEXT_SECONDARY,
+        "WHITE": ColorTokens.NEUTRAL_WHITE,
+        "BLACK": ColorTokens.BRAND_ONYX,
     }
-    cleaned = token_or_hex.strip().lstrip("#")
-    return token_map.get(token_or_hex, cleaned)
+    if token_str in token_map:
+        return token_map[token_str]
+    cleaned = str(token_or_hex).strip().lstrip("#")
+    # Verify if valid 6-char hex
+    if len(cleaned) == 6 and all(c in "0123456789abcdefABCDEF" for c in cleaned):
+        return cleaned
+    if len(cleaned) == 3 and all(c in "0123456789abcdefABCDEF" for c in cleaned):
+        return "".join(c * 2 for c in cleaned)
+    return ColorTokens.TEXT_PRIMARY
 
 
 def apply_solid_fill_alpha(shape, hex_val: str, alpha_val: int = 100000):
@@ -313,8 +328,13 @@ class ComposableRenderer:
                         apply_native_bullet(p_b, char="•", typeface="Arial", mar_l_pt=11.0, indent_pt=-11.0)
 
             elif kind == "divider":
-                proto_key = sh.line_prototype or "side_fade_r"
-                proto = lib_lines.get(proto_key)
+                proto_key = sh.line_prototype
+                if not proto_key:
+                    is_vert = (r.height > 0 and r.width <= 0) or getattr(sh, "orientation", "h") in ("v", "vertical")
+                    is_ctr = getattr(sh, "is_center_aligned", False)
+                    proto = select_library_line(lib_lines, orientation="v" if is_vert else "h", is_center_aligned=is_ctr)
+                else:
+                    proto = lib_lines.get(proto_key)
                 if proto is not None:
                     line = add_library_line(slide, proto, r.left, r.top, r.width, r.height)
                     line.name = sh.shape_id
